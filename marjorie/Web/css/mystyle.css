@@ -1631,6 +1631,11 @@ h4.title {
 
 .wh-25 { width: 25%; }
 
+.wh-33 {
+    width: 33%;
+}
+
+
 .wh-100 { width: 100%; }
 
 .grid-sizer { width: 0; }
@@ -1664,7 +1669,7 @@ h4.title {
 .filter-list .link-style-1:hover:before, .filter-list .link-style-1.active:before { -webkit-transform: translateX(0%); -moz-transform: translateX(0%); -ms-transform: translateX(0%); transform: translateX(0%); }
 .filter-list .link-style-1:hover, .filter-list .link-style-1.active { color: #fff; }
 
-.height-lg { height: 870px; }
+.height-lg { height: 617px; }
 
 .height-md { height: 260px; }
 
