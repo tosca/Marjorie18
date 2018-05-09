@@ -326,7 +326,6 @@
     <Content Include="img\vase\vase_18.jpg" />
     <Content Include="img\vase\vase_19.jpg" />
     <Content Include="img\vase\vase_22.jpg" />
-    <Content Include="index3.html" />
     <Content Include="index.html" />
     <Content Include="js\all.js" />
     <Content Include="js\isotope.pkgd.min.js" />
@@ -351,15 +350,6 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\sammy-0.7.4.js" />
     <Content Include="Scripts\sammy-0.7.4.min.js" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -375,7 +365,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <PropertyGroup>
