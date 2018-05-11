@@ -204,8 +204,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontello.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="img\0502171138.jpg" />
-    <Content Include="img\0502171139.jpg" />
     <Content Include="img\bowls\recent_37.jpg" />
     <Content Include="img\bowls\recent_38.jpg" />
     <Content Include="img\bowls\recent_39.jpg" />
@@ -216,8 +214,6 @@
     <Content Include="img\bowls\sbowl_08.jpg" />
     <Content Include="img\bowls\sbowl_09.jpg" />
     <Content Include="img\bowls\sbowl_12.jpg" />
-    <Content Include="img\CT3A9249-2-Edit.jpg" />
-    <Content Include="img\CT3A9252-2-Edit.jpg" />
     <Content Include="img\drink\drink_01.jpg" />
     <Content Include="img\drink\drink_03.jpg" />
     <Content Include="img\drink\drink_07.jpg" />
@@ -273,7 +269,6 @@
     <Content Include="img\pour\recent_49.jpg" />
     <Content Include="img\pour\recent_50.jpg" />
     <Content Include="img\pour\recent_52.jpg" />
-    <Content Include="img\project_full_1.jpg" />
     <Content Include="img\sculpt01.jpg" />
     <Content Include="img\sculpt02.jpg" />
     <Content Include="img\serve\drink_17.jpg" />
@@ -328,6 +323,8 @@
     <Content Include="fonts\fontello.ttf" />
     <Content Include="fonts\fontello.woff" />
     <Content Include="fonts\fontello.woff2" />
+    <Content Include="img\studshow-01.png" />
+    <Content Include="img\studshow-02.png" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
