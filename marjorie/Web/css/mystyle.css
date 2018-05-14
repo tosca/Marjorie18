@@ -737,7 +737,7 @@ div.no-padding-block { padding-bottom: 0px; }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 9. HEADER*/
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-.header.style-center { position: fixed; left: 0px; top: 0px; height: 90px; width: 100%; background: #fff; z-index: 500; text-align: center; backface-visibility: hidden; }
+.header.style-center { position: fixed; left: 0px; top: 0px; height: 0px; width: 100%; background: #fff; z-index: 500; text-align: center; backface-visibility: hidden; }
 
 .style-fullpage.header.bg-scroll { background: #484848; }
 
@@ -891,7 +891,7 @@ nav li { position: relative; }
   .folow a:hover:after { -webkit-transform: translateY(0px); -moz-transform: translateY(0px); -ms-transform: translateY(0px); transform: translateY(0px); opacity: 1; }
   .folow a:hover:before { opacity: 0; -webkit-transform: translateY(10px); -moz-transform: translateY(10px); -ms-transform: translateY(10px); transform: translateY(10px); } }
 @media (max-width: 1400px) { .header-wrap, .footer, .search-panel .wrap { margin: 0px 0px; }
-  .header.style-center { height: 66px; }
+  .header.style-center { height: 0px; }
   .header.style-center nav { padding: 16px 0px; }
   .main-baner-align { padding-top: 66px; }
   .search-panel { height: 66px; }
@@ -954,7 +954,7 @@ nav li { position: relative; }
 
 .main-content { position: relative; border: 0px solid #fff; height: 100%; padding: 45px 0px 20px; border-bottom: 0px none; }
 .main-content.no-top { padding: 0px; border-top-width: 0px; }
-.main-content.no-padd { padding: 45px 0px 0px; }
+.main-content.no-padd { padding: 5px 0px 0px; }
 
 .sub-title { font-size: 11px; text-transform: uppercase; font-weight: 700; display: block; letter-spacing: 1.6px; }
 
@@ -1404,7 +1404,7 @@ nav li { position: relative; }
   #fp-nav.right { right: 0px; }
   .footer.fix-footer { padding: 16px 30px; }
   .scroll-fade.padd { left: 30px; right: 30px; }
-  .padd-wrap { padding: 66px 0px 54px; }
+  .padd-wrap { padding: 66px 50px 54px; }
   .wrapper-full-scroll { padding-top: 66px; }
   .full-block .service-item .text .title { font-size: 20px; line-height: 26px; }
   .full-block .service-item { padding-bottom: 30px; }
@@ -1669,7 +1669,7 @@ h4.title {
         height: 30px;
         font-size: 15px;
         line-height: 26px;
-        color: #40708a;
+        color: #fffefe;
         padding: 0px 15px;
         border-radius: 20px;
         overflow: hidden;
@@ -1710,8 +1710,8 @@ h4.title {
 }
 
 .home-fade.style-center {
-    height: 400px;
-    margin-bottom: 120px;
+    height: 500px;
+  /*  margin-bottom: 120px;*/
 }
 
 @media (max-width: 414px) {
@@ -1732,8 +1732,8 @@ h4.title {
 
 @media (max-width: 1400px) {
     .home-fade.style-center {
-        height: 200px;
-        margin-bottom: 120px;
+        height: 500px;
+      /*  margin-bottom: 50px;*/
     }
 }
 
@@ -10354,38 +10354,7 @@ h4.title {
         }
     }
 
-    @media (max-width: 1200px) {
-        .section-index .cell-view {
-            display: inline-block;
-            width: 100%;
-            height: auto;
-        }
-
-        .section-index {
-            position: relative;
-            padding: 80px 0px;
-            width: 100%;
-            display: block;
-            height: auto;
-        }
-
-        .index-slider-container {
-            height: auto;
-            min-height: 600px;
-        }
-
-        .index-contact-form .h3-index {
-            padding-bottom: 20px;
-        }
-
-        .text-clip-slider {
-            padding: 80px 0px;
-        }
-
-        .controls.submit-form {
-            display: block;
-            margin-left: 0px;
-        }
+  
 
         .input-control {
             margin-bottom: 30px;
@@ -10439,136 +10408,5 @@ h4.title {
 
         .header.style-center.modern-header .nav-menu > ul > li > a:before {
             background: none;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .services-silde .clip-text {
-            font-size: 40px;
-            line-height: 50px;
-        }
-
-        .clip-text.lg {
-            background-size: 150%;
-            font-size: 500px;
-            line-height: 500px;
-        }
-
-        .footer.type-3 {
-            height: auto;
-        }
-
-        .service-panel.index-popup .close {
-            width: 45px;
-            height: 45px;
-            right: 30px;
-            top: 30px;
-        }
-
-            .service-panel.index-popup .close img {
-                width: 100%;
-                height: auto;
-            }
-
-        .service-panel.index-popup .h3-index {
-            padding-bottom: 20px;
-        }
-
-        .service-panel.index-popup .text {
-            max-width: 100%;
-            padding: 0px 30px;
-        }
-
-        .service-panel.index-popup {
-            background: #2f2828;
-        }
-
-            .service-panel.index-popup .text {
-                margin-right: 0px;
-            }
-
-        .section-index-contact {
-            padding: 80px 0px 0px;
-        }
-
-        .section-index .map-wrapper.type-2 {
-            position: relative;
-            width: 100%;
-            height: 300px;
-        }
-
-        .contact-index-desc-wrap {
-            padding-bottom: 30px;
-        }
-
-        .contact-index-desc {
-            width: 100%;
-        }
-
-        .index-contact-form .error-message {
-            bottom: -5px;
-            left: 15px;
-        }
-    }
-
-    @media (max-width: 680px) {
-        .index-contact-form .error-message {
-            bottom: -25px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .clip-text.lg {
-            font-size: 300px;
-            line-height: 400px;
-        }
-
-        .index-slider-container {
-            min-height: 510px;
-        }
-
-        .main-index-title .h3-index {
-            font-size: 30px;
-            line-height: 30px;
-        }
-
-        .adres-item {
-            font-size: 17px;
-        }
-
-        .input-control {
-            line-height: 45px;
-            height: 45px;
-        }
-
-        .controls.submit-form {
-            height: 45px;
-            line-height: 45px;
-        }
-
-            .controls.submit-form .text {
-                line-height: 45px;
-                font-size: 20px;
-                padding-right: 60px;
-            }
-
-            .controls.submit-form i {
-                line-height: 45px;
-                font-size: 20px;
-            }
-
-        .index-contact-form .questions .input-control {
-            font-size: 20px;
-        }
-
-        .index-contact-form .h3-index {
-            font-size: 30px;
-            line-height: 30px;
-        }
-    }
-
-    @media (max-height: 735px) {
-        .index-slider-container {
-            min-height: 400px;
         }
     }
