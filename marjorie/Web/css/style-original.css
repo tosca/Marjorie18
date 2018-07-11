@@ -2932,7 +2932,7 @@ img.source-image {
 /* 32. Mini */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 @font-face { font-family: 'GTWalsheimProLight'; src: url("../font/walsheim/GT-Walsheim-Pro-Light.eot"); src: url("../font/walsheim/GT-Walsheim-Pro-Light.woff") format("woff"), url("../font/walsheim/GT-Walsheim-Pro-Light.ttf") format("truetype"); font-weight: 300; font-style: normal; }
-@font-face { font-family: 'GTWalsheimProRegular'; src: url("../font/walsheim/GT-Walsheim-Pro-Regular.eot"); src: url("../font/walsheim/GT-Walsheim-Pro-Regular.woff") format("woff"), url("../font/walsheim/GT-Walsheim-Pro-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'GTWalsheimProRegular'; src: url("../font/walsheim/GT-Walsheim-Pro-Regular.eot"); src: url("../font/walsheim/Open-Sans") format("woff"), url("../font/walsheim/Open-Sans") format("truetype"); font-weight: 400; font-style: normal; }
 @font-face { font-family: 'GTWalsheimProBold'; src: url("../font/walsheim/GT-Walsheim-Pro-Bold.eot"); src: url("../font/walsheim/GT-Walsheim-Pro-Bold.woff") format("woff"), url("../font/walsheim/GT-Walsheim-Pro-Bold.ttf") format("truetype"); font-weight: 700; font-style: normal; }
 .mini-title-h1, .mini-title-h2, .mini-title-h3, .mini-title-h4, .mini-title-h5, .mini-title-h6, .mini-title-h7 { font-family: 'GTWalsheimProRegular'; color: #423c3c; }
 
