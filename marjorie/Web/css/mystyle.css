@@ -965,6 +965,7 @@ nav li { position: relative; }
   .button-type-1 { height: 40px; line-height: 36px; padding: 0px 15px; font-size: 11px; }
   .button-type-1 span:before { line-height: 36px; font-size: 11px; }
   .mobile-auto .main-baner-align { padding: 66px 15px 0px; } }
+
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 
 .main-content { position: relative; border: 0px solid #fff; height: 100%; padding: 45px 0px 20px; border-bottom: 0px none; }
@@ -1605,6 +1606,10 @@ p.simple-text.sm{
 
 .izotope-container { position: relative; }
 
+.grid {
+    position: relative;
+}
+
 .wh-50 { width: 50%; }
 
 .wh-25 { width: 25%; }
@@ -2179,33 +2184,6 @@ p.simple-text.sm{
         border-bottom-width: 0px;
     }
 
-    .service-desc {
-        padding: 130px 110px 95px 260px;
-        position: relative;
-        display: table;
-        height: 100%;
-        -webkit-transition: all 800ms cubic-bezier(0.42, 0, 0.58, 1) 0.2s;
-        -moz-transition: all 800ms cubic-bezier(0.42, 0, 0.58, 1) 0.2s;
-        -ms-transition: all 800ms cubic-bezier(0.42, 0, 0.58, 1) 0.2s;
-        transition: all 800ms cubic-bezier(0.42, 0, 0.58, 1) 0.2s;
-    }
-
-        .service-desc .simple-text {
-            margin-bottom: 40px;
-        }
-
-            .service-desc .simple-text p {
-                font-size: 17px;
-                line-height: 25px;
-                color: #4d4d4e;
-                padding-bottom: 25px;
-            }
-
-    .service-caption {
-        padding: 0px 110px 0px 65px;
-        color: #fff;
-    }
-
         .service-caption .sub-title {
             font-size: 13px;
             letter-spacing: 2.8px;
@@ -2399,15 +2377,6 @@ p.simple-text.sm{
             padding: 0px 15px;
         }
 
-        .price-item.year .price-value b {
-            font-size: 50px;
-            line-height: 60px;
-        }
-
-        .price-item.year .price-value {
-            font-size: 20px;
-        }
-
         .main-baner-align .service-desc .cell-view {
             display: block;
         }
@@ -2592,88 +2561,6 @@ p.simple-text.sm{
         margin-bottom: 40px;
     }
 
-    .share-item-wrap .folow.color-style a {
-        margin: 0px 5px 0px 0px;
-    }
-
-    .slide-point {
-        position: relative;
-        width: 123px;
-        height: 123px;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-        .slide-point:before {
-            content: '';
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            box-shadow: inset 0px 0px 0px 3px #fff;
-            opacity: 0;
-            -webkit-transition: all 0.35s ease-out;
-            -moz-transition: all 0.35s ease-out;
-            -ms-transition: all 0.35s ease-out;
-            transition: all 0.35s ease-out;
-        }
-
-        .slide-point .bg, .slide-point .service-layer {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            left: 50%;
-            top: 50%;
-            margin: -50px 0px 0px -50px;
-        }
-
-        .slide-point .path {
-            stroke: #75acff;
-            stroke-width: 3;
-            stroke-miterlimit: 10;
-        }
-
-        .slide-point .spinner {
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-        }
-
-        .slide-point:hover:before, .slide-point.active:before {
-            opacity: 1;
-        }
-
-        .slide-point.active .spinner {
-            opacity: 1;
-        }
-
-        .slide-point.active .path {
-            -webkit-animation: dash1 2s forwards;
-            -moz-animation: dash1 2s forwards;
-            -ms-animation: dash1 2s forwards;
-            animation: dash1 2s forwards;
-        }
-
-    .point-circle-slider {
-        position: absolute;
-        left: 50px;
-        bottom: 45px;
-        width: 100%;
-    }
-
-        .point-circle-slider .swiper-container {
-            width: auto;
-            display: inline-block;
-        }
-
-        .point-circle-slider .swiper-slide {
-            padding: 0px 10px;
-        }
 
     @keyframes dash1 {
         0% {
@@ -2724,59 +2611,15 @@ p.simple-text.sm{
     }
 
     @media (max-width: 1880px) {
-        .blog-post-desc.product-elem {
-            padding: 70px 50px;
-        }
-
-        .share-item-wrap .folow.color-style a {
-            margin: 0px 5px 0px 0px;
-        }
-
-        .pricelist {
-            width: 100%;
-        }
-
-        .right-item-wrapp {
-            width: 100%;
-            padding: 0px;
-        }
-
-        .tags-item-wrap {
-            padding-bottom: 30px;
-        }
+      
     }
 
     @media (max-width: 1200px) {
-        .price-item-wrap .button-type-1 {
-            float: left;
-            clear: both;
-            margin-top: 0px;
-        }
-
-        .price-item-wrap .counter {
-            margin-bottom: 30px;
-        }
-
-        .price-item-wrap .price-val {
-            float: right;
-        }
-
-        .blog-post-desc.product-elem {
-            padding: 50px 30px;
-        }
+       
     }
 
     @media (max-width: 992px) {
-        .point-circle-slider {
-            text-align: center;
-            left: 0px;
-            bottom: 20px;
-        }
-
-            .point-circle-slider .swiper-slide {
-                padding: 0px 5px;
-            }
-
+       
         .main-baner-full.no-table {
             height: auto;
         }
@@ -2785,59 +2628,16 @@ p.simple-text.sm{
             margin-bottom: 0px;
         }
 
-        .caption-rate .title {
-            font-size: 40px;
-            line-height: 50px;
-        }
     }
 
     @media (max-width: 500px) {
         .blog-post-desc.product-elem {
             padding: 30px 15px;
-        }
-
-        .price-item-wrap .counter, .price-item-wrap .button-type-1 {
-            float: none;
-        }
-
-        .price-item-wrap .price-val {
-            float: none;
-            margin-bottom: 30px;
-            width: 100%;
-        }
-
-        .tags-item-wrap {
-            text-align: center;
-        }
-
-            .tags-item-wrap .tag-link-2 {
-                margin: 0px 7px 14px;
-            }
-
-        .share-item-wrap {
-            text-align: center;
-        }
-
-            .share-item-wrap .folow.color-style a {
-                margin: 0px 3px;
-            }
+        }      
     }
 
     @media (max-width: 480px) {
-        .pricelist ul li b, .pricelist ul li p {
-            float: left;
-            clear: both;
-            text-align: left;
-        }
-
-        .caption-rate .title, .blog-post-desc .title {
-            font-size: 30px;
-            line-height: 36px;
-        }
-
-        .point-circle-slider {
-            display: none;
-        }
+   
     }
 
     .top-baner img{
@@ -2923,7 +2723,6 @@ p.simple-text.sm{
         .item-type-1 .bg, .item-type-1 .service-layer {
             -webkit-transition: all 0.35s ease-out;
             -moz-transition: all 0.35s ease-out;
-            -ms-transition: all 0.35s ease-out;
             transition: all 0.35s ease-out;
         }
 
@@ -3010,36 +2809,41 @@ p.simple-text.sm{
     md-size {
     height: 400px;
 }
+/*********  project-item.type-2 ********/
+#container {
+    height: 90%;
+    height: 900px;
+}
+.grid {
+    height: 50%;
+    height: 400px;
+    background: #cc0;
+    max-width: 100%;
+    position: relative;
 
-    .project-item.type-2 {
+}
+
+.project-item.type-2 {
         height: 100%;
         overflow: hidden;
         position: absolute;
         left: 0px;
         top: 0px;
         width: 100%;
-        height: 100%;
+       
     }
 
-        .project-item.type-2 a {
-            font-size: 30px;
-            font-weight: 700;
-            line-height: 40px;
-            color: #fff;
-            padding-bottom: 15px;
-            display: block;
-        }
         .project-item.type-2 {
-            font-size: 30px;
+           /* font-size: 30px;
             font-weight: 700;
             line-height: 40px;
             color: #fff;
-            padding-bottom: 15px;
+            padding-bottom: 15px;*/
             display: block;
         }
 
             .project-item.type-2 hover {
-                color: #a3de15;
+              /* color: #a3de15;*/ 
             }
 
         .project-item.type-2 .simple-text {
@@ -3053,7 +2857,7 @@ p.simple-text.sm{
 
             .project-item.type-2 .sub-title {
                 font-size: 14px;
-                line-height: 14px;
+                line-height: 20px;
                 color: #295065;
                 letter-spacing: 0px;
                 position: relative;
@@ -3076,10 +2880,10 @@ p.simple-text.sm{
             .project-item.type-2 .project-title {
                 position: relative;
                 width: 100%;
+                height: auto;
                 left: auto;
-                top: auto;
-               /* padding: 20px 50px;*/
-               padding: 300px 50px;
+                top: auto;              
+               padding: 200px 30px 20px;
                 opacity: 0;
                 -webkit-transition: all 0.35s ease-out;
                 -moz-transition: all 0.35s ease-out;
@@ -3249,7 +3053,7 @@ body {
 }
 
 /* clear fix */
-.isotope:after {
+.grid:after {
     content: '';
     display: block;
     clear: both;
@@ -3260,21 +3064,28 @@ body {
 /* 5 columns, percentage width */
 .grid-item,
 .grid-sizer {
-    width: 22%;
+    width: 21%;
 }
-
-.grid-item {
-    float: left;
-    height: 300px;
-   /* background: #0D8;
-    border: 2px solid #333;
-    border-color: hsla(0, 0%, 0%, 0.7);*/
-}
-
 .gutter-sizer {
     width: 3.6%;
-    height: 3.6%;
+    height: 10px;
 }
+.grid-item {   
+    position: relative;
+    float: left;
+   /*width: 100px;*/ 
+    height: 360px;
+    margin: 20px;
+   /*padding: 10px;*/ 
+    background: #888;
+
+}
+
+.grid-item > * {
+    margin: 0;
+    padding: 0;
+}
+
 
 .grid-item--width2 {
     width: 48%;
@@ -3283,95 +3094,6 @@ body {
 .grid-item--height2 {
     height: 400px;
 }
-
-
-    .step-swich-link {
-        position: relative;
-        text-align: center;
-        font-size: 0px;
-    }
-
-        .step-swich-link li {
-            display: inline-block;
-            position: relative;
-            width: 25%;
-            margin-bottom: 85px;
-            cursor: pointer;
-        }
-
-            .step-swich-link li .image {
-                position: relative;
-                margin: 0 auto 20px;
-            }
-
-                .step-swich-link li .image img, .step-swich-link li .title {
-                    -webkit-transition: all 0.35s ease-out;
-                    -moz-transition: all 0.35s ease-out;
-                   
-                    transition: all 0.35s ease-out;
-                }
-
-            .step-swich-link li .img-out {
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                -webkit-transform: translate(-50%, -50%) scale(1.5);
-                -moz-transform: translate(-50%, -50%) scale(1.5);
-                -ms-transform: translate(-50%, -50%) scale(1.5);
-                transform: translate(-50%, -50%) scale(1.5);
-                opacity: 0;
-            }
-
-            .step-swich-link li .title {
-                color: rgba(255, 255, 255, 0.25);
-            }
-
-            .step-swich-link li:hover .img-out, .step-swich-link li.active .img-out {
-                -webkit-transform: translate(-50%, -50%) scale(1);
-                -moz-transform: translate(-50%, -50%) scale(1);
-                -ms-transform: translate(-50%, -50%) scale(1);
-                transform: translate(-50%, -50%) scale(1);
-                opacity: 1;
-            }
-
-            .step-swich-link li:hover .img-in, .step-swich-link li.active .img-in {
-                opacity: 0;
-                -webkit-transform: scale(0);
-                -moz-transform: scale(0);
-                -ms-transform: scale(0);
-                transform: scale(0);
-            }
-
-            .step-swich-link li:hover .title, .step-swich-link li.active .title {
-                color: #a3de15;
-            }
-
-    .step-slider-item .text {
-        padding-left: 40px;
-    }
-
-    .step-slider-item .simple-text {
-        padding-bottom: 45px;
-    }
-
-    .step-slider-item .image img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .step-slider-item .title {
-        font-size: 44px;
-        font-weight: 400;
-        color: #fff;
-        line-height: 53px;
-        padding-bottom: 15px;
-        display: block;
-    }
-
-        .step-slider-item .title i {
-            color: #a3de15;
-            font-style: italic;
-        }
 
     .no-margin-bottom .card-item {
         margin-bottom: 0px;
@@ -3387,27 +3109,6 @@ body {
         font-weight: 400;
     }
 
-    .testi-slide {
-        position: relative;
-        width: 100%;
-        padding: 30px 0px 80px 100px;
-        margin-top: 60px;
-    }
-
-        .testi-slide .title {
-            color: #fff;
-            line-height: 38px;
-            display: block;
-            padding-bottom: 35px;
-        }
-
-        .testi-slide .simple-text p {
-            color: rgba(255, 255, 255, 0.6);
-        }
-
-    .testi-container .tab-links {
-        padding-left: 100px;
-    }
 
     @media (max-width: 1200px) {
         .no-margin-bottom .card-item {

@@ -220,6 +220,13 @@
     <Content Include="img\marjorie-banner-02.png" />
     <Content Include="img\sculpt01.jpg" />
     <Content Include="img\sculpt02.jpg" />
+    <Content Include="img\tag-filter-bowl-sd.jpg" />
+    <Content Include="img\tag-filter-vase-sd.jpg" />
+    <Content Include="img\tag-filter-mugs.jpg" />
+    <Content Include="img\tag-filter-teabowl-2.jpg" />
+    <Content Include="img\tag-filter-teabowl.jpg" />
+    <Content Include="img\tag-filter-tumbler-soda.jpg" />
+    <Content Include="img\tag-filter-tumbler.jpg" />
     <Content Include="img\teaBowls\IMG_2126.JPG" />
     <Content Include="img\teaBowls\IMG_2128.JPG" />
     <Content Include="img\teaBowls\IMG_2129.JPG" />
@@ -272,6 +279,7 @@
     <Content Include="js\scrollreveal.min.js" />
     <Content Include="js\swiper.jquery.min.js" />
     <Content Include="img\marjorie-banner.png" />
+    <Content Include="marjStyle.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\fontello.eot" />

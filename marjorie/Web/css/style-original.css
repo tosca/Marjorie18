@@ -1881,7 +1881,18 @@ img.source-image {
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 .mobile-toggle-slide { text-align: center; position: relative; margin: 0 auto; width: 100%; }
 
-.slide-lidt-text { position: relative; width: 100%; display: none; padding: 0px 20px; height: 50px; border: 2px solid #d2d2d3; line-height: 46px; margin: 0 auto 30px; cursor: pointer; }
+.slide-lidt-text {
+    position: relative;
+    width: 100%;
+    display: none;
+    padding: 0px 20px;
+    height: 50px;
+    border: 2px solid #d2d2d3;
+    line-height: 46px;
+    margin: 0 auto 30px;
+    cursor: pointer;
+    color: #534733;
+}
 
 .slide-lidt-text i { position: absolute; right: 20px; top: 0px; }
 
@@ -1900,7 +1911,8 @@ img.source-image {
 .swiper-slide-active .gallery-slide .text { opacity: 1; }
 
 @media (min-width: 992px) { .item.scale-hover:hover .project-item { -webkit-transform: scale(1.05); -moz-transform: scale(1.05); -ms-transform: scale(1.05); transform: scale(1.05); z-index: 5; box-shadow: 0px 59px 89px rgba(5, 5, 6, 0.75); box-shadow: 0 }
-  .item.scale-hover:hover .project-item .layer-bg-3 { opacity: 1; } }
+  .item.scale-hover:hover .project-item .layer-bg-3 { 
+     opacity : 1; } }
 @media (max-width: 1200px) { .project-title { left: 30px; top: 30px; right: 30px; }
   .project-title .title, .project-title.sm .title, .project-title.lg .title { font-size: 30px; line-height: 40px; }
   .project-title .sub-title { margin-bottom: 10px; }
