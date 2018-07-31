@@ -18,7 +18,7 @@
     <!--  <div class="preload loading">
           <div class="loader">Loading...</div>
       </div>-->
-    <div class="container-perspective">
+    <div class="container">
         <div class="effect-push">
             <div class="wrap-over">
                 <div class="pusher-layer"></div>
@@ -43,7 +43,7 @@
                             <li class="tag-link-2 bg" style="background-image:url(img/tag-filter-bowl-sd.jpg);" data-filter=".bowl-sd"><span>Bowls -Surface Design</span></li>
                         </ul>
                     </div>
-                    <div class="izotope-container">
+                    <div class="izotope" id="container">
                         <div class="grid-sizer"></div>
                         <div class="gutter-sizer"></div>
                         <div class="item wh-25 scale-hover pottery mug">
@@ -51,7 +51,7 @@
                                 <img src="img/teaBowls/TB01.jpg" />
                                 <div class="project-title">
                                     <h3 class="title-h2">teabowl</h3>
-                                    <div class="simple-text sm"><p>2.5"h x 3.5"w T</p><i class="close"></i></div>
+                                    <div class="simple-text"><p>2.5"h x 3.5"w T</p></div>
                                     <div class="sub-title sm">TB01 sell item</div>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@
                                     <img src="img/teaBowls/TB02.jpg" />
                                     <div class="project-title">
                                         <h3 class="title-h2">teabowl</h3>
-                                        <div class="simple-text sm"><p>3.5"h x 3.5"w O</p></div>
+                                        <div class="simple-text"><p>3.5"h x 3.5"w O</p></div>
                                         <div class="sub-title sm">TB02 sell item</div>
                                     </div>
                                 </div>
@@ -179,6 +179,33 @@
     <script src="bower_components/isotope-layout/dist/isotope.pkgd.min.js"></script>
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/all.js"></script>
+    <script>
+        var $container = $('#container')
+    // initialize Isotope
+    $container.isotope({
+        // options...
+        resizable: false, // disable normal resizing
+        // set columnWidth to a percentage of container width
+        masonry: { columnWidth: $container.width() / 4 }
+    });
+
+    // update columnWidth on window resize
+    $(window).smartresize(function () {
+        $container.isotope({
+            // update columnWidth to a percentage of container width
+            masonry: { columnWidth: $container.width() / 4 }
+        });
+        });
+        $('#container').isotope({
+            masonry: {
+             columnWidth: 110,
+             gutterWidth: 10,
+
+            
+             
+  }
+});
+    </script>
 
 
 </body>
