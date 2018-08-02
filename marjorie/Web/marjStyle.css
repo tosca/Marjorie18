@@ -1007,7 +1007,7 @@ tag-bg {
     margin-right: 15px;
 }
 .wh-25 {
-    width: 22%;
+    width: 25%;
 }
 .grid-sizer {
     width: 0;
@@ -1027,6 +1027,32 @@ tag-bg {
         height: auto;
         display: block;
 }
+.izotope-append {
+    position: relative;
+    width: 100%;
+    display: none;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0px;
+}
+
+    .izotope-append .item {
+        display: none;
+    }
+
+    .izotope-append.act {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        height: auto;
+        overflow: visible;
+    }
+
+        .izotope-append.act .item {
+            display: block;
+        }
+
 /*.height-lg {
     height: 800px;
 }
@@ -1239,10 +1265,11 @@ tag-bg {
     }
 }
 @media (max-width: 480px) {
-    .project-title {
-        left: 15px;
-        top: 15px;
-        right: 15px;
+    .project-title sm{
+        left: 5px;
+        top: 5px;
+        right: 5px;
+        max-width: 33px;
     }
     .project-title .title, .project-title.sm .title, .project-title.lg .title {
             font-size: 20px;
@@ -1468,15 +1495,15 @@ tag-bg {
 
 @media (max-width: 480px) {
     .project-title {
-        left: 5px;
-        top: 15px;
-        right: 5px;
+        left: 40px;
+        top: 30px;
+        right: -40px;
     }
     .project-title .title-h2 {
             font-size: 20px;
             line-height: 24px;
      }
-    .project-title .sub-title {
+        .project-title .simple-text, .project-title .sub-title {
             font-size: 11px;
         }
 }
