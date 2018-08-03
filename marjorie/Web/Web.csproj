@@ -240,6 +240,12 @@
     <Content Include="img\teaBowls\TB07.jpg" />
     <Content Include="img\teaBowls\TB09.jpg" />
     <Content Include="img\tumblers\t01.jpg" />
+    <Content Include="img\tumblers\t02.jpg" />
+    <Content Include="img\tumblers\t03.jpg" />
+    <Content Include="img\tumblers\t04.jpg" />
+    <Content Include="img\tumblers\tsf01.jpg" />
+    <Content Include="img\tumblers\tsf02.jpg" />
+    <Content Include="img\tumblers\tsf03.jpg" />
     <Content Include="img\vases\IMG_2155.JPG" />
     <Content Include="img\vases\IMG_2156.JPG" />
     <Content Include="img\vases\IMG_2157.JPG" />
