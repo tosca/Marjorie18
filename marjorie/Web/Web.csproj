@@ -246,20 +246,6 @@
     <Content Include="img\tumblers\tsf01.jpg" />
     <Content Include="img\tumblers\tsf02.jpg" />
     <Content Include="img\tumblers\tsf03.jpg" />
-    <Content Include="img\vases\IMG_2155.JPG" />
-    <Content Include="img\vases\IMG_2156.JPG" />
-    <Content Include="img\vases\IMG_2157.JPG" />
-    <Content Include="img\vases\IMG_2158.JPG" />
-    <Content Include="img\vases\IMG_2159.JPG" />
-    <Content Include="img\vases\IMG_2160.JPG" />
-    <Content Include="img\vases\IMG_2161.JPG" />
-    <Content Include="img\vases\IMG_2162.JPG" />
-    <Content Include="img\vases\IMG_2163.JPG" />
-    <Content Include="img\vases\IMG_2164.JPG" />
-    <Content Include="img\vases\IMG_2165.JPG" />
-    <Content Include="img\vases\IMG_2166.JPG" />
-    <Content Include="img\vases\IMG_2167.JPG" />
-    <Content Include="img\vases\IMG_2168.JPG" />
     <Content Include="index - Copy.html" />
     <Content Include="index.html" />
     <Content Include="js\all.js" />
@@ -307,6 +293,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="img\vases\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>

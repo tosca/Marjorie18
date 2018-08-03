@@ -226,32 +226,26 @@ marjblue {
         width: 15px;
     }
 }
-
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 4. TYPOGRAPHY*/
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 body, html {
     width: 100%;
 }
-
     body.full-h, html.full-h {
         height: 100%;
     }
-
 body {
     font-family: 'Averia Serif Libre', cursive;
     font-family: 'Open Sans', sans-serif;
     color: #4d4d4e;
 }
-
     body.overflow {
         overflow: hidden;
     }
-
 .simple-text {
     position: relative;
 }
-
     .simple-text p {
         font-size: 14px;
         line-height: 28px;
@@ -282,15 +276,16 @@ body {
 
     .simple-text.sm p {
         font-size: 15px;
-        line-height: 18px;
+        line-height: 22px;
+        font-weight:500;
         color: #5b493c;
+        padding-bottom: 17px;
     }
 
     .simple-text.xs p {
         font-size: 14px;
-        line-height: 22px;
+        line-height: 28px;
     }
-
 .tag-link-2 {
     position: relative;
     display: inline-block;
@@ -1100,7 +1095,6 @@ tag-bg {
     opacity: 1;
     cursor: crosshair;
 }
-
 .title-h2 {
     font-size: 30px;
     font-family: 'Kaushan Script','Script MT';
@@ -1108,10 +1102,11 @@ tag-bg {
     opacity: 1;
     color: #483726;
 }
-
-.simple-text .sm {
-    font-size: 16px;
-    opacity: 1;
+.title-h2 .sm-size {
+    font-size: 17px;
+}
+.title-h2 simple-text.sm p{
+    padding-bottom: 18px;
 }
 .sub-title .sm {
     color: #534733;
