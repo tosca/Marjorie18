@@ -232,6 +232,7 @@
     <Content Include="img\teaBowls\TB010.jpg" />
     <Content Include="img\teaBowls\TB011.jpg" />
     <Content Include="img\teaBowls\TB012.jpg" />
+    <Content Include="img\teaBowls\TB013.jpg" />
     <Content Include="img\teaBowls\TB02.jpg" />
     <Content Include="img\teaBowls\TB03.jpg" />
     <Content Include="img\teaBowls\TB04.jpg" />
@@ -239,6 +240,10 @@
     <Content Include="img\teaBowls\TB06.jpg" />
     <Content Include="img\teaBowls\TB07.jpg" />
     <Content Include="img\teaBowls\TB09.jpg" />
+    <Content Include="img\bowls\bsd01.jpg" />
+    <Content Include="img\bowls\bsd02.jpg" />
+    <Content Include="img\bowls\bsd03.jpg" />
+    <Content Include="img\bowls\bsd04.jpg" />
     <Content Include="img\tumblers\t01.jpg" />
     <Content Include="img\tumblers\t02.jpg" />
     <Content Include="img\tumblers\t03.jpg" />
@@ -246,6 +251,13 @@
     <Content Include="img\tumblers\tsf01.jpg" />
     <Content Include="img\tumblers\tsf02.jpg" />
     <Content Include="img\tumblers\tsf03.jpg" />
+    <Content Include="img\vases\vsd01.jpg" />
+    <Content Include="img\vases\vsd02.jpg" />
+    <Content Include="img\vases\vsd03.jpg" />
+    <Content Include="img\vases\vsd04.jpg" />
+    <Content Include="img\vases\vsd05.jpg" />
+    <Content Include="img\vases\vsd06.jpg" />
+    <Content Include="img\vases\vsd07.jpg" />
     <Content Include="index - Copy.html" />
     <Content Include="index.html" />
     <Content Include="js\all.js" />
@@ -293,7 +305,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="img\vases\" />
+    <Folder Include="img\mugs\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>

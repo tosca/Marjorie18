@@ -998,8 +998,6 @@ tag-bg {
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 .izotope-container {
     position: relative;
-    margin-left: 15px;
-    margin-right: 15px;
 }
 .wh-25 {
     width: 25%;
@@ -1007,15 +1005,15 @@ tag-bg {
 .grid-sizer {
     width: 0;
 }
-.gutter-sizer {
-}
+
 .item {
     position: relative;
     float: left;
     display: block;
     height: auto;
-    margin: 10px;
-    padding-bottom: 40px;
+    max-width:400px;/*4 across*/
+    margin: 30px;
+    padding-bottom: 20px;
 }
 .item img {
         width: 100%;
@@ -1359,7 +1357,7 @@ tag-bg {
 
 @media (max-width: 1200px) {
     .wh-25 {
-        width: 25%;
+        width: 22%;
     }
     .tag-link-2 .bg {
         top: 0px;
