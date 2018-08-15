@@ -1076,19 +1076,21 @@ tag-bg {
     }
 .project-title {
     position: absolute;
-    top: 70%;
+    bottom: 0.5%;
     left: 50%;
     opacity: 0;
-    padding: 20px;
+    padding: 10px 20px;
+    max-width:40%;
     -webkit-transition: 0.5s ease;
     -moz-transition: 0.5s ease;
     transition: 0.5s ease;
-    background: rgba(251, 250, 249, 0.3);
+    background: rgba(251, 250, 249, 0.4);
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     backface-visibility: hidden;
 }
+
 .project-item:hover .project-title {
     opacity: 1;
     cursor: crosshair;
@@ -1101,7 +1103,7 @@ tag-bg {
     color: #483726;
 }
 .title-h2 .sm-size {
-    font-size: 17px;
+    font-size: 19px;
 }
 .title-h2 simple-text.sm p{
     padding-bottom: 18px;
@@ -1112,6 +1114,205 @@ tag-bg {
     font-size: 14px;
     font-weight: 700;
 }
+
+/****FILTER LIST ******/
+.mobile-toggle-slide .filter-list .tag-link-2 {
+  
+}
+
+    .mobile-toggle-slide .filter-list .tag-link-2:before {
+        background: #2d2d2d;
+    }
+/*.project-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+}*/
+@media (min-width: 768px) {
+    .item.scale-hover:hover .project-item {
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        z-index: 5;
+        box-shadow: 0px 59px 89px rgba(5, 5, 6, 0.75);
+    }
+}
+
+@media (max-width: 1200px) {
+    .wh-25 {
+        width: 22%;
+    }
+
+    .tag-link-2 .bg {
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 992px) {
+    .mobile-toggle-slide .slide-lidt-text span {
+        color: #7f7f7f;
+        font-family: 'Kaushan Script', 'Script MT';
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .mobile-toggle-slide .filter-list .tag-link-2 {
+        color: #4d4d4e;
+    }
+
+        .mobile-toggle-slide .filter-list .tag-link-2.active, .mobile-toggle-slide .filter-list .tag-link-2:hover {
+            color: #7f7f7f;
+        }
+
+    .footer.type-2 .logo-f, .footer.type-2 .top-bar .folow {
+        position: relative;
+        display: block;
+        margin: 0 auto 20px;
+        left: auto;
+        top: auto;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    .footer.type-2 .top-bar .folow {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .footer.type-2 .footer-nav {
+        padding-bottom: 30px;
+    }
+
+    .footer.type-2 .logo-f img {
+        margin: 0 auto;
+    }
+
+    .footer.type-2 .folow a {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gutter-style {
+        width: 1%;
+    }
+
+    .section-fullpage.full {
+        min-height: 600px;
+        height: auto;
+    }
+
+    .project-item .project-title {
+        padding: 30px 7px 3px 7px;
+    }
+}
+
+@media (max-width: 600px) {
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 340px) {
+    .top-baner {
+        height: 600px;
+    }
+}
+
+.item.scale-hover:hover .project-item {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    z-index: 5;
+    box-shadow: 0px 59px 89px rgba(5, 5, 6, 0.50);
+}
+
+    .item.scale-hover:hover .project-item .project-title {
+        opacity: 1;
+        /*   cursor:pointer;
+            cursor:crosshair;*/
+    }
+
+@media (max-width: 1200px) {
+    .project-title {
+        color: #5b493c;
+    }
+
+        .project-title .title-h2 {
+            font-family: 'Kaushan Script', cursive;
+            font-size: 40px;
+            line-height: 50px;
+        }
+
+        .project-title .simple-text.sm {
+            margin-bottom: 10px;
+        }
+
+        .project-title .sub-title {
+            font-weight: bold;
+        }
+
+    .height-lg {
+        height: 600px;
+    }
+
+    .height-md {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-baner-full {
+        display: inline-block;
+    }
+
+    .height-md {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-title {
+        left: 40px;
+        top: 30px;
+        right: -40px;
+    }
+
+        .project-title .title-h2 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .project-title .simple-text, .project-title .sub-title {
+            font-size: 11px;
+        }
+}
+
+.valign {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
 .filter-list {
     text-align: center;
     padding-bottom: 20px;
@@ -1169,7 +1370,6 @@ tag-bg {
     text-align: center;
     position: relative;
     margin: 0 auto;
-    margin: 20px auto;
     width: 100%;
 }
 .slide-lidt-text {
@@ -1325,25 +1525,14 @@ tag-bg {
 }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 27. PROject ITEM _PROJECT ITEM */
-/*---------------------------*/
+/*---------------------------
 .mobile-toggle-slide .filter-list .tag-link-2 {
     color: #fff;
 }
 .mobile-toggle-slide .filter-list .tag-link-2:before {
         background: #2d2d2d;
     }
-/*.project-item {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    -webkit-transition: 0.1s;
-    transition: 0.1s;
-}*/
+
 @media (min-width: 768px) {
     .item.scale-hover:hover .project-item {
         -webkit-transform: scale(1.05);
@@ -1448,8 +1637,7 @@ tag-bg {
     }
 .item.scale-hover:hover .project-item  .project-title {
             opacity: 1;
-        /*   cursor:pointer;
-            cursor:crosshair;*/ 
+        
         }
 @media (max-width: 1200px) {
     .project-title {       
@@ -1506,4 +1694,4 @@ tag-bg {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-}
+}*/
