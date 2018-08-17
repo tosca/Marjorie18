@@ -218,6 +218,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="img\marjFace2.jpg" />
     <Content Include="img\marjorie-banner-02.png" />
+    <Content Include="img\mugs\m01.jpg" />
+    <Content Include="img\mugs\m02.jpg" />
+    <Content Include="img\mugs\m03.jpg" />
+    <Content Include="img\mugs\m04.jpg" />
     <Content Include="img\sculpt01.jpg" />
     <Content Include="img\sculpt02.jpg" />
     <Content Include="img\studshow.jpg" />
@@ -305,7 +309,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="img\mugs\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>

@@ -1076,7 +1076,7 @@ tag-bg {
     }
 .project-title {
     position: absolute;
-    bottom: 0.5%;
+    bottom: -0.7%;
     left: 50%;
     opacity: 0;
     padding: 10px 20px;
