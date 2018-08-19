@@ -214,6 +214,16 @@
     <Content Include="css\style.css" />
     <Content Include="css\swiper.min.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fontello-145d0620\css\animation.css" />
+    <Content Include="fonts\fontello-145d0620\css\circle-thin-codes.css" />
+    <Content Include="fonts\fontello-145d0620\css\circle-thin-embedded.css" />
+    <Content Include="fonts\fontello-145d0620\css\circle-thin-ie7-codes.css" />
+    <Content Include="fonts\fontello-145d0620\css\circle-thin-ie7.css" />
+    <Content Include="fonts\fontello-145d0620\css\circle-thin.css" />
+    <Content Include="fonts\fontello-145d0620\demo.html" />
+    <Content Include="fonts\fontello-145d0620\font\circle-thin.svg" />
+    <Content Include="fonts\fontello-145d0620\LICENSE.txt" />
+    <Content Include="fonts\fontello-145d0620\README.txt" />
     <Content Include="fonts\fontello.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="img\marjFace2.jpg" />
@@ -288,6 +298,11 @@
     <Content Include="bower_components\masonry-layout\.bower.json" />
     <Content Include="bower_components\masonry-layout\bower.json" />
     <Content Include="bower_components\masonry-layout\README.md" />
+    <Content Include="fonts\fontello-145d0620\config.json" />
+    <Content Include="fonts\fontello-145d0620\font\circle-thin.eot" />
+    <Content Include="fonts\fontello-145d0620\font\circle-thin.ttf" />
+    <Content Include="fonts\fontello-145d0620\font\circle-thin.woff" />
+    <Content Include="fonts\fontello-145d0620\font\circle-thin.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
