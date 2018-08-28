@@ -1129,8 +1129,7 @@ padding-right: 30px;
 }
 .title-h2 {
     font-size: 28px;
-    font-family: 'Kaushan Script','Script MT';
-    margin: 10px 0 10px 0;
+    font-family: 'Kaushan Script','Script MT';l
     opacity: 1;
     color: #483726;
 }
@@ -1426,7 +1425,7 @@ padding-right: 30px;
         line-height: 40px;
     }
     .project-title .sub-title {
-      /*  margin-bottom: 10px;*/
+       margin-bottom: 10px;
     }
  
 }
