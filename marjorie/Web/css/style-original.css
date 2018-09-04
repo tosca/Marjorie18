@@ -1844,8 +1844,8 @@ nav li { position: relative; }
 
 .project-title {
     position: absolute;
-    /* left: 60px;
-    top: 60px;*/
+    left: 60px;
+    top: 60px;
     text-align: center;
     max-width: 100%;
     color: #3d92bc;

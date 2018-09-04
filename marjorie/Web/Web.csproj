@@ -208,14 +208,13 @@
     <Content Include="img\drag.png" />
     <Content Include="img\marj-display.jpg" />
     <Content Include="img\marj-portrait-02.jpg" />
-    <Content Include="img\marjFace2.jpg" />
     <Content Include="img\marjorie-banner-02.png" />
     <Content Include="img\mugs\m01.jpg" />
     <Content Include="img\mugs\m02.jpg" />
     <Content Include="img\mugs\m03.jpg" />
     <Content Include="img\mugs\m04.jpg" />
-    <Content Include="img\sculpt02.jpg" />
     <Content Include="img\splash.png" />
+    <Content Include="img\studshow-02.jpg" />
     <Content Include="img\studshow.jpg" />
     <Content Include="img\tag-filter-bowl-sd.jpg" />
     <Content Include="img\tag-filter-vase-sd.jpg" />
@@ -273,7 +272,6 @@
     <Content Include="fonts\fontello.ttf" />
     <Content Include="fonts\fontello.woff" />
     <Content Include="fonts\fontello.woff2" />
-    <Content Include="img\studshow-01.png" />
     <Content Include="img\studshow-02.png" />
     <Content Include="solo_page3-copy.html" />
     <Content Include="solo_page3.html" />
