@@ -1025,16 +1025,17 @@ tag-bg {
     width: 22%;
 }
 
-
 .item {
     float: left;
     display: block;
-   height: 200px;
-margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
-.item ht-tall{
-    height:300px;
+.ht-tall{
+    height:360px;
+}
+.ht-reg{
+    height: 250px;
 }
 .item img {
         width: 100%;
@@ -1094,10 +1095,7 @@ margin-bottom: 50px;
 .project-title {
     position: absolute;
     top: 80%;
-    left:22%;
     opacity: 0;
-   padding: 20px;
- /*   max-width:80%;*/
     -webkit-transition: 0.5s ease;
     -moz-transition: 0.5s ease;
     transition: 0.5s ease;
@@ -1149,7 +1147,7 @@ margin-bottom: 50px;
 
 /****FILTER LIST ******/
 .mobile-toggle-slide .filter-list .tag-link-2 {
-    color: #fff;
+    color: #534733;
 }
 .mobile-toggle-slide .filter-list .tag-link-2:before {
         background: #2d2d2d;
@@ -1177,9 +1175,6 @@ margin-bottom: 50px;
         right: 0px;
         background-size: cover;
     } 
-    .top-baner {
-        height: auto;
-    }
 }
 
 /********* @media (max-width: 992px ****************************/
@@ -1346,14 +1341,14 @@ margin-bottom: 50px;
         display: inline-block;
         background-position: center;
         background-size: cover;
-        height: 100px;
-        font-size: 15px;
-        line-height: 26px;
+        height: 90px;
+       /* font-size: 15px;
+        line-height: 17px;*/
         color: #4d4d4e;
         overflow: hidden;
         z-index: 1;
         cursor: pointer;
-        margin: 5px 15px;
+      /* margin: 5px 15px;*/ 
         -webkit-transition: all 0.25s ease-out;
         -moz-transition: all 0.25s ease-out;
         transition: all 0.25s ease-out;
@@ -1470,29 +1465,34 @@ margin-bottom: 50px;
         display: none;
     }
 }
-@media (max-width: 768px) {
+/*@media (max-width: 768px)*/ 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     .main-baner-full {
         display: inline-block;
     }
+
     .wh-25, .grid-sizer {
-        width: 18%;
+        width: 24%;
     }
-    .item {
-        height: 180px;
-        margin-bottom: 30px;
+     .item {
+       
+        margin-bottom: 40px;
+    }
+     .ht-tall{
+        height:360px;
     }
     .project-title {
         left: 20px;
-      right: 20px;
-      padding: 5px;
+        right: 20px;
+        padding: 5px;
     }
-
         .project-title .title-h2 {
             font-size: 24px;
             line-height: 20px;
+            padding-bottom: 5px;
         }
-        .project-title .simple-text {
-            font-size: 13px;
+        .project-title .simple-text.sm p {
+            font-size: 14px;
         }
         .project-title .sub-title {
             font-size: 11px;
@@ -1520,7 +1520,7 @@ margin-bottom: 50px;
 /**** top-baner****/
 .top-baner {
     position: relative;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
     .top-baner img {
         width: 100%;
