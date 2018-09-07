@@ -215,6 +215,7 @@
     <Content Include="img\mugs\m04.jpg" />
     <Content Include="img\splash.png" />
     <Content Include="img\studshow-02.jpg" />
+    <Content Include="img\studshow-03.jpg" />
     <Content Include="img\studshow.jpg" />
     <Content Include="img\tag-filter-bowl-sd.jpg" />
     <Content Include="img\tag-filter-vase-sd.jpg" />
@@ -259,6 +260,7 @@
     <Content Include="js\all.js" />
     <Content Include="js\googlemap.js" />
     <Content Include="js\isotope.pkgd.min.js" />
+    <Content Include="js\jarallax.js" />
     <Content Include="js\jquery.fullpage.min.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\jquery.mousewheel.min.js" />
