@@ -329,20 +329,19 @@ tag-bg {
 /*****  HEADER ****************************************8*/
 
 .header.mini-style {
-   max-width: 600px;
+    z-index: 50;
     position: absolute;
-    top: 45px;
-        -webkit-transform: translate(0%, -50%);
-        -moz-transform: translate(0%, -50%);
-        -ms-transform: translate(0%, -50%);
-        transform: translate(0%, -50%);       
-        width: 100%; 
-        z-index: 4;
-        background:none;
+    left: 60%;
+    top: 0;
+    width: 100%;     
 }
-.header.mini-style .logo-mini img { 
+.header.mini-style .logo-mini { 
         width:100%;
         height: auto;
+    }
+    .header.mini-style .logo-mini img {
+     height:auto;
+        width: 100%;
     }
 #student-baner {
     position: relative;
@@ -362,7 +361,7 @@ tag-bg {
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 1. header and student-baner*/
 /*-------------------------------------------------------------------------------------------------------------------------------*/
- .header.mini-style .logo-mini {
+ /*.header.mini-style .logo-mini {
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
@@ -375,7 +374,7 @@ tag-bg {
         left: 70%;
         width: 100%;
         height: auto;
-    }
+    }*/
  @media (min-width: 992px) {   
      #student-baner {
         min-height: 620px;
@@ -394,7 +393,7 @@ tag-bg {
         height: 400px;
     }
     #student-baner {
-        min-height: 620px;
+        min-height: 380px;
     }
 }
 @media (max-width: 768px) {
@@ -419,6 +418,7 @@ tag-bg {
     position: relative;
     height: 100%;
     padding-top: 60px;
+    padding-bottom: 70px;
     border-bottom: 0px none;
 }
  .mobile-toggle-slide .slide-lidt-text span {
@@ -644,7 +644,7 @@ tag-bg {
         backface-visibility: hidden;
     }
     .project-item img:hover {
-        opacity: 0.8;
+        opacity: 1.0;
         cursor:crosshair;
     }
 .project-title {
@@ -656,7 +656,7 @@ tag-bg {
     -webkit-transition: 0.5s ease;
     -moz-transition: 0.5s ease;
     transition: 0.5s ease;
-    background: rgba(251, 250, 249, 0.4);
+    background: rgba(251, 250, 249, 0.5);
     transform: translate(0%, -120%);
     -ms-transform: translate(0%, -120%);
     transform: translate(0%, -50%);
@@ -681,7 +681,7 @@ tag-bg {
     font-weight: 500;
 }
 .ht-tall{
-    height:360px;
+    height:340px;
 }
 .ht-reg{
     height: 250px;
@@ -738,7 +738,7 @@ img.source-image {
         }
 
         .ht-tall {
-            height: 360px;
+            height: 340px;
         }
 
         .ht-reg {
@@ -798,17 +798,14 @@ img.source-image {
 
     /******About-myself section*/
 
-    .main-content.solo-type, .contact-section.solo-type {
+    .main-content.solo-type, .main-content.solo-type .contact {
         height: 100vmin;
         padding: 0px;
-        border-top-width: 0px;
         background-color: #fff;
     }
-
-        .main-content.solo-type .content-load, .main-content.solo-type .ajax-load-content, .contact-section .content-load .contact-section.solo-type {
-            height: inherit;
-        }
-
+      /*    .main-content.solo-type .content-load, .main-content.solo-type .ajax-load-content, .contact-section .content-load .contact-section.solo-type {
+          height: inherit;
+        }*/
     .solo-baner {
         background: #ebebe9;
         background: #c0c027;
@@ -894,8 +891,24 @@ img.source-image {
         border-radius: 50%;
         cursor: pointer;
     }
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 15px;
+}
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: .2;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #40708a;
+}
 
-    @media (max-width: 992px) {
+
+ /*   @media (max-width: 992px) {
         .point-circle-slider {
             text-align: center;
             left: 0px;
@@ -975,7 +988,7 @@ img.source-image {
 
             .circle-solo-point.point-circle-slider .slide-point:hover span, .circle-solo-point.point-circle-slider .slide-point.active span {
                 color: #4d4d4e;
-            }
+            }*/
 
     .solo-page3 .left-column {
         width: 55%;
@@ -1013,7 +1026,6 @@ img.source-image {
             font-size: 45px;
             line-height: 50px;
         }
-
         .solo-baner {
             padding: 66px 0px;
         }
@@ -1025,9 +1037,7 @@ img.source-image {
             line-height: 50px;
             padding-bottom: 40px;
         }
-        .main-content.solo-type {
-            height: auto;
-        }
+      
         .solo-baner {
             min-height: 780px;
         }
@@ -1141,8 +1151,8 @@ img.source-image {
         .solo-baner {
             min-height: 630px;
         }
-        .solo-main-title.vertical-align, .search-panel.popup .solo-main-title.close, .amount-wrap .solo-main-title.val, .inside-img img.solo-main-title, .solo-main-title.skill-line {
-            padding: 30px 15px;
+        .solo-main-title.vertical-align, .inside-img img.solo-main-title {
+            padding: 5px 15px;
         }
         .solo-sub-title {
             padding: 30px 0px 0px 15px;
@@ -1206,18 +1216,16 @@ img.source-image {
 
     /****contact******/
 
-    .main-content.contact {
+    .main-content .contact {
         position: relative;
-        /* border: 50px solid #fff;*/
         height: 100%;
         padding: 45px 0px 20px;
-        border-bottom: 0px none;
     }
-        .main-content.contact.no-top {
+        .main-content .contact.no-top {
             padding: 0px;
             border-top-width: 0px;
         }
-        .main-content.contact.no-padd {
+        .main-content .contact.no-padd {
             padding: 0px 0px 0px;
         }
     @media (max-width: 992px) {
@@ -1343,10 +1351,9 @@ img.source-image {
             height: 400px;
         }
     }
-    /***************FOOTER******
-********FOOTER*****************/
-
-
+ /***************/   
+    /****FOOTER******/
+/*****************/
     @media (max-width: 768px) {
         .footer {
             margin: 0px 15px;
