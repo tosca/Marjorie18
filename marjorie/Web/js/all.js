@@ -639,6 +639,7 @@ jQuery(function($) { "use strict";
 				  columnWidth: '.grid-sizer'
 				}
 			});
+
 			$('.filter-list').on('click', 'li', function() {
 			  	$('.izotope-container').each(function(){
 					$(this).find('.item').removeClass('animated');

@@ -407,23 +407,22 @@ tag-bg {
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 2. main-content WORK/
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-.main-content {
-    padding-top: 45px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
+.main-content {  
+   position: relative;
+ /*  height: 100%;
+    padding-top: 60px;*/ 
 }
+    .main-content.solo-type {
+        height: 100vmin;
+        padding-bottom: 70px;
+    }
+        .main-content.solo-type .content-load, .main-content.solo-type .ajax-load-content {
+            height: inherit;
+        }
 
-.main-content.work {
-    position: relative;
-    height: 100%;
-    padding-top: 60px;
-    padding-bottom: 70px;
-    border-bottom: 0px none;
-}
  .mobile-toggle-slide .slide-lidt-text span {
         color: #7f7f7f;
-        font-family: 'Kaushan Script', 'Script MT';
+        font-family: 'Kaushan Script', cursive;
         font-size: 18px;
         margin-bottom: 30px;
     }
@@ -483,7 +482,7 @@ tag-bg {
     position: relative;
     margin: 0 auto;
     width: 100%;
-    max-width: 340px;
+  /*  max-width: 340px;*/
 }
  .mobile-toggle-slide .filter-list .tag-link-2.active, .mobile-toggle-slide .filter-list .tag-link-2:hover {
             color: #7f7f7f;
@@ -569,13 +568,15 @@ tag-bg {
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 21. PROJECT PAGE IZOTOPE */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-
+* {
+    box-sizing: border-box
+}
 .izotope-container {
     position: relative;
- /*   background: #EEE;*/
-    height: 100%;
+background: #ddd;
+ /*   height: 100%;
     width: 100%;
-    margin:0 auto;
+    margin:0 auto;*/
 }
 /* clearfix */
     .izotope-container:after {
@@ -605,26 +606,30 @@ tag-bg {
         .izotope-append.act .item {
             display: block;
         }
-.wh-25, .grid-sizer {
+/*.wh-25, .grid-sizer {
     width: 24%;
-}
+}*/
+.grid-sizer,
+.item{width:25%}
+
 /*from style-original*/
-.gutter-style .item {
+.gutter-sizer .item {
     padding: 0px 15px 30px;
 }
-.gutter-style .grid-sizer {
+/*.gutter-style .grid-sizer {
     width: 1%;
-}
+}*/
 
 .item {
     float: left;
-    display: block;
-   margin-bottom: 30px;
+   /* display: block;*/
+  
 }
 .item img {
-        width: 100%;
-       height: auto;
+    /*    width: 100%;
+       height: auto;*/
         display: block;
+        max-width: 100%;
 }
 .project-item {
     position: relative;
@@ -649,9 +654,10 @@ tag-bg {
     }
 .project-title {
     position: absolute;
-    left:3%;
-    top: 80%;
-    right:3%;
+    top: 85%;
+    left:5%;
+    right:5%;
+    padding: 3%;
     opacity: 0;
     -webkit-transition: 0.5s ease;
     -moz-transition: 0.5s ease;
@@ -667,7 +673,7 @@ tag-bg {
     color: #5b493c;  
 }
 .project-title .title-h2 {
-    font-size: 28px;
+    font-size: 30px;
     font-family: 'Kaushan Script','Script MT';
     color: #483726;
 }
@@ -680,19 +686,19 @@ tag-bg {
     font-size: 14px;
     font-weight: 500;
 }
-.ht-tall{
+/*.ht-tall{
     height:340px;
 }
 .ht-reg{
     height: 250px;
-}
-/* not sure if this stays in*/
+}*/
+/* not sure if this stays in
 img.source-image {
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-}
+}*/
 /*****item-scale-hover *****/
 .item.scale-hover:hover .project-item {
         -webkit-transform: scale(1.05);
@@ -1027,7 +1033,7 @@ img.source-image {
             line-height: 50px;
         }
         .solo-baner {
-            padding: 66px 0px;
+           /*padding: 66px 0px;*/ 
         }
     }
 
