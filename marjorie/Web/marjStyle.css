@@ -404,24 +404,13 @@ tag-bg {
         min-height: 320px;
     }
 }
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/* 2. main-content WORK/
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-.main-content {  
-   position: relative;
- /*  height: 100%;
-    padding-top: 60px;*/ 
-}
-    .main-content.solo-type {
-        height: 100vmin;
-        padding-bottom: 70px;
-    }
-        .main-content.solo-type .content-load, .main-content.solo-type .ajax-load-content {
-            height: inherit;
-        }
+
+/*-----------------------------
+    filter mobile-toggle
+-----------------------------*/
 
  .mobile-toggle-slide .slide-lidt-text span {
-        color: #7f7f7f;
+       color: #7f7f7f;
         font-family: 'Kaushan Script', cursive;
         font-size: 18px;
         margin-bottom: 30px;
@@ -526,17 +515,10 @@ tag-bg {
 
 @media (max-width: 992px) {
 
-    .wh-50 {
-        width: 100%;
-    }
-
     .slide-lidt-text {
         display: inline-block;
     }
 
-    .mobile-toggle-slide {
-      
-    }
         .mobile-toggle-slide ul {
             position: absolute;
             left: 0px;
@@ -606,9 +588,7 @@ background: #ddd;
         .izotope-append.act .item {
             display: block;
         }
-/*.wh-25, .grid-sizer {
-    width: 24%;
-}*/
+
 .grid-sizer,
 .item{width:25%}
 
@@ -739,8 +719,8 @@ img.source-image {
             width: 24%;
         }
 
-        .item {
-            /* margin-bottom: 40px;*/
+        /* .item {
+            margin-bottom: 40px;
         }
 
         .ht-tall {
@@ -749,7 +729,7 @@ img.source-image {
 
         .ht-reg {
             height: 230px;
-        }
+        }*/
 
         .project-title {
             left: 10px;
@@ -774,15 +754,9 @@ img.source-image {
     }
 
     @media (max-width: 480px) {
-        .wh-25, grid-sizer {
-            width: 45%;
-        }
-        .ht-tall {
-            height: 228px;
-        }
-
-        .ht-reg {
-            height:168px;
+        .grid-sizer,
+        .item {
+            width: 50%
         }
         .project-title {
            
@@ -801,17 +775,27 @@ img.source-image {
     .icon-circle-thin:before {
         content: '\f1db';
     }
-
-    /******About-myself section*/
-
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* 2. main-content ABOUT/
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.main-content {  
+   position: relative;
+}
+   .main-content .solo-type {
+        height: 100vmin;
+        padding-bottom: 70px;
+    padding: 0px;
+    border-top-width: 0px;
+}
+        .main-content.solo-type .content-load, .main-content.solo-type .ajax-load-content {
+            height: inherit;
+        }
     .main-content.solo-type, .main-content.solo-type .contact {
         height: 100vmin;
         padding: 0px;
         background-color: #fff;
     }
-      /*    .main-content.solo-type .content-load, .main-content.solo-type .ajax-load-content, .contact-section .content-load .contact-section.solo-type {
-          height: inherit;
-        }*/
+
     .solo-baner {
         background: #ebebe9;
         background: #c0c027;
@@ -820,39 +804,32 @@ img.source-image {
         height: 100%;
         padding: 90px 0px;
     }
-
         .solo-baner .main-img {
             position: absolute;
             right: -5%;
             bottom: 0px;
             width: 83%;
         }
-
             .solo-baner .main-img img {
                 width: 100%;
                 height: auto;
             }
-
         .solo-baner.overflowh {
             overflow: hidden;
         }
-
     .solo-main-title {
         padding: 0px 70px 0px 140px;
         z-index: 5;
     }
-
         .solo-main-title .simple-text {
             max-width: 540px;
             padding-bottom: 35px;
         }
-
         .solo-main-title .title-md {
             font-size: 45px;
             line-height: 50px;
             padding-bottom: 40px;
         }
-
     .left-column {
         width: 70%;
         float: left;
@@ -913,8 +890,7 @@ img.source-image {
     background: #40708a;
 }
 
-
- /*   @media (max-width: 992px) {
+ @media (max-width: 992px) {
         .point-circle-slider {
             text-align: center;
             left: 0px;
@@ -994,7 +970,7 @@ img.source-image {
 
             .circle-solo-point.point-circle-slider .slide-point:hover span, .circle-solo-point.point-circle-slider .slide-point.active span {
                 color: #4d4d4e;
-            }*/
+            }
 
     .solo-page3 .left-column {
         width: 55%;
@@ -1010,20 +986,22 @@ img.source-image {
 
     @media (max-width: 1800px) {
         .solo-main-title {
-            padding: 0px 60px;
+            padding: 0px 40px 0 90px;
             font-family: 'Kaushan Script','Script MT';
             color: #5b493c;
         }
-
         .solo-sub-title {
             top: 160px;
             left: -30px;
         }
-
         .solo-main-title .title-md {
             font-size: 60px;
             line-height: 70px;
             padding-bottom: 25px;
+        }
+        .solo-main-title .simple-text.md p {
+            font-size: 20px;
+            line-height: 30px;
         }
     }
 
