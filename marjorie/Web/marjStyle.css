@@ -933,7 +933,7 @@ img.source-image {
         }
 
         .circle-solo-point.point-circle-slider .slide-point .path {
-            stroke: #25c5f9;
+            stroke: #483726;
             stroke-width: 2px;
         }
 
@@ -954,7 +954,7 @@ img.source-image {
 
             .circle-solo-point.point-circle-slider .slide-point span {
                 position: absolute;
-                font-size: 13px;
+                font-size: 26px;
                 font-weight: 700;
                 left: 0%;
                 top: 0%;
@@ -962,7 +962,7 @@ img.source-image {
                 height: 100%;
                 line-height: 62px;
                 text-align: center;
-                color: rgba(77, 77, 78, 0.3);
+                color: rgba(77, 77, 78, 0.5);
                 -webkit-transition: all 0.25s ease-out;
                 -moz-transition: all 0.25s ease-out;
                 transition: all 0.25s ease-out;
@@ -1000,8 +1000,8 @@ img.source-image {
             padding-bottom: 25px;
         }
         .solo-main-title .simple-text.md p {
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 17px;
+            line-height: 27px;
         }
     }
 
