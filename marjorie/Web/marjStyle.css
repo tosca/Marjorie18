@@ -55,6 +55,8 @@ marjblue {
     margin-left: auto;
     padding-left: 0px;
     padding-right: 0px;
+    width: 100%;
+    height: 100%;
 }
 @media (min-width: 768px) {
     .container {
@@ -787,7 +789,7 @@ img.source-image {
     padding: 0px;
     border-top-width: 0px;
 }
-        .main-content.solo-type .content-load, .main-content.solo-type .ajax-load-content {
+    .main-content.solo-type .content-load, .main-content.solo-type .ajax-load-content {
             height: inherit;
         }
     .main-content.solo-type, .main-content.solo-type .contact {
@@ -795,14 +797,12 @@ img.source-image {
         padding: 0px;
         background-color: #fff;
     }
-
     .solo-baner {
         background: #ebebe9;
         background: #c0c027;
         position: relative;
         width: 100%;
         height: 100%;
-        padding: 90px 0px;
     }
         .solo-baner .main-img {
             position: absolute;
@@ -973,11 +973,11 @@ img.source-image {
             }
 
     .solo-page3 .left-column {
-        width: 55%;
+        width: 60%;
     }
 
     .solo-page3 .right-column {
-        width: 45%;
+        width: 40%;
     }
 
     .slide-shadow img {
@@ -1000,8 +1000,8 @@ img.source-image {
             padding-bottom: 25px;
         }
         .solo-main-title .simple-text.md p {
-            font-size: 17px;
-            line-height: 27px;
+            font-size: 16px;
+            line-height: 25px;
         }
     }
 
@@ -1200,21 +1200,49 @@ img.source-image {
 
     /****contact******/
 
-    .main-content .contact {
+.main-content .contact {
         position: relative;
         height: 100%;
         padding: 45px 0px 20px;
     }
-        .main-content .contact.no-top {
+.main-content .contact.no-top {
             padding: 0px;
             border-top-width: 0px;
         }
-        .main-content .contact.no-padd {
+.main-content .contact.no-padd {
             padding: 0px 0px 0px;
         }
-    @media (max-width: 992px) {
-    }
-
+.contact .solo-baner {
+    background: #ebebe9;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.contact .solo-baner .cform {
+    position: absolute;
+    right: -5%;
+    bottom: 0px;
+    width: 83%;
+}
+.caption{
+    position: relative;
+    text-align: left;
+}
+.left-desc .title {
+    font-size: 79px;
+    line-height: 84px;
+    padding-bottom: 90px;
+}
+.addr-item-wrap {
+    padding-bottom: 40px;
+}
+.addr-item {
+    padding-bottom: 30px;
+}
+@media (max-width: 1400px) {
+.addr-item {
+    padding-bottom: 30px;
+}}
     .left-desc {
         float: left;
         height: 100%;
@@ -1267,10 +1295,11 @@ img.source-image {
         .left-desc {
             padding: 0px 60px;
         }
-
             .left-desc .title {
-                font-size: 50px;
-                line-height: 56px;
+                font-size: 30px;
+                line-height: 44px;
+                font-family: 'Kaushan Script','Script MT';
+                color: #483726;
             }
 
         .addr-item .addr-list li, .addr-item .link {
