@@ -3492,7 +3492,7 @@ body.overflowh { overflow: hidden; }
   .filter-val-slide b { font-size: 70px; line-height: 70px; }
   .revers-color.active .solo-projects-slider { top: 180px; }
   .solo-baner .slide-lidt-text { margin-bottom: 60px; }
-  .solo-mobile-filter .filter-list { position: absolute; left: 0px; top: 50px; border: 2px solid #d2d2d3; z-index: 500; background: #fff; min-width: 320px; padding-bottom: 0px; }
+  .solo-mobile-filter { position: absolute; left: 0px; top: 50px; border: 2px solid #d2d2d3; z-index: 500; background: #fff; min-width: 320px; padding-bottom: 0px; }
   .solo-mobile-filter .filter-list .link-style-1 { display: block; margin: 5px 0px; }
   .solo-mobile-filter .filter-list .link-style-1:before { display: none; }
   .solo-mobile-filter .filter-list .link-style-1:hover, .solo-mobile-filter .filter-list .link-style-1.active { color: #000; }

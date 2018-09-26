@@ -213,9 +213,9 @@
     <Content Include="img\mugs\m02.jpg" />
     <Content Include="img\mugs\m03.jpg" />
     <Content Include="img\mugs\m04.jpg" />
-    <Content Include="img\splash.png" />
     <Content Include="img\studshow-02.jpg" />
     <Content Include="img\studshow-03.jpg" />
+    <Content Include="img\studshow-04.jpg" />
     <Content Include="img\studshow.jpg" />
     <Content Include="img\tag-filter-bowl-sd.jpg" />
     <Content Include="img\tag-filter-vase-sd.jpg" />
@@ -266,7 +266,6 @@
     <Content Include="js\jquery.mousewheel.min.js" />
     <Content Include="js\scrollreveal.min.js" />
     <Content Include="js\swiper.jquery.min.js" />
-    <Content Include="img\marjorie-banner.png" />
     <Content Include="marjStyle.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
