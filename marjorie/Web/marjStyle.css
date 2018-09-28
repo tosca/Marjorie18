@@ -337,13 +337,18 @@ body, html {
     margin: 50px auto;
     cursor: pointer;
     color: #483726;
+    background-color: #3593c6;
     font-family: 'Kaushan Script','Script MT';
-    font-size: 18px;
     -webkit-transition: all 0.35s ease-out;
     -moz-transition: all 0.35s ease-out;
     transition: all 0.35s ease-out;
 }
- .slide-lidt-text i {
+    .slide-lidt-text span {
+        font-size: 28px;
+        color: #483726;
+        font-family: 'Kaushan Script','Script MT';
+    } 
+    .slide-lidt-text i {
         position: absolute;
         right: 20px;
         top: 0px;
@@ -352,11 +357,10 @@ body, html {
     .slide-lidt-text {
         display: inline-block;
     }
-    /*added from original*/
+    /*added from original
     .mobile-toggle-slide {
-        max-width: 320px;
-    }
-
+        max-width: 390px;
+    }*/
         .mobile-toggle-slide ul {
             position: absolute;
             left: 0px;
@@ -391,10 +395,9 @@ body, html {
         display: inline-block;
         background-position: center;
         background-color: #dadbd9;
-        min-height:80px;
+        min-height:70px;
         width: 250px;
-        padding: 15px 0px;
-        margin: 5px;
+        margin: 7px;
         border-radius: 3px;
         overflow: hidden;
         z-index: 1;
@@ -474,7 +477,7 @@ body, html {
             position: absolute;
             left: 0px;
             top: 0;
-            background: rgba(72, 55, 38, 0.7);
+            background:#725538; 
             padding: 20px;
             min-width: 100%;
             z-index: 50;
