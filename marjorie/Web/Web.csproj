@@ -213,11 +213,13 @@
     <Content Include="img\mugs\m02.jpg" />
     <Content Include="img\mugs\m03.jpg" />
     <Content Include="img\mugs\m04.jpg" />
+    <Content Include="img\rock-01.jpg" />
     <Content Include="img\studshow-02.jpg" />
     <Content Include="img\studshow-03.jpg" />
     <Content Include="img\studshow-04.jpg" />
     <Content Include="img\studshow.jpg" />
     <Content Include="img\tag-filter-bowl-sd.jpg" />
+    <Content Include="img\tag-filter-vase-sd-01.jpg" />
     <Content Include="img\tag-filter-vase-sd.jpg" />
     <Content Include="img\tag-filter-mugs.jpg" />
     <Content Include="img\tag-filter-teabowl-2.jpg" />

@@ -330,15 +330,13 @@ body, html {
     position: relative;
     width: 100%;
     display: none;
-    padding: 0px 20px;
-    height: 50px;
-    border: 2px solid #7f7f7f;
-    line-height: 46px;
-    margin: 50px auto;
+    height: 90px;
+    margin: 0px auto;
     cursor: pointer;
     color: #483726;
-    background-color: #3593c6;
+    background-color: #5c97b6;
     font-family: 'Kaushan Script','Script MT';
+   
     -webkit-transition: all 0.35s ease-out;
     -moz-transition: all 0.35s ease-out;
     transition: all 0.35s ease-out;
@@ -347,12 +345,14 @@ body, html {
         font-size: 28px;
         color: #483726;
         font-family: 'Kaushan Script','Script MT';
-    } 
-    .slide-lidt-text i {
         position: absolute;
-        right: 20px;
-        top: 0px;
-    }
+        left: 20%;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+    } 
+   
 @media (max-width: 992px) {
     .slide-lidt-text {
         display: inline-block;
@@ -394,7 +394,7 @@ body, html {
         position: relative;
         display: inline-block;
         background-position: center;
-        background-color: #dadbd9;
+        background-color: #dadbd9; 
         min-height:70px;
         width: 250px;
         margin: 7px;
@@ -454,12 +454,7 @@ body, html {
         font-family: 'Kaushan Script', cursive;
         font-size: 18px;
     }
-    /*mobile-toggle-slide .filter-list .tag-link-2 span {
-    
-}
-.mobile-toggle-slide .filter-list .tag-link-2:before {
-        background: #2d2d2d;
-}*/
+
     .tag-link-2 .bg {
         top: 0px;
         left: 0px;
@@ -467,22 +462,22 @@ body, html {
         right: 0px;
         background-size: cover;
     }
-
-    @media (max-width: 992px) {
-        .mobile-toggle-slide .filter-list .tag-link-2 .slide-lidt-text {
-            height: 120px;
-            display: inline-block;
-        }
-        .mobile-toggle-slide ul {
+ .mobile-toggle-slide ul {
             position: absolute;
             left: 0px;
             top: 0;
-            background:#725538; 
+            background:#725538; background-image: url('img/rock-01.jpg');
             padding: 20px;
             min-width: 100%;
             z-index: 50;
             box-shadow: 0px 35px 79px rgba(4, 5, 5, 0.4);
         }
+    @media (max-width: 992px) {
+        .mobile-toggle-slide .filter-list .tag-link-2 .slide-lidt-text {
+            height: 120px;
+            display: inline-block;
+        }
+       
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
