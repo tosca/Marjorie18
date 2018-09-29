@@ -724,10 +724,10 @@ background: #ddd;
         z-index: 5;
     }
         .solo-main-title .simple-text {
-            max-width: 540px;
+           /* max-width: 540px;*/
             padding-bottom: 35px;
         }
-        .solo-main-title .title-md {
+            .title-md {
             font-size: 45px;
             line-height: 50px;
             padding-bottom: 40px;
@@ -922,14 +922,10 @@ background: #ddd;
     }
 
     @media (max-width: 992px) {
-       .solo-main-title .title-md {
+        .solo-main-title .title-md {
             font-size: 45px;
             line-height: 50px;
             padding-bottom: 40px;
-        }
-      
-        .solo-baner {
-          /*  min-height: 780px;*/
         }
         .solo-main-title.vertical-align, .search-panel.popup .solo-main-title.close, .amount-wrap .solo-main-title.val, .inside-img img.solo-main-title {
             position: relative;
@@ -950,9 +946,9 @@ background: #ddd;
             transform: translateY(0);
             top: 0px;
         }
-        .left-column, .right-column, .solo-page3 .left-column, .solo-page3 .right-column {
-              width: 100%;
-             height: auto;
+        .left-column, .right-column, .left-desc, .right-desc, .solo-page3 .left-column, .solo-page3 .right-column, .solo-page3 .left-desc, .solo-page3 .right-desc {
+            width: 100%;
+            height: auto;
         }
             .right-column .main-slider {
                 height: 400px;
@@ -973,7 +969,6 @@ background: #ddd;
                 padding-bottom: 60px;
             }
     }
-
     @media (max-width: 768px) {
         .solo-main-title {
             padding: 0px 30px;
@@ -982,23 +977,16 @@ background: #ddd;
                 font-size: 50px;
                 line-height: 60px;
             }
-        .solo-baner {
-          /*  min-height: 780px;*/
-        }
-
         .footer.fixed {
             height: auto;
             margin: 0px;
         }
-
             .footer.fixed .folow {
                 padding-left: 0px;
             }
-
         .solo-main-title.vertical-align, .search-panel.popup .solo-main-title.close, .amount-wrap .solo-main-title.val, .inside-img img.solo-main-title, .solo-main-title.skill-line {
             padding: 30px;
         }
-
         .solo-sub-title {
             position: relative;
             left: 0px;
@@ -1014,7 +1002,6 @@ background: #ddd;
         }
 
     }
-
     @media (max-width: 480px) {
         .simple-text.md p {
             font-size: 14px;
@@ -1038,26 +1025,12 @@ background: #ddd;
         .solo-main-title {
             padding: 0px 15px;
         }
-        .solo-baner {
-          /*  min-height: 630px;*/
-        }
         .solo-main-title.vertical-align, .inside-img img.solo-main-title {
             padding: 5px 15px;
         }
         .solo-sub-title {
             padding: 30px 0px 0px 15px;
         }
-
-        .solo-comment-slider .swiper-container {
-            margin: 0px 15px;
-            padding: 0px 15px;
-        }
-
-        .solo-comment-slide p {
-            font-size: 16px;
-            line-height: 26px;
-        }
-
         .right-column.bg-position .main-slider {
             height: auto;
         }
@@ -1066,35 +1039,13 @@ background: #ddd;
             padding: 40px;
         }
     }
-
-    @media (max-height: 1000px) and (min-width: 992px) {
-    }
-
-    @media (max-height: 900px) and (min-width: 992px) {
-        .solo-baner .title-second .title {
-            font-size: 50px;
-            line-height: 60px;
-        }
-
-        .solo-baner .title-second {
-            padding-bottom: 50px;
-        }
-    }
-
-    /****contact******/
+ /********contact******/
 
 .main-content .contact {
         position: relative;
         height: 100%;
         padding: 45px 0px 20px;
     }
-.main-content .contact.no-top {
-            padding: 0px;
-            border-top-width: 0px;
-        }
-.main-content .contact.no-padd {
-            padding: 0px 0px 0px;
-        }
 .contact .solo-baner {
     background: #ebebe9;
     position: relative;
@@ -1113,24 +1064,29 @@ background: #ddd;
     height: 100%;
     position: relative;
 }
-.right-desc .cform {
-margin: 20px auto;
-padding-top: 50px;
-}
+    .right-desc .cform {
+        position: absolute;
+        right: -5%;
+        bottom: 0px;
+        width: 83%;
+        margin: 20px auto;
+        padding-top: 30px;
+    }
 .caption{
     position: relative;
     text-align: left;
 }
-.left-desc .title {
-    font-size: 79px;
-    line-height: 84px;
+.left-desc .title-sm {
+    font-size: 40px;
+    line-height: 54px;
     padding-bottom: 40px;
     display: inherit;
 }
-.left-desc .sub-title {
-    font-size: 22px;
-    line-height: 34px;
+.left-desc .solo-main-title .sub-title {
+    font-size: 18px;
+    line-height: 28px;
     padding-bottom: 30px;
+    font-family: 'Open Sans', san-serif;
 }
 .addr-item-wrap {
     padding-bottom: 40px;
@@ -1164,7 +1120,9 @@ padding-top: 50px;
  .right-desc {
         float: left;
         height: 100%;
+        position: relative;
         display: inherit;
+        display: inline-block;
     }
 
     @media (max-width: 1700px) {
@@ -1237,18 +1195,17 @@ padding-top: 50px;
 
         .right-desc.column-50 {
             width: 100%;
-            height: 400px;
+            height: 100%;
         }
     }
  /***************/   
     /****FOOTER******/
-/*****************/
+
     @media (max-width: 768px) {
         .footer {
             margin: 0px 15px;
         }
     }
-
     .addr-item .addr-list li, .addr-item .link {
         font-size: 26px;
         line-height: 44px;
@@ -1256,19 +1213,17 @@ padding-top: 50px;
 .addr-item .addr-list li a, .addr-item .link a{
     color: #40708a;
 }
-        .addr-item .addr-list li a:hover, .addr-item .link a:hover {
+.addr-item .addr-list li a:hover, .addr-item .link a:hover {
             color: #5b493c;
-        }
+}
     .addr-item .sub-title {
         padding-bottom: 20px;
     }
-
     .footer {
         text-align: center;
         height: auto;
         padding: 25px 0px 0px;
     }
-
         .footer .copyright {
             float: none;
             width: 100%;
@@ -1283,7 +1238,7 @@ padding-top: 50px;
     }
 
     @media (max-width: 992px) {
-        .footer.type-2 .logo-f, .footer.type-2 .top-bar .folow {
+        .footer.type-2 .logo-f, .footer.type-2 .top-bar{
             position: relative;
             display: block;
             margin: 0 auto 20px;
@@ -1308,46 +1263,5 @@ padding-top: 50px;
         }
     }
 
-    /*-------------------------------------------------------------------------------------------------------------------------------*/
-    /* 2. RESPONSIVE WORK/
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-    @media (min-width: 992px) {
-    }
 
-    @media (max-width: 1400px) {
-    }
-
-    @media (mAX-width: 1200px) {
-    }
-
-    @media (max-width: 992px) {
-    }
-
-    @media (max-width: 768px) {
-    }
-
-    @media (max-width: 480px) {
-    }
-
-
-    /*-------------------------------------------------------------------------------------------------------------------------------*/
-    /* 12. RESPONSIVE*/
-    /*-------------------------------------------------------------------------------------------------------------------------------*/
-    @media (min-width: 992px) {
-    }
-
-    @media (max-width: 1400px) {
-    }
-
-    @media (mAX-width: 1200px) {
-    }
-
-    @media (max-width: 992px) {
-    }
-
-    @media (max-width: 768px) {
-    }
-
-    @media (max-width: 480px) {
-    }  
 
