@@ -21,19 +21,18 @@
         <div id="jarallax-container">
             <img src="img/marjorie-banner-02.png" />
         </div>
-        <div class="main-content">
-
-            <div class="mobile-toggle-slide type-2">
-                <div class="slide-lidt-text"><span>Pottery <i class="fa-down-open-big"></i></span></div>
-                <ul class="filter-list slide-toggle-list">
-                    <li class="tag-link-2 bg" style="background-image:url(img/tag-filter-tumbler-01.jpg);" data-filter=".tumbler-sd"><span>Tumblers <br />Surface Design</span></li>
-                    <li class="tag-link-2 bg" style="background-image:url(img/tag-filter-tumbler-soda-01.jpg);" data-filter=".tumbler-sf"><span>Tumblers <br />Soda Surface</span></li>
-                    <li class="tag-link-2 bg" style="background-image:url(img/tag-filter-mugs-01.jpg);" data-filter=".mug"><span>Mugs</span></li>
-                    <li class="tag-link-2 bg" style="background-image:url(img/tag-filter-teabowl-01.jpg);" data-filter=".teabowl"><span>Tea Bowls</span></li>
-                    <li class="tag-link-2 bg" style="background-image:url(img/tag-filter-vase-sd-01.jpg);" data-filter=".vase-sd"><span>Vases <br />Surface Design</span></li>
-                    <li class="tag-link-2 bg" style="background-image:url(img/tag-filter-bowl-sd-02.jpg);" data-filter=".bowl-sd"><span>Bowls <br />Surface Design</span></li>
-                </ul>
-            </div>
+    <div class="main-content">
+        <div class="mobile-toggle-slide type-2">
+            <div class="slide-lidt-text"><span>Pottery <i class="fa-down-open-big"></i></span></div>
+            <ul class="filter-list slide-toggle-list">
+                <li class="tag-link-2" style="background-image:url(img/tag-filter-tumbler-01.jpg);" data-filter=".tumbler-sd"><span>Tumblers <br />Surface Design</span></li>
+                <li class="tag-link-2" style="background-image:url(img/tag-filter-tumbler-soda-01.jpg);" data-filter=".tumbler-sf"><span>Tumblers <br />Soda Surface</span></li>
+                <li class="tag-link-2" style="background-image:url(img/tag-filter-mugs-01.jpg);" data-filter=".mug"><span>Mugs</span></li>
+                <li class="tag-link-2" style="background-image:url(img/tag-filter-teabowl-01.jpg);" data-filter=".teabowl"><span>Tea Bowls</span></li>
+                <li class="tag-link-2" style="background-image:url(img/tag-filter-vase-sd-01.jpg);" data-filter=".vase-sd"><span>Vases <br />Surface Design</span></li>
+                <li class="tag-link-2" style="background-image:url(img/tag-filter-bowl-sd-02.jpg);" data-filter=".bowl-sd"><span>Bowls <br />Surface Design</span></li>
+            </ul>
+        </div>
             <div class="izotope-container">
                 <div class="grid-sizer"></div>
                 <div class="gutter-sizer"></div>
@@ -369,8 +368,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="main-content solo-type about">
+        
+    </div>
+    <div class="main-content solo-type about">
             <div class="content-load">
                 <div class="ajax-load-content">
                     <div class="solo-baner slider-swiching solo-page3">
@@ -455,11 +455,12 @@
                         <div class="left-desc">
                             <div class="solo-main-title vertical-align">
                                 <h2 class="title-sm">Thank you for your interest in my latest artistic collection. </h2>
-                                    <h2 class="sub-title">Many friends and artists from around the world have asked to purchase my sculture pieces.  If you would like information on the purchase of any piece -simply note the item numbers;e.g. ('TSD03') </h2>
+                                    <h2 class="sub-title">Many friends and artists from around the world have asked to purchase my sculture pieces. <br />
+                                If you would like to purchase a "SELL ITEM" sculpture, simply note the "sell item numbers;e.g. ('TSD03') and contant me directly. </h2>
                                     <div class="addr-item-wrap">
                                         <div class="addr-item"> 
                                             <ul class="addr-list">
-                                                <li>Marjorie Nichols Pottery</li>
+                                                <li style="color: #2f86b0;">Marjorie Nichols Pottery</li>
                                                 <li> <a href="mailto:marj528@aol.com">marj528@aol.com</a></li>
                                                 <li> <a href="mailto:marjorienichols528@gmail.com">marjorienichols528@gmail.com</a></li>
                                             </ul>
@@ -468,9 +469,9 @@
                             </div>
                         </div>
                         <div class="right-desc column-50">
-                            <div class="cform vertical-align"></div>
-                            This is where the contact form will go
-                            <img src="img/studshow-02.jpg" />
+                            <div class="bg-contact">
+                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf58__bSEF1xytHA5SNejKIFmUM1i0zYQb9SaKZrVA35kK-lA/viewform?embedded=true" width="100%" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -480,7 +481,7 @@
         <footer class="footer">
             <span class="copyright"> 2018 Marjorie Nichols Pottery</span>
         </footer>
-    </div>
+</div>
     <script src="js/jquery.min.js"></script>
     <script src="js/swiper.jquery.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
@@ -489,13 +490,13 @@
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/jarallax.js"></script>
     <script src="js/all.js"></script>
- <!--  <script>
-     $(document).ready(function () {
-         $(".filter-list li").click(function () {
-             $("#student-baner").fadeOut()
-         });
-     });
-    </script>--> 
+  <script>
+   //  $(document).ready(function () {
+    //     $(".filter-list li").click(function () {
+    //         $("#student-baner").fadeOut()
+     //    });
+   //  });
+    </script>
     <script>
         // initialise Isotope
         var $container = $('.izotope-container');
@@ -523,9 +524,7 @@
             })
         });
 
-    </script>-->
-
-   
+    </script>-->  
 
 </body>
 </html> 
