@@ -69,11 +69,11 @@ marjblue {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'Kaushan Script','Script MT';
     color: #483726;
     font-weight: 500;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.3em;
 }
     .loader::before, .loader::after {
         content: "";
@@ -246,53 +246,64 @@ body {
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 50%;
-    height: 300px;
-    min-height: 300px;
-    min-height: 60%;
+    background-size: 70%;
+    min-height: 100%;
 }
-#jarallax-container{
+
+/*---------------------------------  
+    header and jarallax container 
+  --------------------------*/ 
+ #jarallax-container{
     background-image: url("img/studshow-02.jpg");
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
-    min-height: 700px;
-    min-height: 100%;
-}
-/*---------------------------------  
-    header and jarallax container 
-  --------------------------*/ 
-    @media (min-width: 992px) {
+    min-height: 180px;
+}  
+ @media (min-width: 992px) {
         #jarallax-container {
-         height: 650px;
+       min-height: 460px;
         }
+    .mn-name {
+        background-size: 70%;
+    }
+
    }
 @media (max-width: 1400px) {
     #jarallax-container {
-        height: 400px;
+       min-height:380px;
+    }
+    .mn-name {
+        min-height: 60%;
     }
 }
     @media (max-width: 1200px) {
         #jarallax-container {
-            height: 200px;
+           min-height: 370px; 
+        }
+        .mn-name {
+            background-size: 70%;
         }
     }
     @media (max-width: 992px) {
         #jarallax-container {
-            height: 170px;
+           min-height: 380px;
         }
     }
     @media (max-width: 768px) {
         #jarallax-container {
-            height: 240px;
+          min-height: 260px;
         }
     }
     @media (max-width: 480px) {
         #jarallax-container {
-            height: 140px;
+            min-height: 120px;
         }
+         .mn-name {
+            min-height: 60%;
+         }
     }
 /*@media only screen and (max-device-width: 1366px) {
     #jarallax-container {
@@ -340,18 +351,18 @@ body {
         display: inline-block;
     }
     .mobile-toggle-slide ul {
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            padding: 20px;
-            min-width: 100%;
-            z-index: 50;
-            box-shadow: 0px 35px 79px rgba(4, 5, 5, 0.5);
-        }
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        padding: 20px;
+        min-width: 100%;
+        z-index: 50;
+        box-shadow: 0px 35px 79px rgba(4, 5, 5, 0.5);
+    }     
     .slide-toggle-list {
             display: none; 
-        }
-}
+       }
+}  
 /*-----------------------------
    .filter-list
 -----------------------------*/
