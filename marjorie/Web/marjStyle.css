@@ -290,7 +290,7 @@ body {
     }
     @media (max-width: 992px) {
         #jarallax-container {
-           min-height: 380px;
+           min-height: 340px;
         }
     }
     @media (max-width: 768px) {
@@ -330,18 +330,24 @@ body {
     color: #483726;
     background-color: #2f86b0;
 }
-    .slide-lidt-text span {
+.slide-lidt-text span {
         font-size: 28px;
         color: #483726;
         font-family: 'Kaushan Script','Script MT';
         position: absolute;
         left: 20%;
-        top: 15%;
-     /*   transform: translateY(-50%);
+        top: 40%;
+      transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);*/
+        -moz-transform: translateY(-50%);
     } 
- .mobile-toggle-slide ul {
+ 
+ 
+@media (max-width: 1400px) {
+    .slide-lidt-text {
+        display: inline-block;
+    }
+   .mobile-toggle-slide ul {
         position: absolute;
         left: 0px;
         top: 0px;
@@ -349,41 +355,42 @@ body {
         min-width: 100%;
         z-index: 50;
         box-shadow: 0px 35px 79px rgba(4, 5, 5, 0.5);
-    }        
-@media (max-width: 1400px) {
-    .slide-lidt-text {
-        display: inline-block;
     }
-   
     .slide-toggle-list {
-            display: none; 
-       }
+        display: none;
+    }
 }  
 /*-----------------------------
    .filter-list
 -----------------------------*/
     .filter-list {
       text-align: center;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
+       
     }
 
- .filter-list .tag-link-2 {
-    position: relative;
-    display: inline-block;
-    background-position: center;
-    background-color: #534733;
-    border: 3px outset #483726;
-    min-height: 60px;
-    width: 250px;
-    border-radius: 3px;
-    overflow: hidden;
-    z-index: 1;
-    cursor: pointer;
-    -webkit-transition: all 0.25s ease-out;
-    -moz-transition: all 0.25s ease-out;
-    transition: all 0.25s ease-out;
-}
-.filter-list .tag-link-2 span {
+        .filter-list .tag-link-2 {
+            position: relative;
+            padding-top: 2%;
+            display: inline-block;
+            background-position: center;
+            background-color: #534733;
+            color: #534733;
+            font-family: 'Kaushan Script', cursive;
+            font-size: 16px;
+            top: 3%;
+            border: 3px outset #483726;
+            min-height: 60px;
+            width: 250px;
+            border-radius: 3px;
+            overflow: hidden;
+            z-index: 1;
+            cursor: pointer;
+            -webkit-transition: all 0.25s ease-out;
+            -moz-transition: all 0.25s ease-out;
+            transition: all 0.25s ease-out;
+        }
+.filter-list .tag-link-2 span:before {
             z-index: 5;
             position: relative;
             color: #483726;
@@ -421,15 +428,15 @@ body {
         transform: translateX(0%);
     }
 
-.filter-list .tag-link-2:hover, .filter-list .tag-link-2.active {
+.filter-list .tag-link-2 span:hover, .filter-list .tag-link-2 span:active {
     color: #d49244;
 }
  
-/*.mobile-toggle-slide .filter-list .tag-link-2:hover, .mobile-toggle-slide .filter-list .tag-link-2:active {
+.mobile-toggle-slide .filter-list .tag-link-2:hover, .mobile-toggle-slide .filter-list .tag-link-2:active {
         color: #534733;
         font-family: 'Kaushan Script', cursive;
         font-size: 18px;
-    }*/
+    }
     .tag-link-2{
         top: 0px;
         left: 0px;
@@ -438,12 +445,12 @@ body {
         background-size: cover;
     }
 
-/* @media (max-width: 992px) {
+ @media (max-width: 1400px) {
         .mobile-toggle-slide .filter-list .tag-link-2 .slide-lidt-text {
             height: 120px;
             display: inline-block;
         }       
-}*/
+}
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 21. PROJECT PAGE IZOTOPE */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
@@ -557,7 +564,7 @@ body {
     font-size: 14px;
     font-weight: 500;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     .project-title .sub-title {
        margin-bottom: 10px;
     } 
