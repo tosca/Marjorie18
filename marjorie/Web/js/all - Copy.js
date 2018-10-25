@@ -665,7 +665,7 @@ jQuery(function($) { "use strict";
 	/* 17 - CLICK  */
 	/*============================*/				
 				
-	if ($(window).width()>992) {			
+	if ($(window).width()<992) {			
 		$(document).on('click', '.slide-lidt-text', function(){
 			$(this).parent().find('.slide-toggle-list').slideToggle(300);
 		});				

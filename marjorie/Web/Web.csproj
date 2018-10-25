@@ -206,8 +206,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="img\close.png" />
     <Content Include="img\drag.png" />
+    <Content Include="img\marj-3-vases.jpg" />
     <Content Include="img\marj-display.jpg" />
     <Content Include="img\marj-portrait-02.jpg" />
+    <Content Include="img\marj-wallbowls.jpg" />
     <Content Include="img\marjorie-banner-02.png" />
     <Content Include="img\mugs\m01.jpg" />
     <Content Include="img\mugs\m02.jpg" />
@@ -267,6 +269,7 @@
     <Content Include="img\vases\vsd07.jpg" />
     <Content Include="index - Copy.html" />
     <Content Include="index.html" />
+    <Content Include="js\all - Copy.js" />
     <Content Include="js\all.js" />
     <Content Include="js\googlemap.js" />
     <Content Include="js\isotope.pkgd.min.js" />
