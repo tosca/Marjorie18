@@ -251,7 +251,7 @@ body {
     position: relative;
 }
 .full-h {
-    height: 100%;
+    height: 100vh;
 }
 .vertical-align {
     -webkit-transform: translateY(-50%);
@@ -381,7 +381,7 @@ body {
 .slide-lidt-text {
     position: relative;
     width: 100%;
-    display: none;
+    display: inline-block;
     height: 80px;
     margin: 0px auto;
     cursor: pointer;
@@ -399,14 +399,16 @@ body {
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
     }
-@media (min-width: 1200px){
-    .slide-lidt-text {
+.slide-toggle-list {
+    display: none;
+}
+ .slide-lidt-text {
         height: 100px;
     }
-        .slide-lidt-text span {
+ .slide-lidt-text span {
          font-size:50px;        
     }
-}
+
  .slide-lidt-text {
         display: inline-block;
         -webkit-transition: all 0.35s ease-out;
@@ -778,7 +780,7 @@ body {
         border-radius: 50%;
         cursor: pointer;
     }
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+/*.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 20px;
     text-align: center;
     position: relative;
@@ -794,7 +796,7 @@ body {
 .swiper-pagination-bullet-active {
     opacity: 1;
     background: #40708a;
-}
+}*/
 .point-circle-slider .swiper-slide {
             padding: 0px 10px;
         }
@@ -1053,7 +1055,7 @@ body {
         height: auto;
     }
 }
-        #contact .right-desc .cform {
+#contact .right-desc .cform {
             position: absolute;
             right: -5%;
             bottom: 0px;
@@ -1111,33 +1113,34 @@ body {
         font-family: 'Kaushan Script','Script MT';
         color: #5b493c;
     }
-        #contact .addr-list li a, .addr-item .link a {
+   #contact .addr-list li a, .addr-item .link a {
             font-size: 22px;
             line-height:36px;
             color: #483726; 
             cursor: pointer;
             font-family: 'Open Sans', san-serif;
         }       
-        #contact .addr-item .addr-list li a:hover, .addr-item .link a:hover {
+#contact .addr-item .addr-list li a:hover, .addr-item .link a:hover {
             color: rgba(4, 5, 5, 0.5);
 }
-    #contact .right-desc {
+
+ #contact .right-desc {
         float: left;
         height: 100%;
         position: relative;
         display: inherit;
         display: inline-block;
-    }
+}
  @media (max-width: 1700px) {
     #contact .left-desc {      
     }
-        #contact .left-desc .title {
+    #contact .left-desc .title {
             font-size: 40px;
             line-height: 54px;
             font-family: 'Kaushan Script','Script MT';
             color: #483726;
             padding: 0px 60px;
-        }
+    }
     #contact .addr-item .addr-list li, .addr-item .link {
         font-size: 20px;
         line-height: 24px;
@@ -1160,7 +1163,7 @@ body {
         }
  }
 
-    @media (max-width: 992px) {
+ @media (max-width: 992px) {
         #contact .addr-item-wrap {
             padding-bottom: 30px;
         }
@@ -1191,7 +1194,7 @@ body {
             width: 100%;
             height: 100%;
         }
-    } 
+} 
     /****FOOTER******/
 .footer {
         text-align: left;

@@ -665,7 +665,7 @@ jQuery(function($) { "use strict";
 	/* 17 - CLICK  */
 	/*============================*/				
 				
-	if ($(window).width()>992) {			
+				
 		$(document).on('click', '.slide-lidt-text', function(){
 			$(this).parent().find('.slide-toggle-list').slideToggle(300);
 		});				
@@ -673,7 +673,7 @@ jQuery(function($) { "use strict";
 		    $(this).closest('.mobile-toggle-slide').find('.slide-lidt-text span').text($(this).text());
 			$('.slide-toggle-list').slideUp(300);
 		});	
-	}
+	
 					
 	$(document).on('click', '.list-toggle li', function(){
 	  	$(this).find('ul').slideToggle(300);
