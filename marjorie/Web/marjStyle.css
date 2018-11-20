@@ -196,6 +196,14 @@ body {
     body.overflow {
         overflow: hidden;
     }
+.bg, .service-layer {
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+    backface-visibility: hidden;
+}
 /*.container-perspective {
     position: relative;
     width: 100%;
@@ -329,7 +337,7 @@ body {
         }
     .mn-name {
         font-family: 'Amatic SC', cursive;
-        background-size: 70%;
+        background-size: 50%;
     }
  }
 @media (max-width: 1400px) {
@@ -345,7 +353,7 @@ body {
            min-height: 370px; 
         }
         .mn-name {
-            background-size: 70%;
+            background-size: 50%;
         }
     }
     @media (max-width: 992px) {
@@ -669,19 +677,19 @@ body {
 }
 #about {
     width: 100%;
-    height: auto;
+    height: 100vh;
     padding-bottom: 70px;
     padding: 0px;
     border-top-width: 0px;
 }
-    #about .content-load, #about.ajax-load-content {
+  /*  #about .content-load, #about.ajax-load-content {
         height: inherit;
     }
 #about, .main-content .contact {
     height: inherit;
     padding: 0px;
     background-color: #fff;
-}
+}*/
  .solo-baner {
         background: #c0c029;
        position: relative;
@@ -721,9 +729,9 @@ body {
                 width: 100%;
                 height: auto;
  }
-.solo-baner.overflowh {
+/*.solo-baner.overflowh {
             overflow: hidden;
-        }
+        }*/
 
  .solo-main-title {
         padding: 0px 70px 0px 140px;
@@ -735,18 +743,24 @@ body {
             padding-bottom: 10px;
  }
     .left-column {
-        width: 70%;
+        width: 60%;
         float: left;
         height: 100%;
         position: relative;
         background-color: #c0c027;
     }
     .right-column {
-        width: 30%;
+        width: 40%;
         float: left;
         height: 100%;
         position: relative;
     }
+.solo-page3 .left-column {
+    width: 55%;
+}
+.solo-page3 .right-column {
+    width: 45%;
+}
     .solo-sub-title {
         position: absolute;
         font-size: 13px;
@@ -871,7 +885,11 @@ body {
     .slide-shadow img {
         width: 100%;
     }
-
+.solo-title-counter, .solo-comment-slide p, .author-comm .title, .open-slider, .open-slider b, .author-comm .colmm-tags, .author-comm:before, .testi-slider, .solo-comment-slider, .comm-arrow, .solo-comment-slide p a, .solo-projects-slider, .filter-number-slider, .solo-sub-title, .slide-lidt-text {
+    -webkit-transition: all 0.35s ease-out;
+    -moz-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out;
+}
     @media (max-width: 1800px) {
         .solo-main-title {
             padding: 0px 40px 0 90px;
@@ -893,7 +911,10 @@ body {
             line-height: 22px;
         }
     }
-
+.solo-main-title .simple-text {
+    max-width: 540px;
+    padding-bottom: 35px;
+}
     @media (max-width: 1400px) {
         .solo-main-title .title-md {
             font-size: 45px;
@@ -1033,13 +1054,13 @@ body {
     #contact .left-desc {
         width: 50%;
         float: left;
-        height: 100%;
+        height: 100vh;
         position: relative;
     }
     #contact .right-desc {
         width: 50%;
         float: left;
-        height: 0;
+        height: 100vh;
         position: relative;
     }
 @media (max-width: 992px) {
