@@ -94,7 +94,7 @@ marj-brown {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgb(244, 244, 34);
+    background: #c0c029;
     z-index: 5000;
 }
 .loader {
@@ -114,72 +114,7 @@ marj-brown {
     color: #483726;
     font-weight: 400;
     letter-spacing: 0.3em;
-}
- /*   .loader::before, .loader::after {
-        content: "";
-        display: block;
-        width: 25px;
-        height: 7px;
-        background: #483726;
-        position: absolute;
-        animation: load .7s infinite alternate ease-in-out;
-        -webkit-animation: load .7s infinite alternate ease-in-out;
-    }
-    .loader::before {
-        top: 0;
-    }
-    .loader::after {
-        bottom: 0;
-    }
-@keyframes load {
-    0% {
-        left: 0;
-        height: 12px;
-        width: 7px;
-    }
-    50% {
-        height: 6px;
-        width: 40px;
-    }
-    100% {
-        left: 450px;
-        height: 12px;
-        width: 7px;
-    }
-}
-@-webkit-keyframes load {
-    0% {
-        left: 0;
-        height: 30px;
-        width: 7px;
-    }
-    50% {
-        height: 8px;
-        width: 40px;
-    }
-    100% {
-        left: 235px;
-        height: 60px;
-        width: 7px;
-    }
-}
-@-moz-keyframes load {
-    0% {
-        left: 0;
-        height: 30px;
-        width: 15px;
-    }
-    50% {
-        height: 8px;
-        width: 40px;
-    }
-    100% {
-        left: 235px;
-        height: 30px;
-        width: 15px;
-    }
-}*/
-/*-------------------------------------------------------------------------------------------------------------------------------*/
+} 
 /* 4. TYPOGRAPHY*/
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 body, html {
@@ -264,8 +199,8 @@ body {
     width: 100%;
     text-align: center;
 }
-.padd-30{
-    padding: 30px;
+.padd-tb{
+    padding: 30px 0px;
 }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* circle-shape */
@@ -367,14 +302,8 @@ body {
             background-size: 70%;
          }
     }
-/*@media only screen and (max-device-width: 1366px) {
-    #jarallax-container {
-        background-attachment: scroll;
-    }
-}*/
-/*-----------------------------
-    side-lidt-text
------------------------------*/
+
+/*  side-lidt-text -----------------------*/
 .mobile-toggle-slide {
     text-align: center;
     position: relative;
@@ -421,8 +350,7 @@ body {
       text-align: center;
         padding-bottom: 0px;       
     }
-
-        .filter-list .tag-link-2 {
+    .filter-list .tag-link-2 {
             position: relative;
             padding-top: 0.5%;
             display: inline-block;
@@ -653,49 +581,21 @@ body {
         opacity: 1;
     }
 /*---------------- #about ----------------------*/
-#about {  
-   position: relative;
-   -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-#about .solo-baner {
+#about{
         background: #c0c029;
         position: relative;
         width: 100%;
         height: 100vh;
-        padding: 30px 0px;        
+        padding: 30px 0px;  
+        -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;       
     }
-@media (max-width: 1400px) {
-    .solo-baner {
-        padding: 66px 0px;
-    }
-}
-@media (max-width: 768px){ 
-    .solo-baner {
-        min-height: 780px;
-    }
-}
+
 .solo-baner.overflowh {
-    overflow: hidden;
+  overflow: hidden;
 }
-@media (max-width: 992px){
-    .solo-baner.overflowh {
-        padding-bottom: 0px;
-    }
-}
-@media (max-width: 992px){ 
-    .solo-baner.overflowh.slider-swiching {
-        padding-bottom: 0px;
-    }
-}
-.solo-baner .main-img {
-            right: -5%;
-            bottom: 0px;
-            width: 83%;
-            position: absolute;
-        }
+
 .solo-baner .main-img img {
               width: 100%;
               height: auto;
@@ -709,10 +609,27 @@ body {
             line-height: 50px;
             padding-bottom: 10px;
  }
+@media (max-width: 1400px) {
+    .solo-baner {
+        padding: 50px 0px;
+    }
+}
+@media (max-width: 768px){ 
+    .solo-baner {
+        min-height: 780px;
+    }
+}
+@media (max-width: 992px){ 
+    .solo-baner.overflowh.slider-swiching {
+        padding-bottom: 0px;
+    }
+}
 .left-column {
       width: 55%;
         float: left;
         height: 100%;
+        height: 100vh;
+        height:auto;
         background-color: #c0c027; 
         position: relative;
 }
@@ -720,14 +637,15 @@ body {
    width: 45%;
         float: left;
         height: 100%; 
+        height: 100vh;
         position: relative;      
 }
-.solo-page3 .left-column {
+/*.solo-page3 .left-column {
     width: 55%;
 }
 .solo-page3 .right-column {
     width: 45%;
-}
+}*/
  .solo-sub-title {
         position: absolute;
         font-size: 13px;
@@ -801,7 +719,7 @@ body {
         display: none;
     }
 }
-        .circle-solo-point.point-circle-slider {
+ .circle-solo-point.point-circle-slider {
         position: relative;
         display: inline-block;
         width: 100%;
@@ -890,7 +808,6 @@ body {
         padding: 0px 40px 20px 40px;
     }
     .solo-main-title .sub-title {
-        
         padding: 0px 30px;
     }
  }
@@ -920,7 +837,7 @@ body {
             transform: translateY(0);
             top: 0px;
         } 
-     .left-column, .right-column, solo-page3 .left-column, solo-page3 .right-column, .left-desc, .right-desc {
+     .left-column, .right-column, .solo-page3 .left-column, .solo-page3 .right-column, .left-desc, .right-desc {
             width: 100%;
             height: auto; 
         }
@@ -967,12 +884,12 @@ body {
         .solo-page3 .right-column bg-position {
             align-content: center;
         }
+        .solo-main-title {
+            padding: 0px 15px;
+        }
         .solo-main-title .title-md {
             font-size: 26px;
             line-height: 30px;
-        }
-        .solo-main-title {
-            padding: 0px 15px;
         }
         .solo-main-title.vertical-align, .inside-img img.solo-main-title {
             padding: 5px 15px;
@@ -991,8 +908,9 @@ body {
 }
     /******** #contact******/
 
- #contact .solo-baner {
+ #contact {
         background: rgb(244, 244, 34);
+        background: #c98528;
         position: relative;
         width: 100%;
         height: 100vh;
@@ -1116,10 +1034,10 @@ body {
         height: auto;
         padding: 25px;
     }
-.footer .copyright {
+.copyright {
             float: none;
             width: 100%;
-            margin-bottom: 20px;
+            margin: 30px;
         }
     @media (max-width: 1200px) {
         .footer {
@@ -1137,7 +1055,7 @@ body {
         }
     }
 .swiper-pagination-bullet-active {
-    opacity: 1;
+    opacity: 0;
     background: rgb(192, 192, 39);
 }
 
