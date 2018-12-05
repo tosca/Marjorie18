@@ -16,29 +16,45 @@ body * {
     -webkit-text-size-adjust: none;
     box-sizing: border-box;
 }
-input:focus, select:focus, textarea:focus, button:focus, input:invalid {
-    outline: none;
-    box-shadow: none;
+body, html {
+    width: 100%;
 }
-input, textarea, select {
-    font-weight: 400;
-    -webkit-appearance: none;
-    appearance: none;
-    border-radius: 0;
-    border: 0px none;
-}
-select::-ms-expand {
-    display: none;
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1;
+     color: #4d4d4e;
+} 
+body.full-h, html.full-h {
+        height: 100%;
+    }
+body.overflow {
+        overflow: hidden;
+    }
+.bg {
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+    backface-visibility: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
 }
 a, a:link, a:visited, a:hover, a:active, .item:hover, item:active {
     cursor: crosshair;
     text-decoration: none;
     outline: none;
 }
-body {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1;
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 ul, ol {
     list-style: none;
@@ -51,6 +67,9 @@ marj-brown {
 }
 .marj-green {
     background: rgb(244, 244, 34);
+}
+.marj-dk-blue{
+    color: #2a4f63;
 }
 
 .swiper-wrapper {
@@ -76,11 +95,9 @@ marj-brown {
         content: " ";
         display: table;
     }
-
     .clearfix:after, .container:after, .container-fluid:after, .row:after {
         clear: both;
     }*/ 
-
 .center-block {
     display: block;
     margin-left: auto;
@@ -115,35 +132,8 @@ marj-brown {
     font-weight: 400;
     letter-spacing: 0.3em;
 } 
-/* 4. TYPOGRAPHY*/
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-body, html {
-    width: 100%;
-}
-    body.full-h, html.full-h {
-        height: 100%;
-    }
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: #4d4d4e;
-}
-    body.overflow {
-        overflow: hidden;
-    }
-.bg {
-    overflow: hidden;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: contain;
-    backface-visibility: hidden;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-}
-
+/* TYPOGRAPHY*/
+/*---------------*/
 .simple-text {
     position: relative;
 }
@@ -182,9 +172,10 @@ body {
 .section {
     position: relative;
 }
-.full-h {
+.full-h-section {
     height: 100vh;
     height: 100%;
+    height: auto;
 }
 .vertical-align {
     -webkit-transform: translateY(-50%);
@@ -214,21 +205,27 @@ body {
     opacity: .2;
 }
 /*****  main-content **************/
-.main-content {
+#pottery {
     position: relative;
     height: 100%;
 }
 @media (max-width: 992px) {
-    .main-content {
+    #pottery {
         height: auto;
     }
 }
-.main-content .content-load, .main-content .ajax-load-content {
+#pottery .ajax-load-content {
     height: inherit;
 }
-/*****  jarallax-container **************/
+/*****  mn-name **************/
 
 .mn-name{
+background-image: url("img/marj-name.png");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100%;
     position: absolute;
     left: 0;
     top: 0;
@@ -236,19 +233,10 @@ body {
     text-align: center;
     color: transparent;
 }
-.mn-name {
-    background-image: url("img/marj-name.png");
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 100%;
-}
 
-/*---------------------------------  
-    header and jarallax container 
-  --------------------------*/ 
- #jarallax-container{
+/*-- header and jarallax container --*/ 
+ 
+#jarallax-container{
     background-image: url("img/studshow-02.jpg");
     background-attachment: fixed;
     background-position: top;
@@ -260,21 +248,20 @@ body {
 }  
  @media (min-width: 1400px) {
         #jarallax-container {
-       min-height: 700px;
+       min-height: 450px;
         }
     .mn-name {
-        font-family: 'Amatic SC', cursive;
         background-size: 50%;
     }
  }
-@media (max-width: 1400px) {
+/*@media (max-width: 1400px) {
     #jarallax-container {
-       min-height:380px;
+       min-height: 380px;
     }
     .mn-name {
         background-size: 50%;
     }
-}
+}*/
     @media (max-width: 1200px) {
         #jarallax-container {
            min-height: 370px; 
@@ -315,9 +302,9 @@ body {
     width: 100%;
     display: inline-block;
     height: 70px;
-     margin: 0px auto;
+    margin: 0px auto;
     cursor: pointer;
-    background-color: #2f86b0; 
+    background-color: #2a4f63;
     -webkit-transition: all 0.35s ease-out;
     -moz-transition: all 0.35s ease-out;
     transition: all 0.35s ease-out;
@@ -327,6 +314,7 @@ body {
         font-weight: 700;
         font-size: 50px;
         color: #483726;
+        color:#d49244;
        margin: auto;
         transform: translateY(-0%);
         -webkit-transform: translateY(-50%);
@@ -340,15 +328,20 @@ body {
         left: 0px;
         top: 0px;
         min-width: 100%;
+        padding: 0 20%;
         z-index: 50;
         box-shadow: 0px 35px 79px rgba(4, 5, 5, 0.5);
 }
- /*  ----------------------------
-   .filter-list
------------------------------*/
+.mobile-toggle-slide ul li{
+        padding: 10px;
+ }
+
+ /*** .filter-list-----*/
+
     .filter-list {
-      text-align: center;
-        padding-bottom: 0px;       
+        text-align: center;
+        background-color: #2a4f63;
+        padding-bottom: 0px;
     }
     .filter-list .tag-link-2 {
             position: relative;
@@ -362,6 +355,7 @@ body {
             font-size: 26px;
             top: 3%;
             bottom: 3%;
+            margin: 10px;
             min-height: 100px;
             width: 250px;
             border-radius: 3px;
@@ -439,6 +433,7 @@ body {
     }*/
 /* 21. PROJECT PAGE IZOTOPE */
 /*----------------------------------*/
+
 .izotope-container {
     position: relative;
     background: #ddd;
@@ -478,13 +473,8 @@ body {
 .grid-sizer, .item{
     width:25%
 }
-/*from style-original
-.gutter-sizer .item {
-    padding: 0px 15px 30px;
-}*/
 .item {
     float: left;
-  /* display: block;  */
 }
 .item img {
       display: block; 
@@ -580,13 +570,13 @@ body {
     .item.scale-hover:hover .project-item .project-title{
         opacity: 1;
     }
-/*---------------- #about ----------------------*/
+/*------- #about ----*/
+
 #about{
         background: #c0c029;
         position: relative;
         width: 100%;
-        height: 100vh;
-        padding: 30px 0px;  
+        height: 100vh;  
         -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;       
@@ -595,19 +585,9 @@ body {
 .solo-baner.overflowh {
   overflow: hidden;
 }
-
 .solo-baner .main-img img {
               width: 100%;
               height: auto;
- }
- .solo-main-title {
-        padding: 0px 70px 0px 140px;
-        z-index: 5;
-}
-.solo-main-title .title-md {
-            font-size: 45px;
-            line-height: 50px;
-            padding-bottom: 10px;
  }
 @media (max-width: 1400px) {
     .solo-baner {
@@ -624,28 +604,30 @@ body {
         padding-bottom: 0px;
     }
 }
+ .solo-main-title {
+        padding: 40px 70px 30px 90px;
+        z-index: 5;
+}
+.solo-main-title .title-md {
+            font-size: 45px;
+            line-height: 58px;
+            padding-bottom: 25px;
+ }
 .left-column {
+    position: relative;
       width: 55%;
         float: left;
         height: 100%;
         height: 100vh;
-        height:auto;
-        background-color: #c0c027; 
-        position: relative;
+        background-color: #c0c027;         
 }
 .right-column {
+    position: relative; 
    width: 45%;
         float: left;
         height: 100%; 
-        height: 100vh;
-        position: relative;      
+        height: 100vh;             
 }
-/*.solo-page3 .left-column {
-    width: 55%;
-}
-.solo-page3 .right-column {
-    width: 45%;
-}*/
  .solo-sub-title {
         position: absolute;
         font-size: 13px;
@@ -723,7 +705,7 @@ body {
         position: relative;
         display: inline-block;
         width: 100%;
-        left: 0px;
+       text-align: center;
         bottom: auto;
     }
  .circle-solo-point.point-circle-slider .swiper-slide {
@@ -763,7 +745,6 @@ body {
 .circle-solo-point.point-circle-slider .slide-point:hover span, .circle-solo-point.point-circle-slider .slide-point.active span {
                 color: #4d4d4e;
             }
-
 .slide-shadow img {
         width: 100%;
     }
@@ -778,29 +759,12 @@ body {
           left: -30px;
           z-index: 50;
         }
-        .solo-main-title .title-md {
-            font-size: 50px;
-            line-height: 70px;
-            padding-top: 25px;
-            padding-bottom: 25px;
-        }   
         .solo-main-title .simple-text.md p {
             font-size: 16px;
             line-height: 26px;
-            padding: 0px 30px;
+            padding: 0px 30px 20px 30px;
         }
     }
-.solo-main-title .simple-text {
-   /*max-width: 540px;*/ 
-    padding-bottom: 35px;
-}
-
-@media (max-width: 1800px){
-    .solo-main-title {
-        padding: 0px 50px 20px 30px;
-    }
-}    
-
 @media (max-width: 1400px) {
     .solo-main-title .title-md {
         font-size: 35px;
@@ -909,38 +873,40 @@ body {
     /******** #contact******/
 
  #contact {
-        background: rgb(244, 244, 34);
-        background: #c98528;
+        background-color: #c98528;
         position: relative;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         padding: 30px 0px;
     }
  #contact .left-desc {
-        width: 50%;
+        width: 55%;
         float: left;
-        height: 100vh;
+        height: 100%;
         position: relative;
     }
 #contact .right-desc {
         width: 45%;
         float: right;
-        height: 100vh;
+        height: 100%;
         position: relative;
     }
 #contact .left-desc .solo-main-title .sub-title {
-        font-size: 16px;
+       font-family: 'Open Sans', san-serif; 
+       font-size: 16px;
         line-height: 24px;
         padding-bottom: 30px;
-        font-family: 'Open Sans', san-serif;
+        
     }
 .iframe-container {
         position: relative;
-        background-color: #2f86b0;
+        background-color: #2a4f63;
         padding: 30px;
         text-align: center;
+        display:block;
     }
 .iframe-container i-frame {
+    
             border: 0;
             height: 100%;
             left: 0;
