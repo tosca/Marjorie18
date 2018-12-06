@@ -29,9 +29,9 @@ body {
 body.full-h, html.full-h {
         height: 100%;
     }
-body.overflow {
+/*body.overflow {
         overflow: hidden;
-    }
+    }*/
 .bg {
     overflow: hidden;
     background-position: 50% 50%;
@@ -91,13 +91,13 @@ marj-brown {
     margin-right: 0px;
 }
 
- /*  .clearfix:before, .clearfix:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after {
+  .clearfix:before, .clearfix:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after {
         content: " ";
         display: table;
     }
     .clearfix:after, .container:after, .container-fluid:after, .row:after {
         clear: both;
-    }*/ 
+    }
 .center-block {
     display: block;
     margin-left: auto;
@@ -120,11 +120,11 @@ marj-brown {
     line-height: 50px;
     text-align: center;
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    top: 30%;
+    left: 30%;
+    transform: translate(-30%, -30%);
+    -webkit-transform: translate(-30%, -30%);
+    -ms-transform: translate(-30%, -30%);
     text-transform: uppercase;
     font-size: 50px;
     font-family: 'Merienda', cursive;
@@ -310,12 +310,11 @@ background-image: url("img/marj-name.png");
     transition: all 0.35s ease-out;
 }
     .slide-lidt-text span {
-         font-family: 'Amatic SC', cursive;
+        font-family: 'Amatic SC', cursive;
         font-weight: 700;
-        font-size: 50px;
-        color: #483726;
-        color:#d49244;
-       margin: auto;
+        font-size: 50px; 
+        color:#c97411;
+        margin: auto;
         transform: translateY(-0%);
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
@@ -576,12 +575,24 @@ background-image: url("img/marj-name.png");
         background: #c0c029;
         position: relative;
         width: 100%;
-        height: 100vh;  
+        min-height: 900px;
+        height: 100%;  
         -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;       
+        -moz-transition: all 0.5s;
+         transition: all 0.5s;       
     }
-
+.left-column {
+    position: relative;
+      width: 55%;
+        float: left;
+        height: 100%;        
+}
+.right-column {
+        position: relative; 
+        width: 45%;
+        float: left;
+        height: 100%;             
+}
 .solo-baner.overflowh {
   overflow: hidden;
 }
@@ -589,19 +600,37 @@ background-image: url("img/marj-name.png");
               width: 100%;
               height: auto;
  }
+
 @media (max-width: 1400px) {
     .solo-baner {
         padding: 50px 0px;
     }
 }
+
+@media (max-width: 992px){
+    .footer.fixed {
+        position: relative;
+    }   
+    
+   .solo-baner.overflowh.slider-swiching {
+        padding-bottom: 0px;
+    }
+    .solo-baner.overflowh {
+        padding-bottom: 0px;
+    }
+    .bg-position > .bg {
+        display: none;
+    }
+    .right-column.bg-position .main-slider {
+        height: auto;
+    }
+.right-column.bg-position .main-slider .swiper-container {
+            padding-bottom: 60px;
+        }
+}
 @media (max-width: 768px){ 
     .solo-baner {
-        min-height: 780px;
-    }
-}
-@media (max-width: 992px){ 
-    .solo-baner.overflowh.slider-swiching {
-        padding-bottom: 0px;
+        min-height: 800px;
     }
 }
  .solo-main-title {
@@ -613,21 +642,6 @@ background-image: url("img/marj-name.png");
             line-height: 58px;
             padding-bottom: 25px;
  }
-.left-column {
-    position: relative;
-      width: 55%;
-        float: left;
-        height: 100%;
-        height: 100vh;
-        background-color: #c0c027;         
-}
-.right-column {
-    position: relative; 
-   width: 45%;
-        float: left;
-        height: 100%; 
-        height: 100vh;             
-}
  .solo-sub-title {
         position: absolute;
         font-size: 13px;
@@ -709,7 +723,7 @@ background-image: url("img/marj-name.png");
         bottom: auto;
     }
  .circle-solo-point.point-circle-slider .swiper-slide {
-            padding: 0px 15px 0px 0px;
+            padding: 10px 20px 0px 0px;
         }
  .circle-solo-point.point-circle-slider .slide-point .path {
             stroke: #483726;
@@ -753,6 +767,81 @@ background-image: url("img/marj-name.png");
     -moz-transition: all 0.35s ease-out;
     transition: all 0.35s ease-out;
 }
+
+  /******** #contact******/
+#contact {
+    background-color: #c98528;
+    position: relative;
+    width: 100%;
+    min-height: 1400px;
+    height: 100%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+ #contact .left-desc {
+        position: relative;  
+        width: 55%;
+        float: left;
+       height: 100%;  
+    }
+#contact .right-desc {
+       position: relative;
+       width: 45%;
+      float: left;
+        height: 100%;        
+    }
+#contact .left-desc .solo-main-title .sub-title {
+       font-family: 'Open Sans', san-serif; 
+       font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 30px;        
+    }
+.iframe-container {
+        position: relative;
+        background-color: #2a4f63;
+        padding: 30px;
+        text-align: center;
+        display:block;
+    }
+.iframe-container i-frame {
+            position: absolute;
+            border: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;   
+        }
+ #contact .addr-item-wrap {
+        padding-bottom: 40px;
+        text-align: center;
+    }
+#contact .addr-item .sub-title {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.5);
+        padding-bottom: 20px;
+    }
+ #contact .addr-item {
+        padding-bottom: 30px;
+    }
+#contact .addr-list li {
+    font-size: 24px;
+    line-height: 44px;
+    font-weight: 400;
+    font-family: 'Merienda', cursive;
+    color: #5b493c;
+}
+#contact .addr-list li a, .addr-item .link a {
+            font-size: 18px;
+            line-height:36px;
+            color: #483726; 
+            cursor: pointer;
+            font-family: 'Open Sans', san-serif;
+        }       
+#contact .addr-item .addr-list li a:hover, .addr-item .link a:hover {
+            color: rgba(4, 5, 5, 0.5);
+}
+
  @media (max-width: 2400px) {
         .solo-sub-title{
           top: 120px;
@@ -807,166 +896,9 @@ background-image: url("img/marj-name.png");
         }
     .right-column .main-slider {
                 height: 100vh;
-            }
-        .bg-position > .bg{
-            display: none;
-        }
-        .right-column.bg-position .main-slider {
-            height: auto;
-        }
-            .right-column.bg-position .main-slider .swiper-container {
-                padding-bottom: 60px;
-            }
+            }      
     }
- @media (max-width: 768px) {
-        .solo-main-title {
-            padding: 0px 30px;
-        }
-        .solo-main-title .title-md {
-                font-size: 46px;
-                line-height: 56px;
-        }
-        .solo-main-title.vertical-align, .solo-main-title.close,.solo-main-title.val, .inside-img img.solo-main-title {
-            padding: 30px;
-        }
-        .solo-sub-title {
-            position: relative;
-            left: 0px;
-            top: 0px;
-            -webkit-transform: rotate(0deg);
-            -moz-transform: rotate(0deg);
-            -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
-            padding: 30px 0px 0px 30px;
-        }    
-    }
-    @media (max-width: 480px) {
-        .simple-text.md p {
-            font-size: 16px;
-            line-height: 22px;
-        }      
-        .solo-page3 .right-column bg-position {
-            align-content: center;
-        }
-        .solo-main-title {
-            padding: 0px 15px;
-        }
-        .solo-main-title .title-md {
-            font-size: 26px;
-            line-height: 30px;
-        }
-        .solo-main-title.vertical-align, .inside-img img.solo-main-title {
-            padding: 5px 15px;
-        }
-        .solo-sub-title {
-            padding: 30px 0px 0px 15px;
-        }
-        .right-column.bg-position .main-slider {
-            height: auto;
-            height: 100vh;
-            padding-bottom: 0px;
-        }
-    }
-.solo-main-title .title-md {
-    font-family: 'Merienda', cursive;
-}
-    /******** #contact******/
-
- #contact {
-        background-color: #c98528;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        padding: 30px 0px;
-    }
- #contact .left-desc {
-        width: 55%;
-        float: left;
-        height: 100%;
-        position: relative;
-    }
-#contact .right-desc {
-        width: 45%;
-        float: right;
-        height: 100%;
-        position: relative;
-    }
-#contact .left-desc .solo-main-title .sub-title {
-       font-family: 'Open Sans', san-serif; 
-       font-size: 16px;
-        line-height: 24px;
-        padding-bottom: 30px;
-        
-    }
-.iframe-container {
-        position: relative;
-        background-color: #2a4f63;
-        padding: 30px;
-        text-align: center;
-        display:block;
-    }
-.iframe-container i-frame {
-    
-            border: 0;
-            height: 100%;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-        }
- #contact .addr-item-wrap {
-        padding-bottom: 40px;
-        text-align: center;
-    }
-#contact .addr-item .sub-title {
-        font-size: 20px;
-        color: rgba(0, 0, 0, 0.5);
-        padding-bottom: 20px;
-    }
- #contact .addr-item {
-        padding-bottom: 30px;
-    }
-#contact .addr-list li {
-    font-size: 24px;
-    line-height: 44px;
-    font-weight: 400;
-    font-family: 'Merienda', cursive;
-    color: #5b493c;
-}
-#contact .addr-list li a, .addr-item .link a {
-            font-size: 18px;
-            line-height:36px;
-            color: #483726; 
-            cursor: pointer;
-            font-family: 'Open Sans', san-serif;
-        }       
-#contact .addr-item .addr-list li a:hover, .addr-item .link a:hover {
-            color: rgba(4, 5, 5, 0.5);
-}
-
- @media (max-width: 2400px) {
-    #contact .left-desc .solo-main-title .sub-title {
-        font-size: 20px;
-        line-height: 32px;   
-    }
-    #contact .addr-item .addr-list li, #contact .addr-list li a {
-        font-size: 30px;
-        line-height: 44px;
-    }
-}
-@media (max-width: 1400px) {
-    #contact .addr-item .addr-list li, #contact .addr-list li a {
-        font-size: 20px;
-        line-height: 32px;
-    }
-    #contact .addr-item {
-        padding-bottom: 30px;
-    }
-    .copyright {
-            margin-bottom: 30px;
-    }
- }
- @media (max-width: 992px) {
+@media (max-width: 992px) {
       #contact .left-desc, #contact .right-desc {
         width: 100%;
         height: auto;
@@ -994,6 +926,95 @@ background-image: url("img/marj-name.png");
                 transform: translateY(0px);
          }
 } 
+ @media (max-width: 768px) {
+        .solo-main-title {
+            padding: 0px 30px;
+        }
+        .solo-main-title .title-md {
+                font-size: 46px;
+                line-height: 56px;
+        }
+        .solo-main-title.vertical-align, .solo-main-title.close,.solo-main-title.val, .inside-img img.solo-main-title {
+            padding: 30px;
+        }
+        .solo-sub-title {
+            position: relative;
+            left: 0px;
+            top: 0px;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+            padding: 30px 0px 0px 30px;
+        }    
+    }
+    @media (max-width: 480px) {
+        .solo-main-title .simple-text.md p {
+            font-size: 14px;
+            line-height: 22px;
+            padding: 10px 20px;
+        }      
+        .solo-page3 .right-column bg-position {
+            align-content: center;
+        }
+        .solo-main-title {
+            padding: 0px 15px;
+        }
+        .solo-main-title .title-md {
+            font-size: 24px;
+            line-height: 30px;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        #contact .left-desc .solo-main-title .sub-title {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        #contact .left-desc, #contact .right-desc {
+            width: 100%;
+            min-height: 800px;
+            height: 100vh;
+        }
+        .solo-main-title.vertical-align, .inside-img img.solo-main-title {
+            padding: 5px 15px;
+        }
+        .solo-sub-title {
+            padding: 0px 0px 0px 15px;
+            top: 20px;
+        }
+        .right-column.bg-position .main-slider {
+            height: auto;
+          }
+            .right-column.bg-position .main-slider .swiper-container {
+                padding-bottom: 0px;
+            }
+        
+    }
+.solo-main-title .title-md {
+    font-family: 'Merienda', cursive;
+}
+
+ @media (max-width: 2400px) {
+    #contact .left-desc .solo-main-title .sub-title {
+        font-size: 20px;
+        line-height: 32px;   
+    }
+    #contact .addr-item .addr-list li, #contact .addr-list li a {
+        font-size: 30px;
+        line-height: 44px;
+    }
+}
+@media (max-width: 1400px) {
+    #contact .addr-item .addr-list li, #contact .addr-list li a {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #contact .addr-item {
+        padding-bottom: 30px;
+    }
+ }
+ 
     /****FOOTER******/
 .footer {
         text-align: left;
@@ -1022,7 +1043,7 @@ background-image: url("img/marj-name.png");
     }
 .swiper-pagination-bullet-active {
     opacity: 0;
-    background: rgb(192, 192, 39);
+  /* background: rgb(192, 192, 39);*/ 
 }
 
 
