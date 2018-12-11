@@ -228,12 +228,11 @@ background-image: url("img/marj-name.png");
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
-    background-size: contain;
     min-height: 100%;
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 90%;
     text-align: center;
     color: transparent;
 }
@@ -323,7 +322,7 @@ background-image: url("img/marj-name.png");
         left: 0px;
         top: 0px;
         min-width: 100%;
-        padding: 0 20%;
+        padding: 0 10%;
         z-index: 50;
         box-shadow: 0px 35px 79px rgba(4, 5, 5, 0.5);
 }
@@ -571,7 +570,7 @@ background-image: url("img/marj-name.png");
         background: #c0c029;
         position: relative;
         width: 100%;
-        min-height: 900px;
+        min-height: 800px;
         height: 100%;  
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
@@ -634,7 +633,7 @@ background-image: url("img/marj-name.png");
         cursor: pointer;
     }
 .swiper-wrapper {
-    padding-top: 20%;
+    padding-top: 10%;
 }
 /*.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 20px;
@@ -725,7 +724,7 @@ background-image: url("img/marj-name.png");
     background-color: #c98528;
     position: relative;
     width: 100%;
-    min-height: 1400px;
+    min-height: 900px;
     height: 100%;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -822,7 +821,7 @@ background-image: url("img/marj-name.png");
     .solo-main-title .title-md {
         font-size: 35px;
         line-height: 45px;
-        padding: 0px 40px 20px 40px;
+        padding: 20px 40px 20px 40px;
     }
     .solo-main-title .sub-title {
         padding: 0px 30px;
@@ -1028,8 +1027,8 @@ background-image: url("img/marj-name.png");
         }
     }
 .swiper-pagination-bullet-active {
-    opacity: 0;
-  /* background: rgb(192, 192, 39);*/ 
+    opacity: 1;
+    background: #c98528;
 }
 
 
