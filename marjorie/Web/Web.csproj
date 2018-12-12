@@ -262,7 +262,6 @@
     <Content Include="img\vases\vsd05.jpg" />
     <Content Include="img\vases\vsd06.jpg" />
     <Content Include="img\vases\vsd07.jpg" />
-    <Content Include="index - Copy.html" />
     <Content Include="index.html" />
     <Content Include="js\all - Copy.js" />
     <Content Include="js\all.js" />
@@ -281,8 +280,6 @@
     <Content Include="fonts\fontello.ttf" />
     <Content Include="fonts\fontello.woff" />
     <Content Include="fonts\fontello.woff2" />
-    <Content Include="solo_page3-copy.html" />
-    <Content Include="solo_page3.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
