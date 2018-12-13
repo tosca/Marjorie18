@@ -31,7 +31,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #4d4d4e;
 } 
-body.overflowh {
+body, html {
         overflow-x: hidden;
     }
 .bg {
@@ -250,10 +250,10 @@ background-image: url("img/marj-name.png");
     margin-right: 0;
     margin-left: 0;
     padding-left: 0px;
-    padding-right: F0px;
+    padding-right: 0px;
     height: 100%;
     width: 100%;
-    min-height: 180px;
+    min-height: 420px;
 }  
  @media (min-width: 1400px) {
         #jarallax-container {
