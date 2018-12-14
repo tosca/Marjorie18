@@ -638,10 +638,10 @@ background-image: url("img/marj-name.png");
         border-radius: 50%;
         cursor: pointer;
     }
-.swiper-wrapper {
+/*.swiper-wrapper {
     padding-top: 10%;
 }
-/*.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 20px;
     text-align: center;
     position: relative;
@@ -663,7 +663,7 @@ background-image: url("img/marj-name.png");
 }
 .point-circle-slider {
         position: absolute;
-        left: 50px;
+        left: 0px;
         bottom: 45px;
         width: 100%;
 }
