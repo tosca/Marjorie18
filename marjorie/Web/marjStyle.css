@@ -603,7 +603,7 @@ background-image: url("img/marj-name.png");
               height: auto;
  }
  .solo-main-title {
-        padding: 0px 30px 30px 30px;
+        padding: 20px 30px 30px 50px;
         z-index: 5;
 }
 .solo-main-title .title-md {
