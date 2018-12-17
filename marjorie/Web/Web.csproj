@@ -173,6 +173,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="apple-touch-180.png" />
     <Content Include="bower_components\isotope-layout\dist\isotope.pkgd.js" />
     <Content Include="bower_components\isotope-layout\dist\isotope.pkgd.min.js" />
     <Content Include="bower_components\isotope-layout\gulpfile.js" />
@@ -206,10 +207,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="img\close.png" />
     <Content Include="img\drag.png" />
+    <Content Include="img\m3-d.jpg" />
     <Content Include="img\marj-3-vases.jpg" />
     <Content Include="img\marj-display.jpg" />
     <Content Include="img\marj-name.png" />
     <Content Include="img\marj-portrait-02.jpg" />
+    <Content Include="img\marj-portrait-03.jpg" />
     <Content Include="img\marj-wallbowls.jpg" />
     <Content Include="img\mugs\m01.jpg" />
     <Content Include="img\mugs\m02.jpg" />

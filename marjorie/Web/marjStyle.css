@@ -592,7 +592,8 @@ background-image: url("img/marj-name.png");
         position: relative; 
         width: 50%;
         float: left;
-        height: 100%;             
+        height: 100%; 
+        padding-top: 30px;
 }
 .solo-baner.overflowh {
   overflow: hidden;
@@ -662,11 +663,13 @@ background-image: url("img/marj-name.png");
             padding: 0px 10px;
 }
 .point-circle-slider {
-        position: absolute;
-        left: 0px;
-        bottom: 45px;
-        width: 100%;
+    position: absolute;
+    left: 0px;
+   bottom: 30px;/**/
+   bottom: 20px;
+    width: 100%;
 }
+
 .point-circle-slider .swiper-container {
             width: auto;
             display: inline-block;
@@ -891,10 +894,10 @@ background-image: url("img/marj-name.png");
     .right-column .main-slider {
                 height: 100vh;
             } 
- .point-circle-slider {
+    .point-circle-slider {
             text-align: center;
             left: 0px;
-            bottom: 20px;
+            bottom: 30px;
         }
          .point-circle-slider .swiper-slide {
             padding: 0px 5px;
@@ -998,13 +1001,11 @@ background-image: url("img/marj-name.png");
           }
             .right-column.bg-position .main-slider .swiper-container {
                 padding-bottom: 0px;
-            }
-                  
+            }                 
     }
 .solo-main-title .title-md {
     font-family: 'Merienda', cursive;
 }
-
  
     /****FOOTER******/
 .footer {
@@ -1032,9 +1033,22 @@ background-image: url("img/marj-name.png");
             display: inline-block;
         }
     }
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: .2;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 12px;
+}
+
 .swiper-pagination-bullet-active {
     opacity: 1;
-    background: #c98528;
+    background: #40708a;
 }
 
 
