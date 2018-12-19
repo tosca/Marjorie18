@@ -575,11 +575,8 @@ background-image: url("img/marj-name.png");
 #about{
         background: #c0c029;
         position: relative;
-        
         width: 100%;
-       /* min-height: 800px;
-        height: 100%;  */
-        -webkit-transition: all 0.5s;
+         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
          transition: all 0.5s;       
     }
@@ -587,18 +584,87 @@ background-image: url("img/marj-name.png");
     position: relative;
       width: 55%;
      float: left; 
-     overflow: hidden;
-        
-       /*height: 100%;  */       
+     overflow: hidden;     
 }
 .right-column {
     position: relative;
     width: 45%;
     float: left;
-    overflow: hidden;
-    padding-top: 30px;
-    vertical-align:middle;
+    overflow: hidden; 
 }
+  /******** #contact******/
+#contact {
+   background-color: #c98528;
+   position: relative;
+    width: 100%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.left-desc {
+    position: relative;
+    width: 55%;
+    float: left;
+    overflow: hidden;
+    background-color: #c98528;
+}   
+.right-desc {
+        position: relative;
+        width: 45%;
+        float: left;
+        overflow: hidden;
+        background-color: #2a4f63;
+    }
+.left-desc .solo-main-title .sub-title {
+       font-family: 'Open Sans', san-serif; 
+       font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 30px;        
+    }
+.iframe-container {
+        position: relative;
+        padding: 30px;
+        text-align: center;
+        display:block;
+    }
+.iframe-container i-frame {
+            position: absolute;
+            border: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;   
+        }
+ .addr-item-wrap {
+        padding-bottom: 50px;
+        text-align: center;
+    }
+ .addr-item .sub-title {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.5);
+        padding-bottom: 20px;
+    }
+ .addr-item {
+        padding-bottom: 30px;
+    }
+ .addr-list li {
+    font-size: 24px;
+    line-height: 44px;
+    font-weight: 400;
+    font-family: 'Merienda', cursive;
+    color: #5b493c;
+}
+.addr-list li a, .addr-item .link a {
+            font-size: 18px;
+            line-height:36px;
+            color: #483726; 
+            cursor: pointer;
+            font-family: 'Open Sans', san-serif;
+        }       
+.addr-item .addr-list li a:hover, .addr-item .link a:hover {
+            color: rgba(4, 5, 5, 0.5);
+}
+
 .solo-baner.overflowh {
   overflow: hidden;
 }
@@ -632,6 +698,7 @@ background-image: url("img/marj-name.png");
 }
  .main-slider {
         position: relative;
+        padding-top: 50px;
         width: 100%;
         height: inherit;
         display: inline-block;
@@ -643,9 +710,9 @@ background-image: url("img/marj-name.png");
         border-radius: 50%;
         cursor: pointer;
     }
-/*.swiper-wrapper {
-    padding-top: 10%;
-}
+ .swiper-wrapper{
+    padding-top: 50px;
+} 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 20px;
     text-align: center;
@@ -662,46 +729,43 @@ background-image: url("img/marj-name.png");
 .swiper-pagination-bullet-active {
     opacity: 1;
     background: #40708a;
-}*/
+}
 .point-circle-slider .swiper-slide {
-            padding: 0px 10px;
+    padding: 0px 10px;
 }
 .point-circle-slider {
     position: absolute;
     left: 0px;
-   bottom: 30px;/**/
    bottom: 20px;
     width: 100%;
 }
-
 .point-circle-slider .swiper-container {
-            width: auto;
-            display: inline-block;
+    width: auto;
+    display: inline-block;
  }
-
  .circle-solo-point.point-circle-slider {
         position: relative;
         display: inline-block;
         width: 100%;
        text-align: center;
         bottom: 25px;
-    }
+ }
  .circle-solo-point.point-circle-slider .swiper-slide {
             padding: 10px 20px 0px 0px;
-        }
+  }
  .circle-solo-point.point-circle-slider .slide-point .path {
             stroke: #483726;
             stroke-width: 2px;
-        }
+   }
 .circle-solo-point.point-circle-slider .slide-point {
             width: 62px;
             height: 62px;
-        }
+ }
  .circle-solo-point.point-circle-slider .slide-point:before {
                 box-shadow: inset 0px 0px 0px 2px rgba(77, 77, 78, 0.3);
                 opacity: 1;
                 backface-visibility: hidden;
-            }
+  }
 .circle-solo-point.point-circle-slider .slide-point:hover:before, .circle-solo-point.point-circle-slider .slide-point.active:before {
                 box-shadow: inset 0px 0px 0px 2px #4d4d4e;
             }
@@ -732,80 +796,6 @@ background-image: url("img/marj-name.png");
     transition: all 0.35s ease-out;
 }
 
-  /******** #contact******/
-#contact {
-   position: relative;
-    width: 100%;
-  /*  min-height: 900px;
-    height: 100%;*/
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-.left-desc {
-        position: relative;  
-        width: 55%;
-        float: left;
-       overflow: hidden; 
-       background-color: #c98528;
-    }
-   .right-desc {
-        position: relative;
-        width: 45%;
-        float: left;
-        overflow: hidden;
-        background-color: #2a4f63;
-    }
-#contact .left-desc .solo-main-title .sub-title {
-       font-family: 'Open Sans', san-serif; 
-       font-size: 16px;
-        line-height: 24px;
-        padding-bottom: 30px;        
-    }
-.iframe-container {
-        position: relative;
-        padding: 30px;
-        text-align: center;
-        display:block;
-    }
-.iframe-container i-frame {
-            position: absolute;
-            border: 0;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;   
-        }
- #contact .addr-item-wrap {
-        padding-bottom: 50px;
-        text-align: center;
-    }
-#contact .addr-item .sub-title {
-        font-size: 20px;
-        color: rgba(0, 0, 0, 0.5);
-        padding-bottom: 20px;
-    }
- #contact .addr-item {
-        padding-bottom: 30px;
-    }
-#contact .addr-list li {
-    font-size: 24px;
-    line-height: 44px;
-    font-weight: 400;
-    font-family: 'Merienda', cursive;
-    color: #5b493c;
-}
-#contact .addr-list li a, .addr-item .link a {
-            font-size: 18px;
-            line-height:36px;
-            color: #483726; 
-            cursor: pointer;
-            font-family: 'Open Sans', san-serif;
-        }       
-#contact .addr-item .addr-list li a:hover, .addr-item .link a:hover {
-            color: rgba(4, 5, 5, 0.5);
-}
-
 /****Media****/
  @media (max-width: 2400px) {
         .solo-sub-title{
@@ -818,11 +808,11 @@ background-image: url("img/marj-name.png");
             line-height: 26px;
             padding: 0px 20px 20px 20px;
         }
-        #contact .left-desc .solo-main-title .sub-title {
+       .left-desc .solo-main-title .sub-title {
              font-size: 20px;
             line-height: 32px;   
         }
-         #contact .addr-item .addr-list li, #contact .addr-list li a {
+        .addr-item .addr-list li, .addr-list li a {
             font-size: 30px;
             line-height: 44px;
         }
@@ -839,19 +829,16 @@ background-image: url("img/marj-name.png");
     .solo-main-title .sub-title {
         padding: 0px 30px;
     }
- #contact .addr-item .addr-list li, #contact .addr-list li a {
+.addr-item .addr-list li, #contact .addr-list li a {
         font-size: 20px;
         line-height: 32px;
     }
-    #contact .addr-item {
+   .addr-item {
         padding-bottom: 30px;
     }
  }
  
  @media (max-width: 992px) {
-         .footer.fixed {
-        position: relative;
-    }       
    .solo-baner.overflowh.slider-swiching {
         padding-bottom: 0px;
     }
@@ -908,25 +895,21 @@ background-image: url("img/marj-name.png");
         }
     .point-circle-slider {
         display: none;
-    }
-     #contact .left-desc, #contact .right-desc {
-        width: 100%;
-        height: auto;
     }      
-     #contact .addr-item-wrap {
+     .addr-item-wrap {
             padding-bottom: 30px;
         }
      .full-height-baner.upper {
             height: 100vmin;
             min-height: 800px;
         }
-      #contact .left-desc.column-50 {
+      /*.left-desc {
             width: 100%;
             height: auto;
-            padding: 0px 30px;
-        }
-         #contact .left-desc.column-50 .vertical-align, .left-desc.column-50 .search-panel.popup .close, .search-panel.popup .left-desc.column-50 .close, .left-desc.column-50 .amount-wrap .val, .amount-wrap .left-desc.column-50 .val, .left-desc.column-50 .inside-img img, .inside-img .left-desc.column-50 img, .left-desc.column-50 .skill-line {
-                position: relative;
+            padding: 0px 15px;
+        }*/
+        .left-desc .vertical-align {
+                position: relative; 
                 display: inline-block;
                 width: 100%;
                 top: auto;
@@ -966,6 +949,9 @@ background-image: url("img/marj-name.png");
              }  
     }
     @media (max-width: 480px) {
+        .solo-baner{
+            min-height: 800px;
+        }
         .solo-main-title .simple-text.md p {
             font-size: 14px;
             line-height: 22px;
@@ -984,7 +970,10 @@ background-image: url("img/marj-name.png");
             padding-bottom: 20px;
             text-align: center;
         }
-        #contact .left-desc .solo-main-title .sub-title {
+        .swiper-wrapper{
+            padding-top: 0px;
+        }
+       #contact .left-desc .solo-main-title .sub-title {
             font-size: 18px;
             line-height: 22px;
         }
@@ -1031,6 +1020,9 @@ background-image: url("img/marj-name.png");
         .footer {
             margin: 0px 15px;
         }
+        .swiper-wrapper{
+            padding-top:  30px;
+        }
     }
     @media (max-width: 480px) {
         .footer {
@@ -1046,9 +1038,7 @@ background-image: url("img/marj-name.png");
     background: #000;
     opacity: .2;
 }
-.swiper-wrapper{
-    padding-top: 50px;
-}
+
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 12px;
 }
