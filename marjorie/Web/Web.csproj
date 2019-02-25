@@ -192,7 +192,6 @@
     <Content Include="css\style-original.css" />
     <Content Include="css\style.css" />
     <Content Include="css\swiper.min.css" />
-    <Content Include="favicon.ico" />
     <Content Include="fonts\fontello-145d0620\css\animation.css" />
     <Content Include="fonts\fontello-145d0620\css\circle-thin-codes.css" />
     <Content Include="fonts\fontello-145d0620\css\circle-thin-embedded.css" />
@@ -297,6 +296,7 @@
     <Content Include="fonts\fontello-145d0620\font\circle-thin.ttf" />
     <Content Include="fonts\fontello-145d0620\font\circle-thin.woff" />
     <Content Include="fonts\fontello-145d0620\font\circle-thin.woff2" />
+    <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
