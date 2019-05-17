@@ -188,9 +188,7 @@
     <Content Include="bower_components\masonry-layout\masonry.js" />
     <Content Include="css\fontello.css" />
     <Content Include="css\jquery.fullpage.min.css" />
-    <Content Include="css\mystyle.css" />
     <Content Include="css\style-original.css" />
-    <Content Include="css\style.css" />
     <Content Include="css\swiper.min.css" />
     <Content Include="fonts\fontello-145d0620\css\animation.css" />
     <Content Include="fonts\fontello-145d0620\css\circle-thin-codes.css" />
@@ -265,10 +263,8 @@
     <Content Include="img\vases\vsd06.jpg" />
     <Content Include="img\vases\vsd07.jpg" />
     <Content Include="index.html" />
-    <Content Include="js\all - Copy.js" />
     <Content Include="js\all.js" />
     <Content Include="js\googlemap.js" />
-    <Content Include="js\isotope.pkgd.min.js" />
     <Content Include="js\jarallax.js" />
     <Content Include="js\jquery.fullpage.min.js" />
     <Content Include="js\jquery.min.js" />

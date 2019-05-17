@@ -673,7 +673,7 @@ background-image: url("img/marj-name.png");
               height: auto;
  }
  .solo-main-title {
-        padding: 20px 30px 30px 50px;
+        padding: 50px 30px 30px 50px;
     /*   z-index: 5;*/ 
 }
 .solo-main-title .title-md {
@@ -830,8 +830,8 @@ background-image: url("img/marj-name.png");
         padding: 0px 30px;
     }
 .addr-item .addr-list li, #contact .addr-list li a {
-        font-size: 20px;
-        line-height: 32px;
+        font-size: 28px;
+        line-height: 44px;
     }
    .addr-item {
         padding-bottom: 30px;
