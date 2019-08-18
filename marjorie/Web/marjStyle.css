@@ -320,7 +320,17 @@ background-image: url("img/marj-name.png");
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
     }
-.slide-toggle-list {
+    .slide-lidt-text span small{
+        font-family: 'Amatic SC', cursive;
+        font-weight: 700;
+        font-size: 30px;
+        color: #c97411;
+        margin: auto;
+        transform: translateY(-0%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+    }
+        .slide-toggle-list {
     display: none;
 }
  .mobile-toggle-slide ul {
@@ -535,11 +545,12 @@ background-image: url("img/marj-name.png");
     color: #534733;
    padding-bottom: 10px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 700;
 }
 @media (max-width: 1400px) {
     .project-title .sub-title {
-       margin-bottom: 10px;
+        margin-bottom: 10px;
+        font-weight: 700;
     } 
 }
  @media (max-width: 480px) {
@@ -679,7 +690,7 @@ background-image: url("img/marj-name.png");
 .solo-main-title .title-md {
             font-size: 40px;
             line-height: 58px;
-            padding: 20px 0px 25px 20px;
+            padding: 50px 0px 25px 20px;
  }
  .solo-sub-title {
         position: absolute;
@@ -693,8 +704,8 @@ background-image: url("img/marj-name.png");
         -moz-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
         transform: rotate(-90deg);
-        left: 160px;
-        top: -30px;
+        left: -30px;
+        top: 160px;
 }
  .main-slider {
         position: relative;
@@ -736,7 +747,7 @@ background-image: url("img/marj-name.png");
 .point-circle-slider {
     position: absolute;
     left: 0px;
-   bottom: 20px;
+ /*  bottom: 20px;*/
     width: 100%;
 }
 .point-circle-slider .swiper-container {
@@ -748,7 +759,7 @@ background-image: url("img/marj-name.png");
         display: inline-block;
         width: 100%;
        text-align: center;
-        bottom: 25px;
+      /*  bottom: 25px;*/
  }
  .circle-solo-point.point-circle-slider .swiper-slide {
             padding: 10px 20px 0px 0px;
@@ -788,7 +799,8 @@ background-image: url("img/marj-name.png");
                 color: #4d4d4e;
             }
 .slide-shadow img {
-        width: 100%;
+      width: 100%;
+      height: auto;
     }
 .solo-title-counter, .solo-comment-slide p, .author-comm .title, .open-slider, .open-slider b, .author-comm .colmm-tags, .author-comm:before, .testi-slider, .solo-comment-slider, .comm-arrow, .solo-comment-slide p a, .solo-projects-slider, .filter-number-slider, .solo-sub-title, .slide-lidt-text {
     -webkit-transition: all 0.35s ease-out;
@@ -799,15 +811,15 @@ background-image: url("img/marj-name.png");
 /****Media****/
  @media (max-width: 2400px) {
         .solo-sub-title{
-          top: 120px;
+          top: 160px;
           left: -30px;
-          z-index: 50;
+         
         }
-        .solo-main-title .simple-text.md p {
-            font-size: 16px;
-            line-height: 26px;
-            padding: 0px 20px 20px 20px;
-        }
+  /* .solo-main-title .simple-text.md p {
+        font-size: 18px;
+        line-height: 28px;
+        padding: 30px 60px 40px 60px;
+    }*/ 
        .left-desc .solo-main-title .sub-title {
              font-size: 20px;
             line-height: 32px;   
@@ -880,7 +892,7 @@ background-image: url("img/marj-name.png");
         } 
      .left-column, .right-column, .solo-page3 .left-column, .solo-page3 .right-column, .left-desc, .right-desc {
             width: 100%;
-            height: auto; 
+         /*   height: auto; */
         }
     .right-column .main-slider {
                 height: 100vh;
@@ -888,7 +900,7 @@ background-image: url("img/marj-name.png");
     .point-circle-slider {
             text-align: center;
             left: 0px;
-            bottom: 30px;
+            bottom: 20px;
         }
          .point-circle-slider .swiper-slide {
             padding: 0px 5px;
@@ -942,11 +954,14 @@ background-image: url("img/marj-name.png");
             -moz-transform: rotate(0deg);
             -ms-transform: rotate(0deg);
             transform: rotate(0deg);
-            padding: 30px 0px 0px 30px;
+            padding: 0px 0px 0px 30px;
         } 
         .point-circle-slider {
-                padding-bottom: 20px;
-             }  
+            /*   padding-bottom: 20px;*/ 
+         }
+       /* .slide-shadow img {
+          width: 100%;
+         }*/
     }
     @media (max-width: 480px) {
         .solo-baner{
@@ -986,7 +1001,7 @@ background-image: url("img/marj-name.png");
             padding: 5px 15px;
         }
         .solo-sub-title {
-            padding: 0px 0px 0px 15px;
+          /* padding: 0px 0px 0px 15px;*/ 
             top: 20px;
         }
         .right-column.bg-position .main-slider {
@@ -998,6 +1013,14 @@ background-image: url("img/marj-name.png");
     }
 .solo-main-title .title-md {
     font-family: 'Merienda', cursive;
+}
+.solo-main-title .img-caption {
+    font-family: 'Open Sans', san-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
  
     /****FOOTER******/
@@ -1030,9 +1053,16 @@ background-image: url("img/marj-name.png");
         }
     }
 
+
+
+.swiper-container-horizontal>.swiper-pagination-bullets{
+    text-align: center;
+}
+
+
 .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
+    width: 24px;
+    height: 24px;
     display: inline-block;
     border-radius: 100%;
     background: #000;
@@ -1040,12 +1070,15 @@ background-image: url("img/marj-name.png");
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 12px;
+    margin: 20px;
+    text-align: center;
 }
 
 .swiper-pagination-bullet-active {
     opacity: 1;
     background: #40708a;
+    background: #c97411;
 }
+
 
 

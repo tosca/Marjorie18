@@ -263,6 +263,7 @@
     <Content Include="img\vases\vsd05.jpg" />
     <Content Include="img\vases\vsd06.jpg" />
     <Content Include="img\vases\vsd07.jpg" />
+    <Content Include="shopforpottery.html" />
     <Content Include="index.html" />
     <Content Include="js\all.js" />
     <Content Include="js\googlemap.js" />
