@@ -76,7 +76,9 @@ marj-brown {
 .marj-dk-blue{
     color: #2a4f63;
 }
-
+.sold {
+	background: rgb(244, 244, 34);
+}
 .swiper-wrapper {
     cursor: url(../img/drag.png) 16 16, ew-resize !important;
 }
@@ -548,9 +550,10 @@ background-image: url("img/marj-name.png");
     font-weight: 700;
 }
 @media (max-width: 1400px) {
-    .project-title .sub-title {
-        margin-bottom: 10px;
-        font-weight: 700;
+	.project-title .sub-title {
+		margin-bottom: 10px;
+		font-weight: 700;
+		padding-bottom: 7px;
     } 
 }
  @media (max-width: 480px) {
