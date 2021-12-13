@@ -833,16 +833,18 @@ background-image: url("img/marj-name.png");
         }
  }
 @media (max-width: 1400px) {
-     .solo-baner {
-      /*  padding: 50px 0px;*/
-    }
     .solo-main-title .title-md {
         font-size: 30px;
         line-height: 36px;
         padding: 20px;
     }
     .solo-main-title .sub-title {
-        padding: 0px 30px;
+        font-size: 20px;
+        line-height: 32px;
+        padding-bottom: 20px;
+    >
+                             I have explored a variety of artistic media, but 15 years ago I came back to an early love—clay! My parents were both artists, and our home was filled with objects made by hand. We sat in chairs that had been made by my father, at the table crafted by his hands. These cherished things taught me to view a plate or tumbler with respect for the time and consideration invested in its making. I wanted my work to reflect that same thoughtfulness and inform the user through shape how to hold, use, and find comfort in the vessel.
+                         </h2>
     }
 .addr-item .addr-list li, #contact .addr-list li a {
         font-size: 28px;
