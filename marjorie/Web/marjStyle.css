@@ -52,14 +52,12 @@ a, a:link, a:visited, a:hover, a:active, .item:hover, item:active {
     text-decoration: none;
     outline: none;
 }
-
+/*{ max-width: 100%; height: auto;}*/
 section {
     position: relative;
 }
 .full-h-section {
- /*   height: 700px;
-    height: 100vmin;*/
-    min-height: 800px;
+    height: 100vmin;
 }
 ul, ol {
     list-style: none;
@@ -214,18 +212,12 @@ marj-brown {
 /*****  main-content **************/
 #pottery {
     position: relative;
-    height: 100%;
-}
-@media (max-width: 992px) {
-    #pottery {
-        height: auto;
-    }
+    height: auto;
 }
 #pottery .ajax-load-content {
     height: inherit;
 }
 /*****  mn-name **************/
-
 .mn-name{
 background-image: url("img/marj-name.png");
     background-attachment: fixed;
@@ -239,7 +231,6 @@ background-image: url("img/marj-name.png");
     text-align: center;
     color: transparent;
 }
-
 /*-- header and jarallax container --*/
 
 #jarallax-container {
@@ -293,7 +284,7 @@ background-image: url("img/marj-name.png");
          }
     }
 
-/*  side-lidt-text -----------------------*/
+/*  side-lidt-text ------*/
 .mobile-toggle-slide {
     text-align: center;
     position: relative;
@@ -419,21 +410,19 @@ background-image: url("img/marj-name.png");
 .filter-list .tag-link-2 span:hover, .filter-list .tag-link-2 span:active {
     color: #d49244;
 }
-
 .mobile-toggle-slide .filter-list .tag-link-2:hover, .mobile-toggle-slide .filter-list .tag-link-2:active {
     color: #534733;
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
     font-size: 28px;
 }
-    .tag-link-2{
-        top: 0px;
-        left: 0px;
-        bottom: 0px;
-        right: 0px;
-        background-size: cover;
-    }
-
+.tag-link-2{
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-size: cover;
+}
  @media (max-width: 1400px) {
         .mobile-toggle-slide .filter-list .tag-link-2 .slide-lidt-text {
             height: 120px;
@@ -557,20 +546,20 @@ background-image: url("img/marj-name.png");
     } 
 }
  @media (max-width: 480px) {
-        .grid-sizer,
-        .item {
-            width: 50%
+    .grid-sizer,
+    .item {
+        width: 50%
+    }
+    .project-title .title-h2 {
+            font-size: 28px;
+            line-height: 38px;
         }
-        .project-title .title-h2 {
-                font-size: 28px;
-                line-height: 38px;
-            }
-            .project-title .sub-title {
-                font-size: 11px;
-            }
+        .project-title .sub-title {
+            font-size: 11px;
+        }
 }
 .icon-circle-thin:before {
-        content: '\f1db';
+    content: '\f1db';
  }
 /*****item-scale-hover *****/
 .item.scale-hover:hover .project-item {
@@ -581,32 +570,71 @@ background-image: url("img/marj-name.png");
     z-index: 5;
     box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.4);
 }
-    .item.scale-hover:hover .project-item .project-title{
-        opacity: 1;
-    }
+.item.scale-hover:hover .project-item .project-title{
+    opacity: 1;
+}
 /*------- #about ----*/
-
-#about{
-        background: #c0c029;
-        position: relative;
-        width: 100%;
-         -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-         transition: all 0.5s;       
-    }
+#about {
+    background: #b3b325;
+    width: 100%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;       
+}
 .left-column {
     position: relative;
-      width: 55%;
-     float: left; 
-     overflow: hidden;     
+    width: 50%;
+    float: left; 
+    overflow: hidden;     
 }
 .right-column {
     position: relative;
-    width: 45%;
-    float: left;
+    width: 50%;
+   float: left;
     overflow: hidden; 
 }
-  /******** #contact******/
+
+.wrapper { 
+    display: grid;
+   grid-template-columns: repeat( 3, 1fr);
+      grid-auto-rows: minmax(200px, auto);
+    grid-gap: 0.5em;
+}
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-image:url('img/marj-portrait-03.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.box2 {
+    background-image:url('img/twincups.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+.box3 {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-image:url('img/marj-3-vases.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+} 
+.box4 {
+    grid-column-start: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background:url('img/marj-wallbowls.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/******** #contact******/
 #contact {
    background-color: #c98528;
    position: relative;
@@ -617,20 +645,22 @@ background-image: url("img/marj-name.png");
 }
 .left-desc {
     position: relative;
-    width: 55%;
+    width: 50%;
     float: left;
     overflow: hidden;
     background-color: #c98528;
 }   
 .right-desc {
         position: relative;
-        width: 45%;
+        width: 50%;
         float: left;
         overflow: hidden;
         background-color: #2a4f63;
     }
-.left-desc .solo-main-title .sub-title {
+.left-desc .solo-main-title .sub-title,
+.left-column .solo-main-title .sub-title {
        font-family: 'Open Sans', san-serif; 
+       text-align: left;
        font-size: 16px;
         line-height: 24px;
         padding-bottom: 30px;        
@@ -642,25 +672,25 @@ background-image: url("img/marj-name.png");
         display:block;
     }
 .iframe-container i-frame {
-            position: absolute;
-            border: 0;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;   
-        }
+    position: absolute;
+    border: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+}
  .addr-item-wrap {
-        padding-bottom: 50px;
-        text-align: center;
-    }
+    padding-bottom: 50px;
+    text-align: center;
+}
  .addr-item .sub-title {
-        font-size: 20px;
-        color: rgba(0, 0, 0, 0.5);
-        padding-bottom: 20px;
-    }
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+}
  .addr-item {
-        padding-bottom: 30px;
-    }
+    padding-bottom: 30px;
+}
  .addr-list li {
     font-size: 24px;
     line-height: 44px;
@@ -669,31 +699,30 @@ background-image: url("img/marj-name.png");
     color: #5b493c;
 }
 .addr-list li a, .addr-item .link a {
-            font-size: 18px;
-            line-height:36px;
-            color: #483726; 
-            cursor: pointer;
-            font-family: 'Open Sans', san-serif;
-        }       
+    font-size: 18px;
+    line-height:36px;
+    color: #483726; 
+    cursor: pointer;
+    font-family: 'Open Sans', san-serif;
+    }       
 .addr-item .addr-list li a:hover, .addr-item .link a:hover {
-            color: rgba(4, 5, 5, 0.5);
+    color: rgba(4, 5, 5, 0.5);
 }
-
 .solo-baner.overflowh {
   overflow: hidden;
 }
 .solo-baner .main-img img {
-              width: 100%;
-              height: auto;
- }
+    width: 100%;
+    height: auto;
+}
  .solo-main-title {
-        padding: 50px 30px 30px 50px;
-    /*   z-index: 5;*/ 
+    padding: 50px 30px 30px 50px;
 }
 .solo-main-title .title-md {
-            font-size: 40px;
-            line-height: 58px;
-            padding: 50px 0px 25px 20px;
+    font-family: 'Merienda', cursive; 
+    font-size: 40px;
+    line-height: 58px;
+    padding: 5rem;
  }
  .solo-sub-title {
         position: absolute;
@@ -815,8 +844,7 @@ background-image: url("img/marj-name.png");
  @media (max-width: 2400px) {
         .solo-sub-title{
           top: 160px;
-          left: -30px;
-         
+          left: -30px;       
         }
   /* .solo-main-title .simple-text.md p {
         font-size: 18px;
@@ -825,7 +853,7 @@ background-image: url("img/marj-name.png");
     }*/ 
        .left-desc .solo-main-title .sub-title {
              font-size: 20px;
-            line-height: 32px;   
+            line-height: 28px;   
         }
         .addr-item .addr-list li, .addr-list li a {
             font-size: 30px;
@@ -839,12 +867,9 @@ background-image: url("img/marj-name.png");
         padding: 20px;
     }
     .solo-main-title .sub-title {
-        font-size: 20px;
-        line-height: 32px;
+        font-size: 16px;
+        line-height: 20px;
         padding-bottom: 20px;
-    >
-                             I have explored a variety of artistic media, but 15 years ago I came back to an early love—clay! My parents were both artists, and our home was filled with objects made by hand. We sat in chairs that had been made by my father, at the table crafted by his hands. These cherished things taught me to view a plate or tumbler with respect for the time and consideration invested in its making. I wanted my work to reflect that same thoughtfulness and inform the user through shape how to hold, use, and find comfort in the vessel.
-                         </h2>
     }
 .addr-item .addr-list li, #contact .addr-list li a {
         font-size: 28px;
@@ -1016,9 +1041,7 @@ background-image: url("img/marj-name.png");
                 padding-bottom: 0px;
             }                 
     }
-.solo-main-title .title-md {
-    font-family: 'Merienda', cursive;
-}
+
 .solo-main-title .img-caption {
     font-family: 'Open Sans', san-serif;
     font-size: 16px;
