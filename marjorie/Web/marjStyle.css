@@ -24,16 +24,22 @@ body, html {
     width: 100%;
 }
 body.full-h, html.full-h {
-        height: 100%;
-        min-height: 100vh;
-    }
+    height: 100%;
+    min-height: 100vh;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     color: #4d4d4e;
 } 
 body, html {
-        overflow-x: hidden;
-    }
+    overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+}
 .bg {
     overflow: hidden;
     background-position: 50% 50%;
@@ -108,35 +114,6 @@ marj-brown {
     margin-left: auto;
     margin-right: auto;
 }
-
-/***** Preload *****/
-.preload {
-    position: fixed;
-    left: 0px;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #c0c029;
-    z-index: 5000;
-}
-.loader {
-    width: 450px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    font-size: 50px;
-    font-family: 'Merienda', cursive;
-    color: #483726;
-    font-weight: 400;
-    letter-spacing: 0.3em;
-} 
 /* TYPOGRAPHY*/
 /*---------------*/
 .simple-text {
@@ -177,11 +154,11 @@ marj-brown {
 .section {
     position: relative;
 }
-/*.full-h-section {
+.full-h-section {
     height: 800px;
     height: 100vmin;
     min-height: 750px;
-}*/
+}
 .vertical-align {
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -195,21 +172,13 @@ marj-brown {
     width: 100%;
     text-align: center;
 }
+.text-center{
+    text-align: center;
+}
 .padd-tb{
     padding: 30px 0px;
 }
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/* circle-shape */
-
-.circle-shape {
-    width: 8px;
-    height: 8px;
-    display: inline-block;
-    border-radius: 100%;
-    background: #000;
-    opacity: .2;
-}
-/*****  main-content **************/
+/*****  main-content ******/
 #pottery {
     position: relative;
     height: auto;
@@ -217,7 +186,7 @@ marj-brown {
 #pottery .ajax-load-content {
     height: inherit;
 }
-/*****  mn-name **************/
+/*****  mn-name **********/
 .mn-name{
 background-image: url("img/marj-name.png");
     background-attachment: fixed;
@@ -232,7 +201,6 @@ background-image: url("img/marj-name.png");
     color: transparent;
 }
 /*-- header and jarallax container --*/
-
 #jarallax-container {
     background-image: url("img/studshow-02.jpg");
     background-attachment: fixed;
@@ -249,11 +217,11 @@ background-image: url("img/marj-name.png");
     min-height: 420px;
 }  
  @media (min-width: 1400px) {
-        #jarallax-container {
-       min-height: 450px;
-        }
+    #jarallax-container {
+    min-height: 500px;
+    }
     .mn-name {
-        background-size: 50%;
+    background-size: 50%;
     }
  }
     @media (max-width: 1200px) {
@@ -295,7 +263,7 @@ background-image: url("img/marj-name.png");
     position: relative;
     width: 100%;
     display: inline-block;
-    height: 70px;
+    /*height: 70px;*/
     margin: 0px auto;
     cursor: pointer;
     background-color: #2a4f63;
@@ -338,9 +306,7 @@ background-image: url("img/marj-name.png");
 .mobile-toggle-slide ul li{
         padding: 10px;
  }
-
  /*** .filter-list-----*/
-
     .filter-list {
         text-align: center;
         background-color: #2a4f63;
@@ -478,8 +444,8 @@ background-image: url("img/marj-name.png");
     float: left;
 }
 .item img {
-      display: block; 
-        max-width: 100%;
+    display: block; 
+    max-width: 100%;
 }
 .project-item {
     position: relative;
@@ -489,19 +455,19 @@ background-image: url("img/marj-name.png");
     -moz-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
 }
-    .project-item img {
-        width: 100%;     
-        display: block;
-        opacity: 1;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-        backface-visibility: hidden;
-    }
-        .project-item img:hover, .project-item img:active {
-            opacity: 1.0;
-            cursor: crosshair;
-        }
+.project-item img {
+    width: 100%;     
+    display: block;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    backface-visibility: hidden;
+}
+.project-item img:hover, .project-item img:active {
+    opacity: 1.0;
+    cursor: crosshair;
+}
 .project-title {
     position: absolute;  
     left: 4%;
@@ -513,8 +479,6 @@ background-image: url("img/marj-name.png");
     -moz-transition: 0.5s ease;
     transition: 0.5s ease;
     background: rgba(251, 250, 249, 0.5);
-    transform: translate(0%, -120%);
-    -ms-transform: translate(0%, -120%);
     transform: translate(0%, -50%);
     -ms-transform: translate(0%, -50%);
     backface-visibility: hidden;
@@ -522,13 +486,13 @@ background-image: url("img/marj-name.png");
     max-width: 100%;
     color: #483726;
 }
-    .project-title .title-h2 {
-        font-size: 38px;
-        line-height: 38px;
-        font-family: 'Amatic SC', cursive;
-        font-weight: 700;
-        color: #483726;
-    }
+.project-title .title-h2 {
+    font-size: 38px;
+    line-height: 38px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    color: #483726;
+}
 .project-title .simple-text.sm p{
    padding-bottom: 5px;
 }
@@ -545,18 +509,18 @@ background-image: url("img/marj-name.png");
 		padding-bottom: 7px;
     } 
 }
- @media (max-width: 480px) {
+@media (max-width: 480px) {
     .grid-sizer,
     .item {
         width: 50%
     }
     .project-title .title-h2 {
-            font-size: 28px;
-            line-height: 38px;
-        }
-        .project-title .sub-title {
-            font-size: 11px;
-        }
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .project-title .sub-title {
+        font-size: 11px;
+    }
 }
 .icon-circle-thin:before {
     content: '\f1db';
@@ -581,10 +545,10 @@ background-image: url("img/marj-name.png");
     -moz-transition: all 0.5s;
     transition: all 0.5s;       
 }
-.left-column {
+/*.left-column {
     position: relative;
     width: 50%;
-    float: left; 
+   float: left;
     overflow: hidden;     
 }
 .right-column {
@@ -592,6 +556,9 @@ background-image: url("img/marj-name.png");
     width: 50%;
    float: left;
     overflow: hidden; 
+}*/
+.left-column, .right-column{
+    flex: 50%;
 }
 
 .wrapper { 
@@ -657,14 +624,6 @@ background-image: url("img/marj-name.png");
         overflow: hidden;
         background-color: #2a4f63;
     }
-.left-desc .solo-main-title .sub-title,
-.left-column .solo-main-title .sub-title {
-       font-family: 'Open Sans', san-serif; 
-       text-align: left;
-       font-size: 16px;
-        line-height: 24px;
-        padding-bottom: 30px;        
-    }
 .iframe-container {
         position: relative;
         padding: 30px;
@@ -704,7 +663,7 @@ background-image: url("img/marj-name.png");
     color: #483726; 
     cursor: pointer;
     font-family: 'Open Sans', san-serif;
-    }       
+}       
 .addr-item .addr-list li a:hover, .addr-item .link a:hover {
     color: rgba(4, 5, 5, 0.5);
 }
@@ -723,164 +682,66 @@ background-image: url("img/marj-name.png");
     font-size: 40px;
     line-height: 58px;
     padding: 5rem;
- }
- .solo-sub-title {
-        position: absolute;
-        font-size: 13px;
-        text-transform: uppercase;
-        letter-spacing: 1.4px;
-        font-weight: 700;
-        color: #4d4d4e;
-        display: block;
-        -webkit-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-        left: -30px;
-        top: 160px;
 }
- .main-slider {
-        position: relative;
-        padding-top: 50px;
-        width: 100%;
-        height: inherit;
-        display: inline-block;
-    }
- .slide-point {
-        position: relative;
-        width: 123px;
-        height: 123px;
-        border-radius: 50%;
-        cursor: pointer;
-    }
- .swiper-wrapper{
-    padding-top: 50px;
-} 
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 20px;
-    text-align: center;
-    position: relative;
-}
-.swiper-pagination-bullet {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    border-radius: 100%;
-    background: #000;
-    opacity: .2;
-}
-.swiper-pagination-bullet-active {
-    opacity: 1;
-    background: #40708a;
-}
-.point-circle-slider .swiper-slide {
-    padding: 0px 10px;
-}
-.point-circle-slider {
+.solo-sub-title {
     position: absolute;
-    left: 0px;
- /*  bottom: 20px;*/
-    width: 100%;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    font-weight: 700;
+    color: #4d4d4e;
+    display: block;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    left: -30px;
+    top: 160px;
 }
-.point-circle-slider .swiper-container {
-    width: auto;
+.main-slider {
+    position: relative;
+    padding-top: 50px;
+    width: 100%;
+    height: inherit;
     display: inline-block;
- }
- .circle-solo-point.point-circle-slider {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-       text-align: center;
-      /*  bottom: 25px;*/
- }
- .circle-solo-point.point-circle-slider .swiper-slide {
-            padding: 10px 20px 0px 0px;
-  }
- .circle-solo-point.point-circle-slider .slide-point .path {
-            stroke: #483726;
-            stroke-width: 2px;
-   }
-.circle-solo-point.point-circle-slider .slide-point {
-            width: 62px;
-            height: 62px;
- }
- .circle-solo-point.point-circle-slider .slide-point:before {
-                box-shadow: inset 0px 0px 0px 2px rgba(77, 77, 78, 0.3);
-                opacity: 1;
-                backface-visibility: hidden;
-  }
-.circle-solo-point.point-circle-slider .slide-point:hover:before, .circle-solo-point.point-circle-slider .slide-point.active:before {
-                box-shadow: inset 0px 0px 0px 2px #4d4d4e;
-            }
-.circle-solo-point.point-circle-slider .slide-point span {
-                position: absolute;
-                font-size: 26px;
-                font-weight: 700;
-                left: 0%;
-                top: 0%;
-                width: 100%;
-                height: 100%;
-                line-height: 62px;
-                text-align: center;
-                color: rgba(77, 77, 78, 0.5);
-                -webkit-transition: all 0.25s ease-out;
-                -moz-transition: all 0.25s ease-out;
-                transition: all 0.25s ease-out;
-            }
-.circle-solo-point.point-circle-slider .slide-point:hover span, .circle-solo-point.point-circle-slider .slide-point.active span {
-                color: #4d4d4e;
-            }
+}
+.slide-point {
+    position: relative;
+    width: 123px;
+    height: 123px;
+    border-radius: 50%;
+    cursor: pointer;
+}
 .slide-shadow img {
-      width: 100%;
-      height: auto;
-    }
+    width: 100%;
+    height: auto;
+}
 .solo-title-counter, .solo-comment-slide p, .author-comm .title, .open-slider, .open-slider b, .author-comm .colmm-tags, .author-comm:before, .testi-slider, .solo-comment-slider, .comm-arrow, .solo-comment-slide p a, .solo-projects-slider, .filter-number-slider, .solo-sub-title, .slide-lidt-text {
     -webkit-transition: all 0.35s ease-out;
     -moz-transition: all 0.35s ease-out;
     transition: all 0.35s ease-out;
 }
-
 /****Media****/
- @media (max-width: 2400px) {
-        .solo-sub-title{
-          top: 160px;
-          left: -30px;       
-        }
-  /* .solo-main-title .simple-text.md p {
-        font-size: 18px;
-        line-height: 28px;
-        padding: 30px 60px 40px 60px;
-    }*/ 
-       .left-desc .solo-main-title .sub-title {
-             font-size: 20px;
-            line-height: 28px;   
-        }
-        .addr-item .addr-list li, .addr-list li a {
-            font-size: 30px;
-            line-height: 44px;
-        }
- }
-@media (max-width: 1400px) {
+ @media (max-width: 1400px) {
     .solo-main-title .title-md {
         font-size: 30px;
         line-height: 36px;
         padding: 20px;
     }
     .solo-main-title .sub-title {
-        font-size: 16px;
-        line-height: 20px;
-        padding-bottom: 20px;
+        font-size: 20px;
+        line-height: 28px;
+        padding: 30px;
     }
-.addr-item .addr-list li, #contact .addr-list li a {
-        font-size: 28px;
+    .addr-item .addr-list li, #contact .addr-list li a {
+        font-size: 30px;
         line-height: 44px;
     }
    .addr-item {
         padding-bottom: 30px;
     }
  }
- 
- @media (max-width: 992px) {
+  @media (max-width: 992px) {
    .solo-baner.overflowh.slider-swiching {
         padding-bottom: 0px;
     }
@@ -945,11 +806,6 @@ background-image: url("img/marj-name.png");
             height: 100vmin;
             min-height: 800px;
         }
-      /*.left-desc {
-            width: 100%;
-            height: auto;
-            padding: 0px 15px;
-        }*/
         .left-desc .vertical-align {
                 position: relative; 
                 display: inline-block;
@@ -961,7 +817,6 @@ background-image: url("img/marj-name.png");
                 transform: translateY(0px);
          }
     }
- 
  @media (max-width: 768px) {
          .solo-baner {
              min-height: 800px;
@@ -986,14 +841,8 @@ background-image: url("img/marj-name.png");
             transform: rotate(0deg);
             padding: 0px 0px 0px 30px;
         } 
-        .point-circle-slider {
-            /*   padding-bottom: 20px;*/ 
-         }
-       /* .slide-shadow img {
-          width: 100%;
-         }*/
-    }
-    @media (max-width: 480px) {
+}
+@media (max-width: 480px) {
         .solo-baner{
             min-height: 800px;
         }
@@ -1040,7 +889,7 @@ background-image: url("img/marj-name.png");
             .right-column.bg-position .main-slider .swiper-container {
                 padding-bottom: 0px;
             }                 
-    }
+}
 
 .solo-main-title .img-caption {
     font-family: 'Open Sans', san-serif;
@@ -1050,7 +899,6 @@ background-image: url("img/marj-name.png");
     padding-top: 20px;
     padding-bottom: 30px;
 }
- 
     /****FOOTER******/
 .footer {
         text-align: left;
@@ -1081,32 +929,6 @@ background-image: url("img/marj-name.png");
         }
     }
 
-
-
-.swiper-container-horizontal>.swiper-pagination-bullets{
-    text-align: center;
-}
-
-
-.swiper-pagination-bullet {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    border-radius: 100%;
-    background: #000;
-    opacity: .2;
-}
-
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 20px;
-    text-align: center;
-}
-
-.swiper-pagination-bullet-active {
-    opacity: 1;
-    background: #40708a;
-    background: #c97411;
-}
 
 
 
