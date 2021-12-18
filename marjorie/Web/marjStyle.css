@@ -16,13 +16,13 @@ body * {
 }
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #4d4d4e;
+    color: #353536;
     font-weight: normal;
     font-size: 14px;
     line-height: 1;
 } 
 body, html {
-    margin: 0;
+    margin: 0 auto;
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
@@ -175,6 +175,11 @@ ul, ol {
 .pad-rem {
     padding: 2rem 4rem;
 }
+.margin-rem img{
+    margin:1rem 0;
+    width: 60%;
+    
+}
 /*****  main-content ******/
 #pottery {
     position: relative;
@@ -198,13 +203,13 @@ background-image: url("img/marj-name.png");
     color: transparent;
 }
 .mn-function{
-    position: absolute;
+    position: relative;
     display:block;
     padding: 50px;
     text-align: center;
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 50px;
     color: #24150c;
     margin: auto;
     transform: translateY(-0%);
@@ -225,7 +230,7 @@ background-image: url("img/marj-name.png");
     padding-right: 0px;
     height: 100%;
     width: 100%;
-    min-height: 420px;
+    min-height: 480px;
 }  
  @media (min-width: 1400px) {
     #jarallax-container {
@@ -273,19 +278,22 @@ background-image: url("img/marj-name.png");
     position: relative;
     width: 100%;
     display: inline-block;
-    height: 70px;    
+    height: 50px;
+    padding: 30px 0 30px;    
     background-color: #2a4f63;
     -webkit-transition: all 0.35s ease-out;
     -moz-transition: all 0.35s ease-out;
     transition: all 0.35s ease-out;
 }
     .slide-lidt-text span {
-        font-family: 'Amatic SC', cursive;
+         margin: 0 auto;
+         display:block;
+         text-align:center;
+         font-family: 'Amatic SC', cursive;
         font-weight: 700;
         font-size: 40px;
-
-        color:#c97411;
-        margin: auto;
+ color:#c97411;
+       
         transform: translateY(-0%);
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
@@ -300,9 +308,9 @@ background-image: url("img/marj-name.png");
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
     }
-        .slide-toggle-list {
-    display: none;
-}
+    .slide-toggle-list {
+        display: none;
+    }
  .mobile-toggle-slide ul {
         position: absolute;
         left: 0px;
@@ -398,18 +406,17 @@ background-image: url("img/marj-name.png");
     right: 0px;
     background-size: cover;
 }
- @media (max-width: 1400px) {
+ /*@media (max-width: 1400px) {
         .mobile-toggle-slide .filter-list .tag-link-2 .slide-lidt-text {
             height: 120px;
             display: inline-block;
         }       
-}
+}*/
 .slide-toggle-list {
         display: inline block;
     }
 /* 21. PROJECT PAGE IZOTOPE */
 /*----------------------------------*/
-
 .izotope-container {
     position: relative;
     background-color: #baa38b;
@@ -444,12 +451,7 @@ background-image: url("img/marj-name.png");
 .izotope-append.act .item {
             display: block;
 }
-/*.tag{
-    max-width: 100%;
-    height: auto; 
-    padding: 1rem;
-    vertical-align:middle;   
-}*/
+
 .grid-sizer, .item{
     width:25%
 }
@@ -628,7 +630,7 @@ background-image: url("img/marj-name.png");
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 4;
-    grid-row-end5;
+    grid-row-end: 5;
     background:url('img/marj-wallbowls.jpg');
     background-repeat: no-repeat;
     background-size: contain;
