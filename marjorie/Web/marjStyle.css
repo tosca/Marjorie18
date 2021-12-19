@@ -177,8 +177,7 @@ ul, ol {
 }
 .margin-rem img{
     margin:1rem 0;
-    width: 60%;
-    
+    width: 60%;   
 }
 /*****  main-content ******/
 #pottery {
@@ -292,7 +291,7 @@ background-image: url("img/marj-name.png");
          font-family: 'Amatic SC', cursive;
         font-weight: 700;
         font-size: 40px;
- color:#c97411;
+        color:#c47339;
        
         transform: translateY(-0%);
         -webkit-transform: translateY(-50%);
@@ -419,7 +418,7 @@ background-image: url("img/marj-name.png");
 /*----------------------------------*/
 .izotope-container {
     position: relative;
-    background-color: #baa38b;
+    background-color: #f5ebe0;
    height: 100%;
     width: 100%;
     margin:0 auto;
