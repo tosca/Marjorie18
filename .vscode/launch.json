@@ -4,13 +4,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+
         {
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Open index.html",
             "url": "http://marjorienicholspottery.net",
-            "webRoot": "${workspaceFolder}"
+            "webRoot": "${workspaceFolder}",
             "file": "c:\\Root\\Projects\\marjorie18\\marjorie\\Web\\index.html"
         }
     ]
