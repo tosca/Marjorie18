@@ -216,6 +216,7 @@
     <Content Include="img\mugs\m02.jpg" />
     <Content Include="img\mugs\m03.jpg" />
     <Content Include="img\mugs\m04.jpg" />
+    <Content Include="img\mugs\m05.jpg" />
     <Content Include="img\studshow-02.jpg" />
     <Content Include="img\tag-filter-bowl-sd-02.jpg" />
     <Content Include="img\tag-filter-mugs-01.jpg" />
@@ -247,6 +248,7 @@
     <Content Include="img\tumblers\tsf02.jpg" />
     <Content Include="img\tumblers\tsf03.jpg" />
     <Content Include="img\twincups.jpg" />
+    <Content Include="img\vases\vs09.jpg" />
     <Content Include="img\vases\vsd01.jpg" />
     <Content Include="img\vases\vsd02.jpg" />
     <Content Include="img\vases\vsd03.jpg" />
@@ -254,6 +256,10 @@
     <Content Include="img\vases\vsd05.jpg" />
     <Content Include="img\vases\vsd06.jpg" />
     <Content Include="img\vases\vsd07.jpg" />
+    <Content Include="img\vases\vs09.jpg" />
+    <Content Include="img\vases\vsd10.jpg" />
+    <Content Include="img\vases\vsd11.jpg" />
+    <Content Include="img\vases\vsd11-a.jpg" />
     <Content Include="index.html" />
     <Content Include="js\all.js" />
     <Content Include="js\googlemap.js" />
