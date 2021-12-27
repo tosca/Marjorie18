@@ -74,7 +74,6 @@ ul, ol {
     color: #534733;
 }
 .marj-green {
-    background: rgb(244, 244, 34);
     background: #b3b325;
 }
 .marj-dk-blue{
@@ -102,20 +101,13 @@ ul, ol {
     margin-right: 0px;
 }
 
-/*  .clearfix:before, .clearfix:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after {
-        content: " ";
-        display: table;
-    }
-    .clearfix:after, .container:after, .container-fluid:after, .row:after {
-        clear: both;
-    }*/
 .center-block {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 /* TYPOGRAPHY*/
-/*---------------*/
+/*---------------
 .simple-text {
     position: relative;
 }
@@ -147,7 +139,7 @@ ul, ol {
 .simple-text.xs p {
         font-size: 14px;
         line-height: 28px;
-    }
+    }*/
 .sm-size{
     font-size:60%;
 }
@@ -405,12 +397,6 @@ background-image: url("img/marj-name.png");
     right: 0px;
     background-size: cover;
 }
- /*@media (max-width: 1400px) {
-        .mobile-toggle-slide .filter-list .tag-link-2 .slide-lidt-text {
-            height: 120px;
-            display: inline-block;
-        }       
-}*/
 .slide-toggle-list {
         display: inline block;
     }
@@ -570,7 +556,7 @@ background-image: url("img/marj-name.png");
     line-height: 1.5;
     padding-bottom: 16px;
 }
-.left-column, right-column{
+.left-column, .right-column{
     background-color:#b3b325;
 }
 .right-column, .right-desc {
@@ -592,6 +578,7 @@ background-image: url("img/marj-name.png");
     grid-row-start: 1;
     grid-row-end: 5;
     background-image:url('img/marj-portrait-03.jpg');
+    background-image:url('img/m3-d.jpg');
     background-repeat: no-repeat;
     background-size: contain;
 }
