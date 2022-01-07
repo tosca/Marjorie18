@@ -100,46 +100,11 @@ ul, ol {
     margin-right: -15px;
     margin-right: 0px;
 }
-
 .center-block {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-/* TYPOGRAPHY*/
-/*---------------
-.simple-text {
-    position: relative;
-}
-.simple-text p {
-        font-size: 16px;
-        line-height: 28px;
-        font-weight: 500;     
-}
-.simple-text.lg p {
-        font-size: 22px;
-        line-height: 30px;
-    }
-    .simple-text.mdl p {
-        font-size: 18px;
-        line-height: 34px;
-    }
- .simple-text.md p {
-        font-size: 14px;
-        line-height: 24px;
-        padding: 0 20px 20px 20px;
-        font-family:'Open Sans', san-serif;
-    }
-.simple-text.sm p {
-        font-size: 17px;
-        line-height: 19px;
-        font-weight:700;
-        color: #5b493c;        
-    }
-.simple-text.xs p {
-        font-size: 14px;
-        line-height: 28px;
-    }*/
 .sm-size{
     font-size:60%;
 }
