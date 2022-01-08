@@ -10,15 +10,14 @@
         "request": "attach",
         "type": "pwa-chrome",
         "webRoot": "${workspaceFolder}"
-    }
-    //,
+    },
         
-       // {
-       //    "type": "pwa-chrome",
-       //     "request": "launch",
-       //     "name": "Launch Chrome against localhost",
-       //     "url": "http://marjorienicholspottery.net",
-       //     "webRoot": "${workspaceFolder}"
-       // }
+        {
+           "type": "pwa-chrome",
+            "request": "launch",
+           "name": "Launch Chrome against localhost",
+            "url": "http://marjorienicholspottery.net",
+            "webRoot": "${workspaceFolder}"
+        }
     ]
 }
