@@ -4,6 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+<<<<<<< HEAD
     {
         "name": "Attach to Chrome",
         "port": 9222,
@@ -16,6 +17,13 @@
            "type": "pwa-chrome",
             "request": "launch",
            "name": "Launch Chrome against localhost",
+=======
+        
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+>>>>>>> parent of 6882869 (remove mugs)
             "url": "http://marjorienicholspottery.net",
             "webRoot": "${workspaceFolder}"
         }
