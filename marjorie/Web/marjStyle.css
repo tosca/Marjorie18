@@ -214,7 +214,7 @@ background-image: url("img/marj-name.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: #483726;
+    background-color: #e9e7ef;
     margin-right: 0;
     margin-left: 0;
     padding-left: 0px;
@@ -272,6 +272,7 @@ background-image: url("img/marj-name.png");
     height: 50px;
     padding: 30px 0 30px;    
     background-color: #2a4f63;
+    background-color: #e9e7ef;
     -webkit-transition: all 0.35s ease-out;
     -moz-transition: all 0.35s ease-out;
     transition: all 0.35s ease-out;
@@ -284,6 +285,7 @@ background-image: url("img/marj-name.png");
         font-weight: 700;
         font-size: 40px;
         color:#c47339;
+        color:#ea6418;
        
         transform: translateY(-0%);
         -webkit-transform: translateY(-50%);
@@ -404,7 +406,7 @@ background-image: url("img/marj-name.png");
 /*----------------------------------*/
 .izotope-container {
     position: relative;
-    background-color: #c7bca8;
+    background-color: #d2d3d1;
    height: 100%;
     width: 100%;
     margin:0 auto;
@@ -554,10 +556,12 @@ background-image: url("img/marj-name.png");
 .left-column .sub-title, .left-desc{
     font-size: 16px;
     line-height: 1.5;
+    padding-top: 16px;
     padding-bottom: 16px;
 }
 .left-column, .right-column{
     background-color:#b3b325;
+    background-color: #e9e7ef;
 }
 .right-column, .right-desc {
     position: relative;
@@ -761,7 +765,9 @@ background-image: url("img/marj-name.png");
             align-content: center;
         }
         .solo-main-title {
-            padding: 0px 15px;
+            padding: 3px 15px;
+            font-size: 24px;
+            line-height: 30px;
         }
         .solo-main-title .title-md {
             font-size: 24px;
