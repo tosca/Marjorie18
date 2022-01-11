@@ -242,9 +242,12 @@
     <Content Include="img\bowls\bowlplate21.jpg" />
     <Content Include="img\bowls\bowlplate22.jpg" />
     <Content Include="img\bowls\bowlplate23.jpg" />
-    <Content Include="img\bowls\bowlplate24.jpg" />
-    <Content Include="img\bowls\bowlplate25.jpg" />
-    <Content Include="img\bowls\bowlplate26.jpg" />
+    <Content Include="img\bowls\bplate21.jpg" />
+    <Content Include="img\bowls\bplate22.jpg" />
+    <Content Include="img\bowls\bplate23.jpg" />
+    <Content Include="img\bowls\bplate24.jpg" />
+    <Content Include="img\bowls\bplate25.jpg" />
+    <Content Include="img\bowls\bplate26.jpg" />
     <Content Include="img\tumblers\tsf01.jpg" />
     <Content Include="img\tumblers\tsf02.jpg" />
     <Content Include="img\tumblers\tsf03.jpg" />
