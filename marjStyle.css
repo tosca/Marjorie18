@@ -8,13 +8,6 @@ body {
     font-size: 14px;
     line-height: 1;
 } 
-/*body, html {
-    margin: 0 auto;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-}*/
-
 .text{
     padding:1.2rem;
     font-size: 1rem;
@@ -330,20 +323,7 @@ sub-title {
 .email-marg {
     margin:auto;
 } 
-/*.iframe-container {
-    position: relative;
-    padding: 15px;
-    text-align: center;
-    display:block;
-}
-.iframe-container .iframe {
-    position: absolute;
-    border: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;   
-}*/
+
 .solo-baner.overflowh {
   overflow: hidden;
 }
@@ -446,12 +426,10 @@ sub-title {
         line-height: 36px;
         padding: 20px;
     }
-    .solo-main-title .sub-title {
+  /*  .solo-main-title .sub-title {
         font-size: 18px;
         line-height: 28px;
         padding: 30px;
-    }
-        padding-bottom: 30px;
     }
  
 .solo-main-title .img-caption {
@@ -461,11 +439,11 @@ sub-title {
     line-height: 24px;
     padding-top: 20px;
     padding-bottom: 30px;
-}
+}*/
+ }
     /****FOOTER******/
 #footer {
-   background-color:#954425;
-   
+   background-color:#954425;  
 }
 .copyright {
     width: 100%;
@@ -473,7 +451,3 @@ sub-title {
     text-align: center;
     color:black;
 }
-
-
-
-
