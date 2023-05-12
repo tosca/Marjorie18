@@ -1,5 +1,4 @@
-﻿
-* { box-sizing: border-box; }
+﻿* { box-sizing: border-box; }
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -28,9 +27,6 @@ a, a:link, a:visited, a:hover, a:active, .item:hover, .item:active {
 section {
     max-width: 100%; height: auto;
 }
-.sold {
-	background: rgb(221, 221, 134);
-}
 .swiper-wrapper {
     cursor: url(../img/drag.png) 16 16, ew-resize !important;
 }
@@ -44,18 +40,6 @@ section {
     color: #954425;
     margin: 30px auto;
 }
-/*.mn-function{
-    font-size: 2.3rem;
-}
-*** side-lidt-text ****/
-/*.slide-lidt-text, 
-.pottery-title {
-    position: relative;
-    display: inline-block;
-    padding: 2rem;
-    text-align: center;
-    width: 100%;  
-}*/
 .slide-lidt-text span,
 .pottery-title span {
     font-family: 'Amatic SC', cursive;
@@ -63,25 +47,6 @@ section {
     font-size: 50px;
     color:#954425;
 }
-/*
-.mobile-toggle-slide ul {
-    position: relative;
-    left: 0px;
-    top: 0px;
-    min-width: 100%;
-    padding: 0 10%;
-    z-index: 50;
-    box-shadow: 0px 35px 79px rgba(4, 5, 5, 0.5);
-}
-.slide-toggle-list {
-        display: block;
-    }
-***** grid *********
-.grid:after {
-    content: '';
-    display: block;
-    clear: both;
-}*/
 .grid { 
     position: relative;
     height: 100%;
@@ -91,21 +56,14 @@ section {
 .grid-item { float:left; width: 24.52%; padding: 3px; }
 .grid-item--width2 { float:left; width: 33.3%; padding: 3px; }
 .gutter-sizer { width: 2%; }
-
-
-.grid-item { width: 25% }
-.grid-item--width2 { width: 33%; }
-
 .grid-item img {
     display: block; 
     max-width: 100%;
 }
-
 /****Project desc ******/
 .project-item {
     position: relative;
     width: 100%;
-    /*height: 100%;*/
     -webkit-transition: all 0.25s ease-out;
     -moz-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
@@ -144,27 +102,16 @@ section {
     color: #483726;
 }
 .project-title .title-h2 {
-   /* font-size: 38px;
-    line-height: 38px;*/
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
     color: #483726;
 }
-
 .project-title .sub-title .sm {
     color: #534733;
    padding-bottom: 5px;
     font-size: 14px;
     font-weight: 700;
 }
-/*@media (max-width: 1400px) {
-	.project-title .sub-title {
-		margin-bottom: 10px;
-		font-weight: 700;
-		padding-bottom: 7px;
-    } 
-}*/
-/**** isotope grid ***/
 /*****item-scale-hover *****/
 .grid-item.scale-hover:hover .project-item,
  .grid-item--width2.scale-hover:hover .project-item {
@@ -281,15 +228,10 @@ section {
     }
 }
 @media (min-width: 576px) {   
-    .solo-main-title {
-        padding: 3px 15px;
-        font-size: 24px;
-        line-height: 30px;
-    }
+   
     .solo-main-title .simple-text.md p {
-        font-size: 14px;
         line-height: 22px;
-        padding: 10px 20px;
+        padding: 2rem;
     }  
     .solo-main-title .title-md {
         font-size: 24px;
@@ -298,10 +240,6 @@ section {
         padding-bottom: 20px;
         text-align: center;
     }       
-    .addr-list li a {
-        font-size: 18px;
-        line-height: 24px;
-    }
     .solo-main-title.vertical-align, .inside-img img.solo-main-title {
         padding: 5px 15px;
     }      
@@ -313,9 +251,7 @@ section {
     .solo-baner {
         height: auto;
     }
-    .solo-main-title {
-        padding: 30px;
-    }
+
     .solo-main-title .title-md {
         font-size: 46px;
         line-height: 56px;
@@ -336,37 +272,6 @@ section {
         transform: rotate(0deg);
         padding: 0px 0px 0px 30px;
     } 
-}
-@media (min-width: 992px) {
-    .mn-banner {
-        font-size: 4.5rem;
-     }
-}
-
- @media (min-width: 1200px) { 
-    .solo-main-title .title-md {
-        font-size: 40px;
-        line-height: 36px;
-        padding: 20px;
-    }
-  /*  .solo-main-title .sub-title {
-        font-size: 18px;
-        line-height: 28px;
-        padding: 30px;
-    }
- 
-.solo-main-title .img-caption {
-    font-family: 'Open Sans', san-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    padding-top: 20px;
-    padding-bottom: 30px;
-}*/
- }
-    /****FOOTER******/
-#footer {
-   background-color:#954425;  
 }
 .copyright {
     width: 100%;
