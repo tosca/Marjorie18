@@ -144,8 +144,8 @@ section {
     color: #483726;
 }
 .project-title .title-h2 {
-    font-size: 38px;
-    line-height: 38px;
+   /* font-size: 38px;
+    line-height: 38px;*/
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
     color: #483726;
@@ -157,27 +157,15 @@ section {
     font-size: 14px;
     font-weight: 700;
 }
-@media (max-width: 1400px) {
+/*@media (max-width: 1400px) {
 	.project-title .sub-title {
 		margin-bottom: 10px;
 		font-weight: 700;
 		padding-bottom: 7px;
     } 
-}
+}*/
 /**** isotope grid ***/
-@media (max-width: 480px) {
-    .grid-sizer,
-    .grid-item {
-        width: 50%
-    }
-    .project-title .title-h2 {
-        font-size: 28px;
-        line-height: 38px;
-    }
-    .project-title .sub-title {
-        font-size: 11px;
-    }
-}/*****item-scale-hover *****/
+/*****item-scale-hover *****/
 .grid-item.scale-hover:hover .project-item,
  .grid-item--width2.scale-hover:hover .project-item {
     -webkit-transform: scale(1.05);
@@ -279,7 +267,19 @@ section {
 .contact-wrap a{
     font-size: 18px;
 }
- 
+ @media (max-width: 480px) {
+    .grid-sizer,
+    .grid-item {
+        width: 50%
+    }
+    .project-title .title-h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .project-title .sub-title {
+        font-size: 11px;
+    }
+}
 @media (min-width: 576px) {   
     .solo-main-title {
         padding: 3px 15px;
