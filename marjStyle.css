@@ -178,10 +178,6 @@ section {
 .left-column {
     background-color: #c98528;
 } 
-.email-marg {
-    margin:auto;
-} 
-
 .solo-baner.overflowh {
   overflow: hidden;
 }
@@ -227,7 +223,7 @@ section {
         font-size: 11px;
     }
 }
-@media (min-width: 576px) {   
+/*@media (min-width: 576px) {   
    
     .solo-main-title .simple-text.md p {
         line-height: 22px;
@@ -243,7 +239,7 @@ section {
     .solo-main-title.vertical-align, .inside-img img.solo-main-title {
         padding: 5px 15px;
     }      
-} 
+}*/ 
 @media (min-width: 768px) {
     .left-column, .right-column {
         width: 50%;
@@ -251,7 +247,6 @@ section {
     .solo-baner {
         height: auto;
     }
-
     .solo-main-title .title-md {
         font-size: 46px;
         line-height: 56px;
