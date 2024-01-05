@@ -2,22 +2,24 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #dee2e6;
-    color: #353536;
+    background-color: #ffc598;
+    background-color: #f4bba7;
+    color: #29292a;
     font-size: 14px;
-    line-height: 1;
+    overflow-x: hidden;
 } 
+
 .text{
     padding:1.2rem;
     font-size: 1rem;
-    line-height: 1.6rem;
+    line-height: 1.5rem;
 }
 img{
     width: 100%;
     height: auto;
 }
 .carmel {
-    color: #954425;
+    color: #b3706b;
 }
 a, a:link, a:visited, a:hover, a:active, .item:hover, .item:active {
     cursor: crosshair;
@@ -36,16 +38,16 @@ section {
     text-align: center;
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
-    font-size: 50px;
-    color: #954425;
-    margin: 30px auto;
+    font-size: 60px;
+    color: #b3706b;
+    color: #999099;
 }
 .slide-lidt-text span,
 .pottery-title span {
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
     font-size: 50px;
-    color:#954425;
+    color:#b38a6b;
 }
 .grid { 
     position: relative;
@@ -53,8 +55,8 @@ section {
     width: 100%;
     margin:0 auto; 
 }
-.grid-item { float:left; width: 24.52%; padding: 3px; }
-.grid-item--width2 { float:left; width: 33.3%; padding: 3px; }
+.grid-item { float:left; width: 24.52%; padding: 8px; }
+.grid-item--width2 { float:left; width: 33.3%; padding: 8px; }
 .gutter-sizer { width: 2%; }
 .grid-item img {
     display: block; 
@@ -86,7 +88,7 @@ section {
     position: absolute;  
     left: 4%;
     right: 4%;
-    bottom: 0;
+    bottom: -17px;
     padding: 2%;
     opacity: 0;
     -webkit-transition: 0.5s ease;
@@ -108,8 +110,14 @@ section {
 }
 .project-title .sub-title .sm {
     color: #534733;
-   padding-bottom: 5px;
-    font-size: 14px;
+   padding-bottom: 3px;
+    font-size: 10px;
+    font-weight: 700;
+}
+.project-title .simple-text .sm {
+    color: #534733;
+   padding-bottom: 2px;
+    font-size: 9px;
     font-weight: 700;
 }
 /*****item-scale-hover *****/
@@ -140,7 +148,7 @@ section {
     overflow: hidden;     
 }
 .right-column {
-    background-color: #ccd0d3;  
+    background-color: #b8a9b8;  
 }
 .wrapper { 
     display: grid;
@@ -176,7 +184,7 @@ section {
     background-size: contain;
 }
 .left-column {
-    background-color: #c98528;
+    background-color: #fff0e5;
 } 
 .solo-baner.overflowh {
   overflow: hidden;
@@ -201,7 +209,7 @@ section {
     text-transform: uppercase;
     letter-spacing: 1.4px;
     font-weight: 700;
-    color: #954425;
+    color: #b3706b;
     display: block;
 
     left: -30px;
@@ -215,12 +223,8 @@ section {
     .grid-item {
         width: 50%
     }
-    .project-title .title-h2 {
+     .title-h2 {
         font-size: 28px;
-        line-height: 38px;
-    }
-    .project-title .sub-title {
-        font-size: 11px;
     }
 }
 
@@ -232,8 +236,7 @@ section {
         height: auto;
     }
     .solo-main-title .title-md {
-        font-size: 46px;
-        line-height: 56px;
+        font-size: 30px;
     }
     .box1 .title-sm  {
        font-size: 25px;
