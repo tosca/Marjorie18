@@ -39,7 +39,6 @@ section {
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
     font-size: 60px;
-    color: #b3706b;
     color: #999099;
 }
 .slide-lidt-text span,
@@ -124,7 +123,6 @@ section {
 .grid-item.scale-hover:hover .project-item,
  .grid-item--width2.scale-hover:hover .project-item {
     -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
     z-index: 5;
