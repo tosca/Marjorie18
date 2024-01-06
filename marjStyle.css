@@ -7,8 +7,6 @@ body {
     color: #29292a;
     font-size: 14px;
     overflow-x: hidden;
-} 
-
 .text{
     padding:1.2rem;
     font-size: 1rem;
@@ -40,6 +38,7 @@ section {
     font-weight: 700;
     font-size: 60px;
     color: #999099;
+    color: #7d7a7d;
 }
 .slide-lidt-text span,
 .pottery-title span {
@@ -47,6 +46,7 @@ section {
     font-weight: 700;
     font-size: 50px;
     color:#b38a6b;
+   color: #aa8467;
 }
 .grid { 
     position: relative;
