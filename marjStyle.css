@@ -55,7 +55,7 @@ a, a:link, a:visited, a:hover, a:active, .item:hover, .item:active {
     font-weight: 700;
     font-size: 50px;
     color:#b38a6b;
-   color: #aa8467;
+   color: #a1743b;
 }
 .grid { 
     position: relative;
@@ -97,7 +97,7 @@ a, a:link, a:visited, a:hover, a:active, .item:hover, .item:active {
     left: 4%;
     right: 4%;
     bottom: -17px;
-    padding: 2%;
+   /* padding: 2%;*/
     opacity: 0;
     -webkit-transition: 0.5s ease;
     -moz-transition: 0.5s ease;
@@ -114,7 +114,9 @@ a, a:link, a:visited, a:hover, a:active, .item:hover, .item:active {
 .project-title .title-h2 {
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
-    color: #483726;
+}
+.project-title .title-h2 .sm-size {
+    font-size: 1.5rem;
 }
 .project-title .sub-title .sm {
     color: #534733;
@@ -122,12 +124,16 @@ a, a:link, a:visited, a:hover, a:active, .item:hover, .item:active {
     font-size: 10px;
     font-weight: 700;
 }
-.project-title .simple-text .sm {
+ .simple-text .sm p{
     color: #534733;
-   padding-bottom: 2px;
-    font-size: 9px;
+    font-size: 1rem;
     font-weight: 700;
+    margin-bottom: 0.5rem;
 }
+.simple-text p{
+    margin-bottom: 0;
+}
+
 /*****item-scale-hover *****/
 .grid-item.scale-hover:hover .project-item,
  .grid-item--width2.scale-hover:hover .project-item {
