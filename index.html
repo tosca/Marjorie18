@@ -664,6 +664,13 @@
             }
         });
 
+        $(window).on('load', function() {
+            $('.grid').isotope({
+            itemSelector: '.grid-item',
+            layoutMode: 'masonry',
+            })
+        });
+
         $grid.imagesLoaded().progress(function() {
           $grid.isotope('layout');
         }); 
