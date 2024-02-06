@@ -7,19 +7,12 @@ body {
     color: #29292a;
     font-size: 14px;
     overflow-x: hidden;
+}
 .text{
     padding:1.2rem;
     font-size: 1rem;
     line-height: 1.5rem;
 }
-/*.bg-img {
-    background-image: ('img/2024/24-20');
-    background-position: center center;
-    background-size: auto;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}*/
 img{
     width: 100%;
     height: auto;
@@ -32,10 +25,6 @@ a, a:link, a:visited, a:hover, a:active, .item:hover, .item:active {
     text-decoration: none;
     outline: none;
 }
-/*section {
-    max-width: 100%; height: auto;
-}*/
-
 .swiper-wrapper {
     cursor: url(../img/drag.png) 16 16, ew-resize !important;
 }
@@ -224,7 +213,6 @@ a, a:link, a:visited, a:hover, a:active, .item:hover, .item:active {
     font-weight: 700;
     color: #b3706b;
     display: block;
-
     left: -30px;
     top: 160px;
 }
@@ -240,7 +228,6 @@ a, a:link, a:visited, a:hover, a:active, .item:hover, .item:active {
         font-size: 28px;
     }
 }
-
 @media (min-width: 768px) {
     .left-column, .right-column {
         width: 50%;
