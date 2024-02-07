@@ -9,7 +9,7 @@
       "webRoot": "${workspaceFolder}",
       "file": "c:\\Root\\Projects\\Marjorie18\\index.html"
     }
-  /*  {
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
@@ -27,6 +27,6 @@
           "ignoreFailures": true
         }
       ]
-    }*/
+    }
   ]
 }
