@@ -2,31 +2,12 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "chrome",
+      "type": "msedge",
       "request": "launch",
       "name": "Open index.html",
       "url": "http://marjorienicholspottery.net",
       "webRoot": "${workspaceFolder}",
       "file": "c:\\Root\\Projects\\Marjorie18\\index.html"
-    }
-    {
-      "name": "C/C++ Runner: Debug Session",
-      "type": "cppdbg",
-      "request": "launch",
-      "args": [],
-      "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "c:/Root/Projects/Marjorie18/.vscode",
-      "program": "c:/Root/Projects/Marjorie18/.vscode/build/Debug/outDebug",
-      "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ]
-    }
+    } 
   ]
 }

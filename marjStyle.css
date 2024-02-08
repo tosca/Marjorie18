@@ -52,6 +52,10 @@ a, a:link, a:visited, a:hover, a:active, .item:hover, .item:active {
     width: 100%;
     margin:0 auto; 
 }
+.grid:after {
+    content: '';
+    clear: both;
+}
 .grid-item { float:left; width: 24.52%; padding: 8px; }
 .grid-item--width2 { float:left; width: 33.3%; padding: 8px; }
 .gutter-sizer { width: 30%; }
