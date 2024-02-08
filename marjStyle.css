@@ -46,6 +46,9 @@ a, a:link, a:visited, a:hover, a:active, .item:hover, .item:active {
     color:#b38a6b;
    color: #a1743b;
 }
+.grid-section {
+    padding-bottom: 3%;
+}
 .grid { 
     position: relative;
     height: 100%;
@@ -56,8 +59,8 @@ a, a:link, a:visited, a:hover, a:active, .item:hover, .item:active {
     content: '';
     clear: both;
 }
-.grid-item { float:left; width: 24.52%; padding: 8px; }
-.grid-item--width2 { float:left; width: 33.3%; padding: 8px; }
+.grid-item { float:left; width: 24.52%; padding: 10px; }
+.grid-item--width2 { float:left; width: 33.3%; padding: 10px; }
 .gutter-sizer { width: 30%; }
 .grid-item img {
     display: block; 

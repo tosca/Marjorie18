@@ -17,7 +17,7 @@
         <div class="mn-banner">Marjorie Nichols Pottery</div> 
         <br/>
         <section id="pottery"> 
-           <div class="slide-lidt-text text-center pt-4"> 
+           <div class="slide-lidt-text text-center py-4"> 
                 <span>New Sculptural Designs</span>
             </div>
                 <img src="img/2024/24-20.jpg" class="py-3" alt="2024 sculptural pottery 20">
@@ -198,11 +198,11 @@
                 </div>
             </div>
 
-            <div class="slide-lidt-text text-center pt-4"> 
+            <div class="slide-lidt-text text-center py-4"> 
                 <span>Sculptural Designs</span>
             </div>
-           <div class="grid" data-isotope='{ "itemSelector": ".grid-item", "percentPosition": "true", "layoutMode": "fitRows", "masonry": {"columnWidth": ".grid-sizer"} }'>                             
-                <div class="grid-sizer"></div>
+            <div class="grid" data-isotope='{ "itemSelector": ".grid-item", "percentPosition": "true", "layoutMode": "fitRows", "masonry": {"columnWidth": ".grid-sizer"} }'>                             
+               <div class="grid-sizer"></div>
                 <div class="gutter-sizer"></div>
                 <div class="grid-item scale-hover pottery vase">
                     <div class="project-item">
@@ -343,13 +343,15 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="slide-lidt-text text-center pt-4"> 
+           </div>
+
+            <div class="slide-lidt-text text-center py-4"> 
                 <span>Vases 'surface designs'</span>
             </div>
+           
             <div class="grid" data-isotope='{ "itemSelector": ".grid-item", "percentPosition": "true", "layoutMode": "fitRows", "masonry":{"columnWidth": ".grid-sizer"} }'>                             
                 <div class="grid-sizer"></div>
-                <div class="gutter-sizer"></div>               
+                <div class="gutter-sizer"></div>             
                 <div class="grid-item scale-hover pottery vase-sd">
                     <div class="project-item">
                         <img src="img/vases/vsd01.jpg" class="img-fluid" alt="vase surface design pottery">
@@ -422,7 +424,7 @@
                 </div>
             </div>
            
-            <div class="slide-lidt-text text-center pt-4"> 
+            <div class="slide-lidt-text text-center py-4"> 
                 <span> Tumblers 'soda fired'</span>
             </div>      
             <div class="grid" data-isotope='{ "itemSelector": ".grid-item", "percentPosition": "true", "layoutMode": "fitRows", "masonry":{"columnWidth": ".grid-sizer"} }'>                             
@@ -459,7 +461,8 @@
                     </div>
                 </div>
             </div>
-            <div class="slide-lidt-text text-center pt-4"> 
+           
+            <div class="slide-lidt-text text-center py-4"> 
                 <span> Tea bowls</span>
             </div>
            <div class="grid" data-isotope='{ "itemSelector": ".grid-item", "percentPosition": "true", "layoutMode": "fitRows", "masonry":{"columnWidth": ".grid-sizer"} }'>                             
@@ -576,7 +579,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slide-lidt-text text-center pt-4"> 
+            <div class="slide-lidt-text text-center py-4"> 
                 <span> Bowls 'surface designs'</span>
             </div>
             <div class="grid" data-isotope='{ "itemSelector": ".grid-item", "percentPosition": "true", "layoutMode": "fitRows", "masonry":{"columnWidth": ".grid-sizer"} }'>
@@ -654,5 +657,16 @@
             </div>
         </section>
     </div>
+   <script>
+    var $grid = $('.grid').imagesLoaded( function() {
+        $grid.isotope({
+          itemSelector: '.grid-item',
+          percentPosition: true,
+          masonry: {
+            columnWidth: '.grid-sizer'
+          }
+        });
+      });
+    </script>
 </body>
 </html> 
