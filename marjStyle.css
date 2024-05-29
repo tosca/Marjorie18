@@ -2,8 +2,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f4bba7;
-    color: #29292a;
+     color: #29292a;
     font-size: 14px;
     overflow-x: hidden;
 }
@@ -66,7 +65,7 @@ a, a:link, a:visited, a:hover, a:active, .item:hover, .item:active {
 }*/
 /****Project desc ******/
 .project-item {
-    float:left; width: 24.52%; padding: 10px;
+    float:left; width: 24.52%; padding: 2px;
     position: relative;
     height: 100%;
     width: 100%;
@@ -192,9 +191,6 @@ a, a:link, a:visited, a:hover, a:active, .item:hover, .item:active {
     background-repeat: no-repeat;
     background-size: contain;
 }
-.left-column {
-    background-color: #fff0e5;
-} 
 .solo-baner.overflowh {
   overflow: hidden;
 }
